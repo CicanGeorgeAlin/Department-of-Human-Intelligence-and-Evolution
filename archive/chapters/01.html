@@ -18,6 +18,8 @@ a{color:inherit}.shell{width:min(var(--max),calc(100% - 36px));margin:auto}.top{
 a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{border-radius:4px}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
 .nav-back{display:flex;gap:16px;align-items:center;flex-wrap:wrap}.nav-back a{white-space:nowrap}
+/* Mobile navigation layout */
+@media(max-width:560px){.bar{height:auto;min-height:64px;flex-wrap:wrap;padding:10px 0}.nav-back{width:100%;justify-content:space-between;gap:8px}.nav-back a{font-size:.76rem}}
 </style></head>
 <body>
 <a class="skip-link" href="#main-content">Skip to main content</a>
