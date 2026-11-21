@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="13" fill="#08090d"/>
+  <rect x="2" y="2" width="60" height="60" rx="11" fill="none" stroke="#20cbd0" stroke-width="1.8"/>
+  <path d="M13 40a19 19 0 0 1 38 0" fill="none" stroke="#d0008b" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M15 42h34" stroke="#20cbd0" stroke-width="2"/>
+  <text x="32" y="32" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" font-weight="800" letter-spacing="-.8" fill="#fff">DHIE</text>
+  <circle cx="32" cy="42" r="2.5" fill="#20cbd0"/>
+</svg>
