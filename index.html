@@ -27,7 +27,8 @@
     .button{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 24px;border:1px solid var(--accent);background:var(--accent);color:#111;text-decoration:none;font-weight:800;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;transition:transform .2s,background .2s}
     .button:hover{transform:translateY(-2px);background:#ead5a8}
     .button.secondary{background:transparent;color:var(--white);border-color:var(--line)}
-    .book-stage{display:flex;justify-content:center;perspective:1200px;padding:25px}
+    .book-stage{display:flex;justify-content:center;align-items:center;padding:25px}
+    .real-cover{display:block;width:min(100%,390px);height:auto;max-height:690px;object-fit:contain;border:1px solid rgba(255,255,255,.18);box-shadow:0 28px 70px rgba(0,0,0,.58)}
     .book{width:min(100%,370px);aspect-ratio: .69;position:relative;display:flex;flex-direction:column;justify-content:space-between;padding:36px 31px;background:linear-gradient(145deg,#1c2028,#090a0d 65%);border:1px solid rgba(215,189,130,.65);box-shadow:24px 28px 65px rgba(0,0,0,.6),inset 0 0 50px rgba(215,189,130,.055);transform:rotateY(-9deg) rotateX(2deg)}
     .book:before{content:"";position:absolute;left:13px;top:0;bottom:0;width:1px;background:rgba(215,189,130,.35)}
     .book:after{content:"";position:absolute;inset:15px;border:1px solid rgba(215,189,130,.22);pointer-events:none}
@@ -88,13 +89,8 @@
             <a class="button secondary" href="#about">Explore the book</a>
           </div>
         </div>
-        <div class="book-stage" aria-label="Stylised typographic presentation of the DHIE book">
-          <div class="book">
-            <div class="book-top">RESTRICTED ACCESS · DHIE</div>
-            <div class="book-title">Department of Human Intelligence and Evolution<small>THE DHIE PROTOCOLS</small></div>
-            <div class="seal" aria-hidden="true">DHIE</div>
-            <div class="book-bottom">A MANUAL FOR HUMANITY'S<br>DIRECTED EVOLUTION</div>
-          </div>
+        <div class="book-stage">
+          <img class="real-cover" src="81HZAtRkoGL._SL1500_.jpg" alt="Original cover of The DHIE Protocols by George Cican">
         </div>
       </section>
 
