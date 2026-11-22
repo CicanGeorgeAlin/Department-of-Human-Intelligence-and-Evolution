@@ -1,4 +1,4 @@
-import { normalizeState, switchChapter } from "./state.js";
+import { normalizeState, switchChapter, createInitialChapterState, INITIAL_METRICS } from "./state.js";
 
 export const DIMENSIONS = Object.freeze([
   "evidence_confidence",
@@ -79,4 +79,40 @@ export function applyAssessment(currentState, questions, answers, chapterId = nu
     completed: true
   });
   return { state, score, total: questions.length };
+}
+
+
+/**
+ * Restart one chapter without disturbing other chapters.
+ * Campaign-wide metrics are replayed from the initial baseline so clamped
+ * values are recalculated correctly; cumulative source unlocks are retained.
+ */
+export function restartChapter(currentState, chapterId = null) {
+  let state = normalizeState(currentState);
+  const targetId = chapterId === null ? state.campaign.chapterId : String(chapterId);
+  if (!/^(?:[1-9]|1[0-4])$/.test(targetId)) {
+    throw new Error("Chapter must be between 1 and 14.");
+  }
+  if (targetId !== state.campaign.chapterId) {
+    state = switchChapter(state, targetId);
+  }
+
+  state.decisionLog = state.decisionLog.filter(entry => String(entry.chapterId) !== targetId);
+  state.metrics = { ...INITIAL_METRICS };
+  for (const entry of state.decisionLog) {
+    const effects = entry.effects;
+    if (!effects || DIMENSIONS.some(key =>
+      !Number.isInteger(effects[key]) || effects[key] < -2 || effects[key] > 2
+    )) continue;
+    for (const key of DIMENSIONS) {
+      state.metrics[key] = Math.max(0, Math.min(10, state.metrics[key] + effects[key]));
+    }
+  }
+
+  state.chapter = createInitialChapterState();
+  state.chapterProgress[targetId] = { ...state.chapter, answers: {} };
+  state.campaign.completedChapters = state.campaign.completedChapters.filter(id => id !== targetId);
+  // unlockedSections are cumulative archive discoveries and may be shared by
+  // multiple chapters, so restarting one chapter does not revoke them.
+  return state;
 }
