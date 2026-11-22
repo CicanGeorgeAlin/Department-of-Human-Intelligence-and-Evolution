@@ -52,7 +52,7 @@ test("campaign works in Chromium desktop and mobile viewports", async t => {
   assert.equal(await page.locator("#dashPlayable").textContent(), "14 / 14");
 
   await page.locator('[data-chapter="14"]').click();
-  await page.getByRole("heading", { name: /The Homo Optima and the Final Ascendance/ }).waitFor();
+  await page.locator("#activeChapterTitle").waitFor();
   await page.getByRole("button", { name: "Enter the situation" }).click();
   await page.getByRole("button", { name: "Review directives" }).click();
   await page.locator(".option").first().click();
@@ -74,7 +74,7 @@ test("campaign works in Chromium desktop and mobile viewports", async t => {
   await page.getByRole("heading", { name: /Organizational Structure/ }).waitFor();
   await page.getByRole("button", { name: "← Campaign overview" }).click();
   await page.locator('[data-chapter="14"]').click();
-  await page.getByRole("heading", { name: /The Homo Optima and the Final Ascendance/ }).waitFor();
+  await page.locator("#activeChapterTitle").waitFor();
   assert.equal(await page.locator("#campaignChapterStat").textContent(), "14 / 14");
   assert.equal(await page.locator("#chapterCoverageStat").textContent(), "12 / 12");
   assert.deepEqual(pageErrors, []);
@@ -87,6 +87,6 @@ test("campaign works in Chromium desktop and mobile viewports", async t => {
   );
   assert.equal(overflow, false, "mobile dashboard should not overflow horizontally");
   await page.locator('[data-chapter="14"]').click();
-  await page.getByRole("heading", { name: /The Homo Optima and the Final Ascendance/ }).waitFor();
+  await page.locator("#activeChapterTitle").waitFor();
   assert.deepEqual(pageErrors, []);
 });
