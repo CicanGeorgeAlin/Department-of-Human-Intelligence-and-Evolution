@@ -128,7 +128,7 @@
       9
     ]
   ],
-  "status": "M0 in progress. Chapters 1–6 have section inventories and page references checked. Chapters 7–14 remain.",
+  "status": "M0 in progress. Chapters 1–7 have section inventories and page references checked. Chapters 8–14 remain.",
   "method": "Physical PDF page indexing (1-based), using the supplied 91-page PDF and checking page text directly. Page ranges are used where a section spans a page break. Heading extraction is tracked chapter by chapter; the preliminary global count of 277 remains unverified.",
   "editorial_rules": [
     "Preserve source wording, numbering, omissions, and contradictions; do not silently repair.",
@@ -650,5 +650,108 @@
       "41–42"
     ]
   ],
-  "chapter_6_page_mapping_status": "PDF pages 35–42 checked directly. Chapter 6 headings 6.1–6.5.3 verified; page ranges use physical PDF pages (1-based). Page 42 also checked to confirm the transition to Chapter 7."
+  "chapter_6_page_mapping_status": "PDF pages 35–42 checked directly. Chapter 6 headings 6.1–6.5.3 verified; page ranges use physical PDF pages (1-based). Page 42 also checked to confirm the transition to Chapter 7.",
+  "chapter_7_sections": [
+    [
+      "7.1",
+      "Targeted Amnesia Induction: Removing Undesirable Memories",
+      42
+    ],
+    [
+      "7.1.1",
+      "Trauma Protocol 7.B: Eradicating Emotional Scars",
+      42
+    ],
+    [
+      "7.1.2",
+      "Dissenting Event Erasure: Maintaining Social Cohesion",
+      43
+    ],
+    [
+      "7.1.3",
+      "The \"Blank Slate\" Procedure for Re-Education Subjects",
+      43
+    ],
+    [
+      "7.2",
+      "Memory Implantation and Augmentation: Creating Shared Experiences",
+      "43–44"
+    ],
+    [
+      "7.2.1",
+      "Fabricated Historical Narratives: Reinforcing DHIE's Legitimacy",
+      43
+    ],
+    [
+      "7.2.2",
+      "Childhood Memory Enhancement: Perfecting Upbringing",
+      44
+    ],
+    [
+      "7.2.3",
+      "Creating \"Collective Nostalgia\" for Fabricated Past Events",
+      "44–45"
+    ],
+    [
+      "7.3",
+      "Historical Narrative Control: DHR's Role in Shaping Collective Memory",
+      45
+    ],
+    [
+      "7.3.1",
+      "Archival Revision Protocols: Rewriting the Past",
+      45
+    ],
+    [
+      "7.3.2",
+      "Public Record Management and Data Scrubbing",
+      "45–46"
+    ],
+    [
+      "7.3.3",
+      "Propaganda Dissemination and Counter-Narrative Suppression",
+      46
+    ],
+    [
+      "7.4",
+      "Personal Chronological Integration: Ensuring Consistency",
+      46
+    ],
+    [
+      "7.4.1",
+      "Memory Stream Synchronization with DHIE Databases",
+      46
+    ],
+    [
+      "7.4.2",
+      "Identifying and Correcting \"Errant\" Personal Recollections",
+      "46–47"
+    ],
+    [
+      "7.4.3",
+      "The \"Reality Consensus\" Indoctrination",
+      47
+    ],
+    [
+      "7.5",
+      "Protocols for Dissent Suppression: Memory as a Weapon",
+      47
+    ],
+    [
+      "7.5.1",
+      "Inducing Confusion and Self-Doubt Through Memory Alteration",
+      47
+    ],
+    [
+      "7.5.2",
+      "Creating False Flags and Manufactured Threats in Memory",
+      "47–48"
+    ],
+    [
+      "7.5.3",
+      "The Ultimate Sanction: Complete Memory Wipe and Identity Reassignment",
+      48
+    ]
+  ],
+  "chapter_7_page_mapping_status": "PDF pages 42–48 checked directly. Chapter 7 headings 7.1–7.5.3 verified; page ranges use physical PDF pages (1-based). Page 48 also checked to confirm the transition to Part III and Chapter 8."
 }
