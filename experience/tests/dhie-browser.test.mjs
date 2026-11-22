@@ -134,6 +134,33 @@ test("campaign works in Chromium desktop and mobile viewports", async t => {
     const exported = JSON.parse(await readFile(savePath, "utf8"));
     assert.equal(exported.format, "dhie-directors-mandate-save");
     assert.equal(exported.campaign.completedChapters.length, 14);
+    // Verify an in-progress chapter survives a real browser refresh.
+    await page.evaluate(() => localStorage.clear());
+    await page.reload({ waitUntil: "networkidle" });
+    await page.getByText("14 of 14 chapter records passed source and mechanics validation.").waitFor();
+    await page.locator('[data-chapter="6"]').click();
+    await page.getByRole("button", { name: "Enter the situation" }).click();
+    await page.getByRole("button", { name: "Review directives" }).click();
+    await page.locator(".option").nth(1).click();
+    await page.reload({ waitUntil: "networkidle" });
+    await page.getByText("14 of 14 chapter records passed source and mechanics validation.").waitFor();
+    await page.getByRole("button", { name: "Resume Chapter 6" }).click();
+    assert.equal(await page.locator("#steps .step.active").textContent(), "03 Decision");
+    assert.equal(await page.locator(".option.selected").count(), 1,
+      "selected decision should survive a browser refresh");
+    await page.getByRole("button", { name: "Record directive" }).click();
+    await page.getByRole("button", { name: "Take the knowledge check" }).click();
+    const chapterSix = JSON.parse(await readFile(resolve(root, "content/chapter-06.json"), "utf8"));
+    const firstQuestion = chapterSix.assessment[0];
+    await page.locator(`input[name="${firstQuestion.id}"][value="${firstQuestion.answer}"]`).check();
+    await page.reload({ waitUntil: "networkidle" });
+    await page.getByText("14 of 14 chapter records passed source and mechanics validation.").waitFor();
+    await page.getByRole("button", { name: "Resume Chapter 6" }).click();
+    assert.equal(await page.locator("#steps .step.active").textContent(), "05 Knowledge check");
+    assert.equal(await page.locator(`input[name="${firstQuestion.id}"][value="${firstQuestion.answer}"]`).isChecked(), true,
+      "assessment answers should survive a browser refresh");
+
+    // Begin the import rejection/recovery checks from a clean local campaign.
     await page.evaluate(() => localStorage.clear());
     await page.reload({ waitUntil: "networkidle" });
     await page.getByText("14 of 14 chapter records passed source and mechanics validation.").waitFor();
