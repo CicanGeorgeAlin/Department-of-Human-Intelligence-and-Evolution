@@ -36,3 +36,8 @@ jobs:
       - name: Run Chromium end-to-end smoke test
         run: node --test tests/dhie-browser.test.mjs
         working-directory: experience
+      - name: Run published GitHub Pages Chromium smoke test
+        run: node --test tests/dhie-browser.test.mjs
+        working-directory: experience
+        env:
+          DHIE_BASE_URL: https://cicangeorgealin.github.io/Department-of-Human-Intelligence-and-Evolution/experience/
