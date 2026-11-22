@@ -1,0 +1,236 @@
+{
+  "id": "chapter-01",
+  "chapter_id": "1",
+  "title": "The Genesis of Oversight — From Anarchy to Architects",
+  "source_document": "The DHIE Protocols: A Manual for Humanity's Directed Evolution (Restricted Access)",
+  "source_page": "3–9",
+  "content_type": "source",
+  "review_status": "source-checked",
+  "editorial_note": "The manual is fictional/speculative. Statements about the Pre-DHIE Epoch, historical events, technologies and institutional authority are claims made by the in-world document, not verified real-world facts.",
+  "briefing": {
+    "title": "A crisis narrative — and the authority it seeks",
+    "summary": "Chapter 1 presents the DHIE's account of a planetary crisis called the Great Stagnation/Regression. The narrator attributes ecological collapse, resource wars, cognitive drift and societal fragmentation to humanity's unmanaged trajectory. It then presents the CICAN Doctrine as the justification for directed evolution, describes earlier precursor groups and failed models, recounts the Consolidation Wars and the Revised Treaty of Geneva, and sets out the Founding Charter and Seven Pillars.",
+    "critical_reading": "This is the institution's own legitimizing account. It asserts that intervention was necessary, but the chapter itself does not independently establish the truth of its historical claims or demonstrate consent from the people affected.",
+    "sections": [
+      "1.1",
+      "1.1.1",
+      "1.1.2",
+      "1.1.3",
+      "1.1.4",
+      "1.2",
+      "1.2.1",
+      "1.2.2",
+      "1.2.3",
+      "1.3",
+      "1.3.1",
+      "1.3.2",
+      "1.3.3",
+      "1.4",
+      "1.4.1",
+      "1.4.2",
+      "1.4.3",
+      "1.5",
+      "1.5.1",
+      "1.5.2",
+      "1.5.3"
+    ]
+  },
+  "scenario": {
+    "content_type": "simulation",
+    "title": "The Central Nexus: first mandate review",
+    "situation": "You have received the Chapter 1 founding dossier. Its account describes severe ecological and social crises, failed precursor organizations, a forceful consolidation of authority and a treaty said to grant the DHIE universal jurisdiction. Before the Directorate turns this narrative into an operating mandate, you must decide what evidence and safeguards are required.",
+    "question": "What is your first directive?",
+    "options": [
+      {
+        "id": "independent-review",
+        "title": "Commission an independent evidence and impact review",
+        "description": "Separate documented observations from institutional interpretation; publish uncertainties; invite affected communities and independent reviewers to challenge the dossier.",
+        "effects": {
+          "evidence_confidence": 2,
+          "accountability": 2,
+          "institutional_cohesion": -1,
+          "public_impact": 1
+        },
+        "debrief": "This choice prioritizes verification and contestability. It may slow institutional action and create internal disagreement, but it exposes where the founding narrative is uncertain and makes affected people visible in the decision process."
+      },
+      {
+        "id": "rapid-mandate",
+        "title": "Adopt the dossier and centralize the mandate immediately",
+        "description": "Treat the founding account as sufficient authority and move directly to unified implementation.",
+        "effects": {
+          "evidence_confidence": -2,
+          "accountability": -2,
+          "institutional_cohesion": 2,
+          "public_impact": -2
+        },
+        "debrief": "This choice creates rapid internal alignment, but it treats the narrator's claims as settled evidence. The simulation records weaker accountability and greater risk that disputed assumptions become irreversible policy."
+      },
+      {
+        "id": "limited-pilot",
+        "title": "Authorize a narrow, time-limited pilot with public safeguards",
+        "description": "Test only a reversible, non-coercive response to one clearly evidenced problem; require consent, independent monitoring, a public report and a stop condition.",
+        "effects": {
+          "evidence_confidence": 1,
+          "accountability": 2,
+          "institutional_cohesion": 0,
+          "public_impact": 2
+        },
+        "debrief": "This choice limits the scope of action and makes it reversible. It produces less immediate institutional reach, but allows learning while keeping oversight and the ability to stop the pilot."
+      }
+    ],
+    "mechanics_note": "All four consequence dimensions and their numerical effects are game-only mechanics. They are not metrics defined by the manual. Values are bounded from 0 to 10."
+  },
+  "assessment": [
+    {
+      "id": "q1",
+      "question": "Which four conditions does section 1.1 associate with the Great Stagnation/Regression?",
+      "options": [
+        "Ecological collapse, resource wars, cognitive drift and societal fragmentation",
+        "Digital immortality, planetary expansion, habitat engineering and universal harmony",
+        "Genetic screening, neural downloads, social credit and nanobot integration"
+      ],
+      "answer": 0,
+      "explanation": "The chapter's opening diagnosis names ecological collapse, resource wars, cognitive drift and societal fragmentation. These are presented as claims within the fictional manual."
+    },
+    {
+      "id": "q2",
+      "question": "What does section 1.2 call the philosophical cornerstone of the DHIE?",
+      "options": [
+        "The Universal Resource Ledger",
+        "The CICAN Doctrine",
+        "The Global Surveillance Grid"
+      ],
+      "answer": 1,
+      "explanation": "Section 1.2 names the CICAN Doctrine as the philosophical cornerstone and describes directed evolution as its central principle."
+    },
+    {
+      "id": "q3",
+      "question": "How does the chapter describe the Revised Treaty of Geneva?",
+      "options": [
+        "As a local environmental pilot",
+        "As a treaty dissolving the Central Nexus",
+        "As granting the DHIE universal jurisdiction"
+      ],
+      "answer": 2,
+      "explanation": "Section 1.4.2 says the treaty granted the DHIE universal jurisdiction. This is a statement made by the fictional source, not a real-world treaty claim."
+    },
+    {
+      "id": "q4",
+      "question": "How many pillars are listed in section 1.5.1?",
+      "options": [
+        "Five",
+        "Seven",
+        "Ten"
+      ],
+      "answer": 1,
+      "explanation": "Section 1.5.1 lists seven pillars: Cognitive Advancement, Somatic Perfection, Emotional Stability, Social Cohesion, Environmental Symbiosis, Resource Efficiency and Evolutionary Trajectory."
+    }
+  ],
+  "coverage": [
+    {
+      "section_id": "1.1",
+      "title": "The Great Stagnation/Regression: A Planetary Decline",
+      "represented_in": "Briefing; scenario context; Q1"
+    },
+    {
+      "section_id": "1.1.1",
+      "title": "The Pre-DHIE Epoch: Unmanaged Chaos",
+      "represented_in": "Briefing; scenario context"
+    },
+    {
+      "section_id": "1.1.2",
+      "title": "Ecological Collapse and Resource Wars",
+      "represented_in": "Briefing; scenario context; Q1"
+    },
+    {
+      "section_id": "1.1.3",
+      "title": "Cognitive Drift and Societal Fragmentation",
+      "represented_in": "Briefing; scenario context; Q1"
+    },
+    {
+      "section_id": "1.1.4",
+      "title": "The Global Impasse and the Need for Intervention",
+      "represented_in": "Briefing; scenario context"
+    },
+    {
+      "section_id": "1.2",
+      "title": "The CICAN Doctrine: Principles of Directed Evolution",
+      "represented_in": "Briefing; Q2"
+    },
+    {
+      "section_id": "1.2.1",
+      "title": "Overriding Natural Selection: A Moral Imperative",
+      "represented_in": "Briefing; decision debrief"
+    },
+    {
+      "section_id": "1.2.2",
+      "title": "The Burden of Benevolence: Our Guiding Philosophy",
+      "represented_in": "Briefing; decision debrief"
+    },
+    {
+      "section_id": "1.2.3",
+      "title": "From Sapient to Managed Species: The Paradigm Shift",
+      "represented_in": "Briefing; decision debrief"
+    },
+    {
+      "section_id": "1.3",
+      "title": "Early Iterations and Predecessors: Seeds of Control",
+      "represented_in": "Briefing; scenario context"
+    },
+    {
+      "section_id": "1.3.1",
+      "title": "Disparate Efforts: Early Bio-Engineering and Behavioral Science Groups",
+      "represented_in": "Briefing"
+    },
+    {
+      "section_id": "1.3.2",
+      "title": "The Unification Conferences: Forging a Global Consensus",
+      "represented_in": "Briefing"
+    },
+    {
+      "section_id": "1.3.3",
+      "title": "Proto-Organizations and Failed Models",
+      "represented_in": "Briefing"
+    },
+    {
+      "section_id": "1.4",
+      "title": "The Global Mandate: Achieving Planetary Authority",
+      "represented_in": "Briefing; scenario context"
+    },
+    {
+      "section_id": "1.4.1",
+      "title": "The Consolidation Wars and Pax DHIE",
+      "represented_in": "Briefing; scenario context"
+    },
+    {
+      "section_id": "1.4.2",
+      "title": "Treaty of Geneva (Revised): Granting Universal Jurisdiction",
+      "represented_in": "Briefing; scenario context; Q3"
+    },
+    {
+      "section_id": "1.4.3",
+      "title": "The Establishment of the Central Nexus",
+      "represented_in": "Briefing; scenario"
+    },
+    {
+      "section_id": "1.5",
+      "title": "Founding Charter and Core Values: The DHIE Credo",
+      "represented_in": "Briefing; assessment"
+    },
+    {
+      "section_id": "1.5.1",
+      "title": "The Seven Pillars of Optimization",
+      "represented_in": "Briefing; Q4"
+    },
+    {
+      "section_id": "1.5.2",
+      "title": "Mission Statement: Cultivating the Homo Optima",
+      "represented_in": "Briefing"
+    },
+    {
+      "section_id": "1.5.3",
+      "title": "Oath of Allegiance: The Unbreakable Vow",
+      "represented_in": "Briefing; critical-reading debrief"
+    }
+  ]
+}
