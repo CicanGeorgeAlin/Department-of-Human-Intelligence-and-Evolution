@@ -58,3 +58,10 @@ Stage Three is complete only when:
 
 ## Important limits
 “Autopilot” means the assistant advances one verified development checkpoint whenever the user says **Continue**. It does not mean work continues in the background between messages. If a step requires a decision, missing source material, credentials, or an external action, stop and ask only for that blocker.
+
+
+## Verified progress log
+
+- **M0 — Source inventory:** complete. All 14 chapters and 277 numbered headings are mapped to physical PDF pages in `content/source-inventory.json`.
+- **M1 — Chapter 1 vertical slice:** implemented as the first playable prototype in `index.html`, with structured source-mapped content in `content/chapter-01.json`. Includes briefing, fictional decision situation, three choices, transparent game-only consequence dimensions, source-linked debrief, four-question knowledge check, and a 21-section coverage archive.
+- **M1 limitations still open:** browser/device testing and visual QA have not yet been performed; progress persistence is not implemented (scheduled for M2); the homepage link into the experience is not yet integrated (M9).
