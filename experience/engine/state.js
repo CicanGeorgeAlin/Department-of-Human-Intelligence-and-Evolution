@@ -36,7 +36,7 @@ function normalizeChapterState(candidate) {
   const step = Number.isInteger(chapter.step) ? Math.max(0, Math.min(5, chapter.step)) : 0;
   const answers = chapter.answers && typeof chapter.answers === "object"
     ? Object.fromEntries(Object.entries(chapter.answers).filter(([key, value]) =>
-        /^q\\d+$/.test(key) && Number.isInteger(value) && value >= 0 && value <= 10))
+        /^q\d+$/.test(key) && Number.isInteger(value) && value >= 0 && value <= 10))
     : {};
   return {
     step,
