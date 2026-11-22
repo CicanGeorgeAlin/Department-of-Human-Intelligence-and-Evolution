@@ -230,4 +230,4 @@ document.getElementById("world").addEventListener("click",event=>{
   else if(dy!==0)move(0,dy);
   else if(dx!==0)move(dx,0);
 });
-updateHUD();draw();
+if(state.completed) finishMission(); else { updateHUD(); draw(); }
