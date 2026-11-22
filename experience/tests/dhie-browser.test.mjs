@@ -196,6 +196,47 @@ test("campaign works in Chromium desktop and mobile viewports", async t => {
     await page.locator("#activeChapterTitle").waitFor();
     assert.equal(await page.locator("#campaignChapterStat").textContent(), "14 / 14");
     assert.equal(await page.locator("#chapterCoverageStat").textContent(), "12 / 12");
+
+    // A cancelled restart must be a no-op. Confirmed restart resets only Chapter 6.
+    await page.locator('[data-chapter="6"]').click();
+    await page.locator("#activeChapterTitle").waitFor();
+    const beforeRestart = await page.evaluate(() =>
+      JSON.parse(localStorage.getItem("dhie-directors-mandate-save-v1"))
+    );
+    page.once("dialog", dialog => dialog.dismiss());
+    await page.getByRole("button", { name: "Restart this chapter" }).click();
+    const afterCancel = await page.evaluate(() =>
+      JSON.parse(localStorage.getItem("dhie-directors-mandate-save-v1"))
+    );
+    assert.deepEqual(afterCancel, beforeRestart, "cancelling restart must leave the save unchanged");
+
+    page.once("dialog", dialog => dialog.accept());
+    await page.getByRole("button", { name: "Restart this chapter" }).click();
+    assert.equal(await page.locator("#steps .step.active").textContent(), "01 Briefing");
+    assert.equal(await page.locator("#decisionState").textContent(), "Pending");
+    const afterRestart = await page.evaluate(() =>
+      JSON.parse(localStorage.getItem("dhie-directors-mandate-save-v1"))
+    );
+    assert.equal(afterRestart.chapterProgress["6"].decision, null);
+    assert.deepEqual(afterRestart.chapterProgress["6"].answers, {});
+    assert.equal(afterRestart.campaign.completedChapters.includes("6"), false);
+    assert.equal(afterRestart.campaign.completedChapters.length, 13);
+    assert.deepEqual(afterRestart.chapterProgress["5"], beforeRestart.chapterProgress["5"],
+      "another chapter's progress must remain unchanged");
+    assert.equal(afterRestart.decisionLog.some(entry => entry.chapterId === "6"), false);
+    const replayedMetrics = {
+      evidence_confidence: 5,
+      accountability: 5,
+      institutional_cohesion: 5,
+      public_impact: 5
+    };
+    for (const entry of afterRestart.decisionLog) {
+      for (const key of Object.keys(replayedMetrics)) {
+        replayedMetrics[key] = Math.max(0, Math.min(10, replayedMetrics[key] + entry.effects[key]));
+      }
+    }
+    assert.deepEqual(afterRestart.metrics, replayedMetrics,
+      "campaign indicators must equal a replay of the remaining decision log");
   } finally {
     await rm(exportDir, { recursive: true, force: true });
   }
