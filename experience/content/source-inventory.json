@@ -128,12 +128,105 @@
       9
     ]
   ],
-  "status": "M0 in progress. Chapter 1 heading inventory and page ranges checked; Chapters 2–14 still require section-by-section extraction and page mapping.",
-  "method": "Physical PDF page indexing (1-based), using the supplied 91-page PDF and checking page text directly. Page ranges are used where a section spans a page break. This is a source inventory, not an interpretation of the fictional claims.",
+  "status": "M0 in progress. Chapters 1 and 2 have section inventories and page references checked. Chapters 3–14 remain.",
+  "method": "Physical PDF page indexing (1-based), using the supplied 91-page PDF and checking page text directly. Page ranges are used where a section spans a page break. Heading extraction is tracked chapter by chapter; the preliminary global count of 277 remains unverified.",
   "editorial_rules": [
     "Preserve source wording, numbering, omissions, and contradictions; do not silently repair.",
     "Chapter title strings are transcribed as printed where confirmed; some titles wrap across lines.",
     "The manual is treated as fictional/speculative source material, not verified real-world fact or policy guidance."
   ],
-  "chapter_1_page_mapping_status": "Pages 3–9 checked directly in the PDF text extraction. Page ranges indicate physical PDF page numbers, 1-based. Section headings and their continuation text were checked across page breaks."
+  "chapter_1_page_mapping_status": "Pages 3–9 checked directly in the PDF text extraction. Page ranges indicate physical PDF page numbers, 1-based. Section headings and their continuation text were checked across page breaks.",
+  "chapter_2_sections": [
+    [
+      "2.1",
+      "The Directorate: Command and Control",
+      9
+    ],
+    [
+      "2.1.1",
+      "Director Cican George Alin: The Chief Architect",
+      10
+    ],
+    [
+      "2.1.2",
+      "The Inner Council (The Octad): Strategic Policy Makers",
+      10
+    ],
+    [
+      "2.1.3",
+      "Central Nexus Command Hierarchy: Layers of Authority",
+      "10–11"
+    ],
+    [
+      "2.2",
+      "Core Divisions: Pillars of DHIE Operations",
+      11
+    ],
+    [
+      "2.2.1",
+      "Division of Cognitive Optimization (DCO): The Mind Sculptors",
+      11
+    ],
+    [
+      "2.2.2",
+      "Division of Somatic Adaptation (DSA): The Body Forgers",
+      "11–12"
+    ],
+    [
+      "2.2.3",
+      "Division of Social Harmonization (DSH): The Architects of Society",
+      12
+    ],
+    [
+      "2.2.4",
+      "Division of Evolutionary Trajectory (DET): The Future Seers",
+      12
+    ],
+    [
+      "2.2.5",
+      "Division of Historical Revision (DHR): The Custodians of Truth",
+      12
+    ],
+    [
+      "2.3",
+      "Regional Bureaus and Field Operatives: Global Reach",
+      "12–13"
+    ],
+    [
+      "2.3.1",
+      "Geo-Sector Command Centers",
+      13
+    ],
+    [
+      "2.3.2",
+      "Field Operative Classification and Deployment",
+      13
+    ],
+    [
+      "2.3.3",
+      "Covert Insertion and Extraction Teams",
+      13
+    ],
+    [
+      "2.4",
+      "Internal Compliance Division (ICD-7): The Enforcers of Fidelity",
+      14
+    ],
+    [
+      "2.4.1",
+      "Surveillance and Monitoring Protocols for Personnel",
+      14
+    ],
+    [
+      "2.4.2",
+      "Re-Education and Service Re-Allocation for Violations",
+      14
+    ],
+    [
+      "2.4.3",
+      "Threat Assessment and Suppression of Internal Dissent",
+      14
+    ]
+  ],
+  "chapter_2_page_mapping_status": "PDF pages 9–14 checked directly. Chapter 2 opening and section headings 2.1–2.4.3 verified; page ranges reflect physical PDF pages (1-based)."
 }
