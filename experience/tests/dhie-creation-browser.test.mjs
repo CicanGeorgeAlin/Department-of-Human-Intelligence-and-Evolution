@@ -18,7 +18,7 @@ test("Homo Optima creation flow works on desktop and mobile and restores its cha
  await page.getByRole("button",{name:/03 Your charter/}).click();
  await page.locator('input[name="charter-0"][value="plural"]').check();await page.locator('input[name="charter-1"][value="consent"]').check();await page.locator('input[name="charter-2"][value="protect"]').check();
  await page.getByRole("button",{name:"ASSEMBLE MY CHARTER"}).click();assert.equal(await page.locator("#charterResult").isVisible(),true);assert.match(await page.locator("#profileName").innerText(),/Charter 01/);
- await page.reload({waitUntil:"networkidle"});assert.match(await page.locator("#profileName").innerText(),/Charter 01/);assert.equal(await page.locator("#charterResult").isVisible(),true);
+ await page.reload({waitUntil:"networkidle"});assert.match(await page.locator("#profileName").innerText(),/Charter 01/);await page.getByRole("button",{name:/03 Your charter/}).click();assert.equal(await page.locator("#charterResult").isVisible(),true);
  const mobile=await browser.newPage({viewport:{width:390,height:844}});await mobile.goto(url,{waitUntil:"networkidle"});const dims=await mobile.evaluate(()=>({scroll:document.documentElement.scrollWidth,client:document.documentElement.clientWidth}));assert.ok(dims.scroll<=dims.client+1,"mobile page should not overflow horizontally");await mobile.close();assert.deepEqual(errors,[]);
 });
 function missionWordCount(text){return text.trim().split(/\s+/).length;}
