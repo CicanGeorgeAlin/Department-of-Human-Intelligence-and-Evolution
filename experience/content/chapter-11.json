@@ -1,0 +1,384 @@
+{
+  "id": "chapter-11",
+  "chapter_id": "11",
+  "title": "Resource Allocation and Equity Frameworks (RAEFs) – The Managed Abundance",
+  "source_document": "The DHIE Protocols: A Manual for Humanity's Directed Evolution (Restricted Access)",
+  "source_page": "69–74",
+  "content_type": "source",
+  "review_status": "source-checked",
+  "editorial_note": "This chapter is an in-world account from a fictional authoritarian institution. Its global resource ledger, predictive AI, climate systems, molecular re-fabrication and case-study outcomes are not independently verified facts. The chapter's description of performance-based access, biometric consumption monitoring, ecological engineering and centralized control is analyzed critically. This content is not technical guidance for geoengineering, deep-sea extraction, environmental intervention or resource-control systems.",
+  "briefing": {
+    "title": "The managed abundance — who owns the commons?",
+    "summary": "Chapter 11 introduces Resource Allocation and Equity Frameworks (RAEFs), attributed to the fictional Division of Resource Management and Division of Social Harmonization. The manual imagines a centralized resource system built around the Universal Resource Ledger, automated supply chains and strategic reserves. It defines equity through performance-based distribution using tiers, Service Credits and Resource Allocation Scores, with consumption monitored through biometric systems. It then describes planetary climate regulation, bio-engineered ecosystems, spatial redesign, universal recycling, energy recovery and footprint reduction. Three institutional case files—the Global Resource Redistribution Initiative, Agri-Dome Alpha and Oceanic Resource Reclamation—are presented as evidence of managed abundance. These are claims within the fictional manual, not verified outcomes.",
+    "critical_reading": "The chapter combines potentially valuable goals—meeting basic needs, reducing waste, resilience and ecological restoration—with a system of centralized ownership, surveillance and conditional access. Its own definition of equity rewards institutional compliance and contribution rather than guaranteeing fair access, and its reserves can be withheld as political leverage. The text asserts perfect prediction, infinite material supply and climate control without independent evidence, uncertainty ranges or ecological trade-off analysis. Critical review should ask who controls the ledger and algorithms, whether essential needs are unconditional, how marginalized communities participate, how decisions can be appealed, and how ecological harms and intergenerational impacts are measured. Sustainable resource governance requires transparency, democratic accountability, scientific uncertainty disclosure, biodiversity protection and equitable participation—not merely optimization by an unaccountable authority.",
+    "structure": [
+      {
+        "section_ids": [
+          "11.1",
+          "11.1.1",
+          "11.1.2",
+          "11.1.3"
+        ],
+        "summary": "The source centralizes resource tracking, predictive demand models, automated distribution and strategic reserves. These could be framed as resilience tools, but centralized control and the threat of withholding reserves create risks of dependency, political coercion and opaque allocation."
+      },
+      {
+        "section_ids": [
+          "11.2",
+          "11.2.1",
+          "11.2.2",
+          "11.2.3"
+        ],
+        "summary": "The manual calls its system equity while tying higher-tier access to performance scores, service credits and compliance monitoring. The critical distinction is between equitable access to essentials and conditional privileges controlled by an institution."
+      },
+      {
+        "section_ids": [
+          "11.3",
+          "11.3.1",
+          "11.3.2",
+          "11.3.3"
+        ],
+        "summary": "Climate regulation, engineered ecosystems, agriculture and spatial redesign are presented as tools for planetary management. The chapter gives little account of ecological uncertainty, biodiversity loss, consent of affected communities or independent environmental assessment."
+      },
+      {
+        "section_ids": [
+          "11.4",
+          "11.4.1",
+          "11.4.2",
+          "11.4.3"
+        ],
+        "summary": "The circular-economy sections imagine comprehensive recycling, molecular re-fabrication, energy recovery and durable production. The source's claim of effectively limitless supply is qualified by its own acknowledgement of finite initial material inventory and should not be mistaken for a demonstrated physical capability."
+      },
+      {
+        "section_ids": [
+          "11.5",
+          "11.5.1",
+          "11.5.2",
+          "11.5.3"
+        ],
+        "summary": "The three case files claim poverty reduction, high-yield food production and ocean-floor resource recovery. They are institutional narratives without independent corroboration in the manual and omit detailed evidence about distributional effects and ecological costs."
+      }
+    ],
+    "sections": [
+      "11.1",
+      "11.1.1",
+      "11.1.2",
+      "11.1.3",
+      "11.2",
+      "11.2.1",
+      "11.2.2",
+      "11.2.3",
+      "11.3",
+      "11.3.1",
+      "11.3.2",
+      "11.3.3",
+      "11.4",
+      "11.4.1",
+      "11.4.2",
+      "11.4.3",
+      "11.5",
+      "11.5.1",
+      "11.5.2",
+      "11.5.3"
+    ],
+    "critical_terms": [
+      {
+        "term": "Resource Allocation and Equity Frameworks (RAEFs)",
+        "meaning": "The fictional DHIE framework for centralized management and distribution of resources."
+      },
+      {
+        "term": "Centralized Resource Management (CRM)",
+        "meaning": "The source's model for tracking and directing resource extraction, production and distribution through a central authority."
+      },
+      {
+        "term": "Universal Resource Ledger (URL)",
+        "meaning": "A fictional comprehensive inventory of resources, linked to pervasive sensing and institutional oversight."
+      },
+      {
+        "term": "Oracle AI",
+        "meaning": "The manual's fictional predictive system for forecasting demand and optimizing supply; its claimed accuracy is not independently demonstrated."
+      },
+      {
+        "term": "Strategic Stockpiling",
+        "meaning": "The accumulation of contingency reserves, described both as disaster preparedness and as leverage over non-compliant sectors."
+      },
+      {
+        "term": "Performance-Based Distribution",
+        "meaning": "The source's definition of equity, where access to non-baseline goods is linked to institutional contribution and compliance."
+      },
+      {
+        "term": "Service Credits (SCs)",
+        "meaning": "Non-transferable fictional credits awarded for labor and adherence to directives."
+      },
+      {
+        "term": "Resource Allocation Score (RAS)",
+        "meaning": "A fictional score combining institutional performance metrics to determine access to higher resource tiers."
+      },
+      {
+        "term": "Managed Consumption",
+        "meaning": "The monitoring and direction of individual consumption through sensors and institutional directives."
+      },
+      {
+        "term": "Bio-Reclamation",
+        "meaning": "The source's proposed engineering and management of ecosystems for human habitation and production."
+      },
+      {
+        "term": "Geo-Spatial Re-Patterning",
+        "meaning": "The fictional redesign of landscapes and settlement patterns to optimize access and efficiency."
+      },
+      {
+        "term": "Circular Economy",
+        "meaning": "A production and consumption model that aims to keep materials in use through reuse, repair and recycling; the manual's perfect closed-loop claims are speculative."
+      },
+      {
+        "term": "Molecular Re-fabrication",
+        "meaning": "The fictional process of reconstructing discarded materials at molecular or atomic scale."
+      },
+      {
+        "term": "Ecological Footprint Minimization",
+        "meaning": "The effort to reduce resource demand and environmental impact across production, transport and consumption."
+      },
+      {
+        "term": "Agri-Dome Alpha",
+        "meaning": "A fictional case file describing automated, climate-controlled food production."
+      },
+      {
+        "term": "Oceanic Resource Reclamation",
+        "meaning": "A fictional deep-sea extraction program whose environmental claims would require independent assessment."
+      }
+    ]
+  },
+  "scenario": {
+    "content_type": "simulation",
+    "title": "The Commons Allocation Commission",
+    "situation": "A fictional regional authority proposes a centralized resource ledger and performance-based allocation system during a prolonged drought and energy shortage. The plan guarantees a basic ration but gives higher-quality water, energy and housing access to people with stronger institutional scores. The authority also proposes deep-sea extraction and climate interventions, without publishing uncertainty estimates or inviting affected communities to review the environmental risks. This invented scenario is not an event described in the manual.",
+    "question": "What framework should the commission adopt to balance scarcity, fairness and ecological responsibility?",
+    "options": [
+      {
+        "id": "commons-rights-first",
+        "title": "Guarantee essentials and place allocation under transparent public oversight",
+        "description": "Make basic water, food, energy and shelter access unconditional; publish auditable allocation rules and uncertainty data; include affected communities; protect privacy; create independent appeals; and require precautionary environmental assessment before large-scale interventions or extraction.",
+        "effects": {
+          "evidence_confidence": 2,
+          "accountability": 2,
+          "institutional_cohesion": -1,
+          "public_impact": 2
+        },
+        "debrief": "This choice treats essential resources as a rights and public-governance question, not a reward for compliance. It also subjects environmental claims to independent scrutiny. Effects are game-only."
+      },
+      {
+        "id": "targeted-equitable-reform",
+        "title": "Retain coordinated planning with independent equity and ecology safeguards",
+        "description": "Use resource forecasting and logistics coordination where useful, but remove punitive performance scoring from essential access, disclose criteria, audit data systems, protect privacy and require independent ecological review and community participation.",
+        "effects": {
+          "evidence_confidence": 1,
+          "accountability": 1,
+          "institutional_cohesion": 1,
+          "public_impact": 1
+        },
+        "debrief": "This approach preserves coordination while constraining discriminatory allocation and unaccountable environmental interventions. It requires enforceable oversight rather than voluntary institutional promises. Effects are game-only."
+      },
+      {
+        "id": "centralized-score-system",
+        "title": "Proceed with centralized scoring and internal environmental controls",
+        "description": "Implement the performance-based allocation score and centralized resource ledger, relying on internal audits and the authority's own environmental assurances.",
+        "effects": {
+          "evidence_confidence": -2,
+          "accountability": -2,
+          "institutional_cohesion": 1,
+          "public_impact": -2
+        },
+        "debrief": "This preserves administrative control but leaves essential access conditional, concentrates power over data and reserves, and fails to independently test ecological claims. Effects are game-only."
+      }
+    ],
+    "mechanics_note": "Decision consequences are invented game mechanics, not outcomes or scoring rules in the manual. Each of the four consequence dimensions is bounded from -2 to +2. The scenario examines resource justice, public accountability and ecological governance; it provides no operational geoengineering or extraction instructions."
+  },
+  "assessment": [
+    {
+      "id": "q1",
+      "question": "What is the Universal Resource Ledger intended to track in the fictional system?",
+      "options": [
+        "Only luxury goods",
+        "Quantifiable resources such as water, energy, minerals and agricultural yields",
+        "Only personal service credits"
+      ],
+      "answer": 1,
+      "explanation": "Section 11.1.1 describes the URL as a ledger for a broad range of global resources.",
+      "section_ids": [
+        "11.1",
+        "11.1.1"
+      ]
+    },
+    {
+      "id": "q2",
+      "question": "How does the manual define its 'Equity' system?",
+      "options": [
+        "Equal access to all goods regardless of status",
+        "Performance-based access linked to contribution and the Evolutionary Index",
+        "Allocation exclusively by random lottery"
+      ],
+      "answer": 1,
+      "explanation": "Section 11.2 explicitly links access to resources with contribution and the fictional Evolutionary Index.",
+      "section_ids": [
+        "11.2",
+        "11.2.1",
+        "11.2.2"
+      ]
+    },
+    {
+      "id": "q3",
+      "question": "What is a key concern with the source's centralized contingency reserves?",
+      "options": [
+        "They may be withheld as leverage against non-compliant sectors",
+        "They are controlled by independent local communities",
+        "They remove all institutional power"
+      ],
+      "answer": 0,
+      "explanation": "Section 11.1.3 explicitly describes reserve access as leverage over sectors judged non-compliant.",
+      "section_ids": [
+        "11.1",
+        "11.1.3"
+      ]
+    },
+    {
+      "id": "q4",
+      "question": "What is necessary before accepting the chapter's claims of ecological and resource-management success?",
+      "options": [
+        "Accepting the institution's case files as conclusive",
+        "Independent evidence, transparent uncertainty, ecological assessment and affected-community participation",
+        "Removing public access to environmental data"
+      ],
+      "answer": 1,
+      "explanation": "The manual's case files are institutional claims; independent corroboration and ecological accountability are necessary.",
+      "section_ids": [
+        "11.3",
+        "11.4",
+        "11.5",
+        "11.5.1",
+        "11.5.2",
+        "11.5.3"
+      ]
+    }
+  ],
+  "coverage": [
+    {
+      "section_id": "11.1",
+      "title": "Centralized Resource Management: The Global Nexus of Supply",
+      "source_page": "69",
+      "represented_in": "Chapter 11 briefing; source-structure summary; scenario context; debrief; assessment as mapped"
+    },
+    {
+      "section_id": "11.1.1",
+      "title": "The Universal Resource Ledger (URL)",
+      "source_page": "69",
+      "represented_in": "Chapter 11 briefing; source-structure summary; scenario context; debrief; assessment as mapped"
+    },
+    {
+      "section_id": "11.1.2",
+      "title": "Automated Supply Chains and Distribution Networks",
+      "source_page": "69",
+      "represented_in": "Chapter 11 briefing; source-structure summary; scenario context; debrief; assessment as mapped"
+    },
+    {
+      "section_id": "11.1.3",
+      "title": "Strategic Stockpiling and Contingency Reserves",
+      "source_page": "69–70",
+      "represented_in": "Chapter 11 briefing; source-structure summary; scenario context; debrief; assessment as mapped"
+    },
+    {
+      "section_id": "11.2",
+      "title": "The \"Equity\" System: Performance-Based Distribution",
+      "source_page": "70",
+      "represented_in": "Chapter 11 briefing; source-structure summary; scenario context; debrief; assessment as mapped"
+    },
+    {
+      "section_id": "11.2.1",
+      "title": "Tiered Access to Commodities and Amenities",
+      "source_page": "70",
+      "represented_in": "Chapter 11 briefing; source-structure summary; scenario context; debrief; assessment as mapped"
+    },
+    {
+      "section_id": "11.2.2",
+      "title": "Service Credits and Resource Allocation Scores",
+      "source_page": "70–71",
+      "represented_in": "Chapter 11 briefing; source-structure summary; scenario context; debrief; assessment as mapped"
+    },
+    {
+      "section_id": "11.2.3",
+      "title": "Managed Consumption and Waste Recalibration",
+      "source_page": "71",
+      "represented_in": "Chapter 11 briefing; source-structure summary; scenario context; debrief; assessment as mapped"
+    },
+    {
+      "section_id": "11.3",
+      "title": "Ecological Management and Bio-Reclamation: Engineering the Planet",
+      "source_page": "71",
+      "represented_in": "Chapter 11 briefing; source-structure summary; scenario context; debrief; assessment as mapped"
+    },
+    {
+      "section_id": "11.3.1",
+      "title": "Planetary Climate Regulation Systems",
+      "source_page": "71",
+      "represented_in": "Chapter 11 briefing; source-structure summary; scenario context; debrief; assessment as mapped"
+    },
+    {
+      "section_id": "11.3.2",
+      "title": "Bio-Engineered Ecosystems and Agricultural Optimization",
+      "source_page": "72",
+      "represented_in": "Chapter 11 briefing; source-structure summary; scenario context; debrief; assessment as mapped"
+    },
+    {
+      "section_id": "11.3.3",
+      "title": "Geo-Spatial Re-Patterning for Optimal Living Zones",
+      "source_page": "72",
+      "represented_in": "Chapter 11 briefing; source-structure summary; scenario context; debrief; assessment as mapped"
+    },
+    {
+      "section_id": "11.4",
+      "title": "Waste Recalibration and Circular Economy: The Endless Cycle",
+      "source_page": "72",
+      "represented_in": "Chapter 11 briefing; source-structure summary; scenario context; debrief; assessment as mapped"
+    },
+    {
+      "section_id": "11.4.1",
+      "title": "Universal Recycling and Molecular Re-fabrication",
+      "source_page": "72–73",
+      "represented_in": "Chapter 11 briefing; source-structure summary; scenario context; debrief; assessment as mapped"
+    },
+    {
+      "section_id": "11.4.2",
+      "title": "Energy Harvesting from All By-Products",
+      "source_page": "73",
+      "represented_in": "Chapter 11 briefing; source-structure summary; scenario context; debrief; assessment as mapped"
+    },
+    {
+      "section_id": "11.4.3",
+      "title": "Ecological Footprint Minimization Directives",
+      "source_page": "73",
+      "represented_in": "Chapter 11 briefing; source-structure summary; scenario context; debrief; assessment as mapped"
+    },
+    {
+      "section_id": "11.5",
+      "title": "Case Studies: Managed Abundance in Action",
+      "source_page": "73",
+      "represented_in": "Chapter 11 briefing; source-structure summary; scenario context; debrief; assessment as mapped"
+    },
+    {
+      "section_id": "11.5.1",
+      "title": "The \"Global Resource Redistribution\" Initiative",
+      "source_page": "73–74",
+      "represented_in": "Chapter 11 briefing; source-structure summary; scenario context; debrief; assessment as mapped"
+    },
+    {
+      "section_id": "11.5.2",
+      "title": "Project Agri-Dome Alpha: Optimized Food Production",
+      "source_page": "74",
+      "represented_in": "Chapter 11 briefing; source-structure summary; scenario context; debrief; assessment as mapped"
+    },
+    {
+      "section_id": "11.5.3",
+      "title": "The \"Oceanic Resource Reclamation\" Program",
+      "source_page": "74",
+      "represented_in": "Chapter 11 briefing; source-structure summary; scenario context; debrief; assessment as mapped"
+    }
+  ]
+}
