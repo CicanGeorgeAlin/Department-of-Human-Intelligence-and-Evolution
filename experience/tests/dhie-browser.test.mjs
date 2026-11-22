@@ -253,4 +253,73 @@ test("campaign works in Chromium desktop and mobile viewports", async t => {
   await page.locator('[data-chapter="14"]').click();
   await page.locator("#activeChapterTitle").waitFor();
   assert.deepEqual(pageErrors, []);
+
+  // New playable world: touch controls, exploration, conversations, puzzle, ending and save recovery.
+  await page.goto(new URL("world.html", baseUrl).href, { waitUntil: "networkidle" });
+  await page.evaluate(() => localStorage.removeItem("dhie-living-district-save-v1"));
+  await page.reload({ waitUntil: "networkidle" });
+  assert.equal(await page.title(), "DHIE: The Living District — Playable Mission");
+  assert.equal(await page.locator(".touch-controls").isVisible(), true);
+  await page.locator('[data-move="up"]').click();
+  await page.locator('[data-move="down"]').click();
+
+  const walk = async (key, count) => {
+    for (let i = 0; i < count; i++) await page.keyboard.press(key);
+  };
+  // Supply cache A at (3,2).
+  await walk("ArrowUp", 6);
+  await walk("ArrowRight", 2);
+  await page.getByRole("button", { name: /INTERACT/ }).click();
+  assert.equal(await page.locator("#parts").textContent(), "1");
+
+  // Restore water at (12,2).
+  await walk("ArrowRight", 9);
+  await page.keyboard.press("e");
+  assert.equal(await page.locator("#water").textContent(), "1");
+
+  // Speak with both residents and choose co-design.
+  await walk("ArrowLeft", 6);
+  await walk("ArrowDown", 3);
+  await page.keyboard.press("e");
+  await page.getByRole("button", { name: /Listen and co-design/ }).click();
+  assert.equal(await page.locator("#trust").textContent(), "1");
+  await walk("ArrowLeft", 2);
+  await walk("ArrowDown", 2);
+  await page.keyboard.press("e");
+  await page.getByRole("button", { name: /Listen and co-design/ }).click();
+  assert.equal(await page.locator("#trust").textContent(), "2");
+
+  // Find the second cache, then solve the hands-on solar routing puzzle.
+  await walk("ArrowRight", 7);
+  await page.keyboard.press("e");
+  assert.equal(await page.locator("#parts").textContent(), "2");
+  await walk("ArrowRight", 2);
+  await page.keyboard.press("e");
+  await page.locator("#puzzleModal").waitFor({ state: "visible" });
+  await page.locator('[data-node="grid"]').click();
+  assert.equal(await page.locator("#puzzleProgress").textContent(), "0 / 3 nodes connected",
+    "wrong routing order should reset the puzzle");
+  await page.locator('[data-node="sun"]').click();
+  await page.locator('[data-node="storage"]').click();
+  await page.locator('[data-node="grid"]').click();
+  await page.locator("#puzzleModal").waitFor({ state: "hidden" });
+  assert.equal(await page.locator("#power").textContent(), "ON");
+
+  // Return to the Commons and complete the mission.
+  await walk("ArrowLeft", 5);
+  await walk("ArrowUp", 3);
+  await page.keyboard.press("e");
+  await page.locator("#endingModal").waitFor({ state: "visible" });
+  assert.match(await page.locator("#endingText").textContent(), /residents involved/);
+  assert.equal(await page.locator("#trust").textContent(), "2");
+
+  // Completed mission survives refresh and can be replayed from a clean state.
+  await page.reload({ waitUntil: "networkidle" });
+  await page.locator("#endingModal").waitFor({ state: "visible" });
+  await page.getByRole("button", { name: /PLAY AGAIN/ }).click();
+  assert.equal(await page.locator("#parts").textContent(), "0");
+  assert.equal(await page.locator("#water").textContent(), "0");
+  assert.equal(await page.locator("#trust").textContent(), "0");
+  assert.equal(await page.locator("#power").textContent(), "OFF");
+  assert.deepEqual(pageErrors, []);
 });
