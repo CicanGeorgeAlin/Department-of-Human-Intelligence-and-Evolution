@@ -1,7 +1,7 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import { createServer } from "node:http";
-import { readFile, stat } from "node:fs/promises";
+import { readFile, stat, writeFile } from "node:fs/promises";
 import { resolve, extname, sep, join } from "node:path";
 import { mkdtemp, rm } from "node:fs/promises";
 import { tmpdir } from "node:os";
@@ -78,7 +78,25 @@ test("campaign works in Chromium desktop and mobile viewports", async t => {
     await page.locator("#activeChapterTitle").waitFor();
     await page.getByRole("button", { name: "Enter the situation" }).click();
     await page.getByRole("button", { name: "Review directives" }).click();
-    await page.locator(".option").first().click();
+    if (chapterId === 1) {
+      const controlAudit = await page.locator("#campaignExperience").evaluate(root => ({
+        unnamedButtons: [...root.querySelectorAll("button")].filter(button =>
+          !button.disabled && !(button.getAttribute("aria-label") || button.innerText || button.title).trim()
+        ).length,
+        unlabeledRadios: [...root.querySelectorAll('input[type="radio"]')].filter(input =>
+          !input.labels || input.labels.length === 0
+        ).length
+      }));
+      assert.equal(controlAudit.unnamedButtons, 0, "visible campaign buttons should have accessible names");
+      assert.equal(controlAudit.unlabeledRadios, 0, "assessment radio controls should have associated labels");
+      await page.keyboard.press("Tab");
+      assert.equal(await page.evaluate(() => document.activeElement?.classList.contains("option")), true,
+        "keyboard focus should reach the first decision option");
+      await page.keyboard.press("Enter");
+      assert.equal(await page.locator(".option").first().evaluate(option => option.classList.contains("selected")), true);
+    } else {
+      await page.locator(".option").first().click();
+    }
     await page.getByRole("button", { name: "Record directive" }).click();
     await page.getByRole("button", { name: "Take the knowledge check" }).click();
 
@@ -119,9 +137,34 @@ test("campaign works in Chromium desktop and mobile viewports", async t => {
     await page.evaluate(() => localStorage.clear());
     await page.reload({ waitUntil: "networkidle" });
     await page.getByText("14 of 14 chapter records passed source and mechanics validation.").waitFor();
+    const invalidPath = join(exportDir, "invalid-save.json");
+    await writeFile(invalidPath, JSON.stringify({ format: "not-a-dhie-save", version: 1 }));
+    await page.locator("#importSave").setInputFiles(invalidPath);
+    await page.locator("#campaignStatus").getByText("This is not a Director's Mandate save file.").waitFor();
+    assert.match(await page.locator("#dashCompleted").textContent(), /0 \/ 14/,
+      "an invalid import must not overwrite the current empty campaign");
+
+    const importedMessage = page.locator("#campaignStatus").getByText("Save imported. Resume the saved chapter from the campaign overview.");
     await page.locator("#importSave").setInputFiles(savePath);
-    await page.locator("#campaignStatus").getByText("Save imported. Resume the saved chapter from the campaign overview.").waitFor();
+    await importedMessage.waitFor();
     assert.match(await page.locator("#dashCompleted").textContent(), /14 \/ 14/);
+
+    // Selecting the identical file again verifies that the file input was reset.
+    await page.locator("#importSave").setInputFiles(savePath);
+    await importedMessage.waitFor();
+    assert.match(await page.locator("#dashCompleted").textContent(), /14 \/ 14/,
+      "re-importing the same valid backup should remain safe");
+
+    // Corrupt browser storage should fall back to a clean initial state, not crash the app.
+    await page.evaluate(() => localStorage.setItem("dhie-directors-mandate-save-v1", "{ definitely not JSON"));
+    await page.reload({ waitUntil: "networkidle" });
+    await page.getByText("14 of 14 chapter records passed source and mechanics validation.").waitFor();
+    assert.match(await page.locator("#dashCompleted").textContent(), /0 \/ 14/,
+      "corrupted local storage should recover to a clean campaign state");
+    await page.locator("#importSave").setInputFiles(savePath);
+    await importedMessage.waitFor();
+    assert.match(await page.locator("#dashCompleted").textContent(), /14 \/ 14/,
+      "a valid backup should restore progress after storage recovery");
     await page.locator('[data-chapter="14"]').click();
     await page.locator("#activeChapterTitle").waitFor();
     assert.equal(await page.locator("#campaignChapterStat").textContent(), "14 / 14");
