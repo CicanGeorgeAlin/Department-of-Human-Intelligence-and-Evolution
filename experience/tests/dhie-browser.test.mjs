@@ -156,7 +156,7 @@ test("campaign works in Chromium desktop and mobile viewports", async t => {
     await page.reload({ waitUntil: "networkidle" });
     await page.getByText("14 of 14 chapter records passed source and mechanics validation.").waitFor();
     await page.getByRole("button", { name: "Resume Chapter 6" }).click();
-    assert.equal(await page.locator("#steps .step.active").textContent(), "05 Knowledge check");
+    assert.equal(await page.locator("#steps .step.active").textContent(), "05 Assessment");
     assert.equal(await page.locator(`input[name="${firstQuestion.id}"][value="${firstQuestion.answer}"]`).isChecked(), true,
       "assessment answers should survive a browser refresh");
 
