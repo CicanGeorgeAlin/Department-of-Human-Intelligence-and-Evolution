@@ -1,0 +1,318 @@
+{
+  "id": "chapter-02",
+  "chapter_id": "2",
+  "title": "Organizational Structure – The Labyrinth of Control",
+  "source_document": "The DHIE Protocols: A Manual for Humanity's Directed Evolution (Restricted Access)",
+  "source_page": "9–14",
+  "content_type": "source",
+  "review_status": "source-checked",
+  "editorial_note": "This chapter describes a fictional institution and its coercive internal systems. Its claims and procedures are represented as statements made by the in-world manual, not verified real-world facts or recommendations.",
+  "briefing": {
+    "title": "The institutional blueprint — and the concentration of power",
+    "summary": "Chapter 2 describes the DHIE as a centralized, hierarchical institution. It places the Directorate at the apex, identifies Director Cican George Alin as the Chief Architect, and describes the Inner Council (The Octad) as eight strategic policy makers. Beneath them, the Central Nexus Command Hierarchy is divided into Alpha, Beta and Gamma tiers. The chapter then describes five core divisions: Cognitive Optimization (DCO), Somatic Adaptation (DSA), Social Harmonization (DSH), Evolutionary Trajectory (DET), and Historical Revision (DHR). It extends the organization through Regional Bureaus, Geo-Sector Command Centers and Field Operatives, before detailing Internal Compliance Division 7 (ICD-7), including personnel monitoring, re-education, service re-allocation and suppression of internal dissent.",
+    "critical_reading": "The chapter presents centralized control, loyalty and enforcement as organizational strengths. It also describes intrusive monitoring, manipulation of historical narratives, punishment for dissent and the eradication of consciousness. The source does not provide independent evidence that its systems are legitimate, effective, consensual or safe. Those omissions are central to evaluating the institution it describes.",
+    "structure": [
+      {
+        "section_ids": [
+          "2.1",
+          "2.1.1",
+          "2.1.2",
+          "2.1.3"
+        ],
+        "summary": "The Directorate is presented as the supreme command authority. The Director is described as the Chief Architect; The Octad consists of eight policy makers; and the command hierarchy uses Alpha, Beta and Gamma tiers."
+      },
+      {
+        "section_ids": [
+          "2.2",
+          "2.2.1",
+          "2.2.2",
+          "2.2.3",
+          "2.2.4",
+          "2.2.5"
+        ],
+        "summary": "Five specialized divisions are described, covering cognitive optimization, somatic adaptation, social harmonization, evolutionary trajectory and historical revision."
+      },
+      {
+        "section_ids": [
+          "2.3",
+          "2.3.1",
+          "2.3.2",
+          "2.3.3"
+        ],
+        "summary": "Regional Bureaus and field operatives extend the institution beyond the Central Nexus. The source describes Geo-Sector Command Centers, three operative tiers, and Covert Insertion and Extraction Teams."
+      },
+      {
+        "section_ids": [
+          "2.4",
+          "2.4.1",
+          "2.4.2",
+          "2.4.3"
+        ],
+        "summary": "ICD-7 is described as an internal oversight body. The chapter details personnel surveillance, re-education and service re-allocation, and suppression of internal dissent."
+      }
+    ],
+    "sections": [
+      "2.1",
+      "2.1.1",
+      "2.1.2",
+      "2.1.3",
+      "2.2",
+      "2.2.1",
+      "2.2.2",
+      "2.2.3",
+      "2.2.4",
+      "2.2.5",
+      "2.3",
+      "2.3.1",
+      "2.3.2",
+      "2.3.3",
+      "2.4",
+      "2.4.1",
+      "2.4.2",
+      "2.4.3"
+    ],
+    "critical_terms": [
+      {
+        "term": "The Octad",
+        "meaning": "The source's name for the eight-member Inner Council."
+      },
+      {
+        "term": "Alpha, Beta and Gamma tiers",
+        "meaning": "The three levels in the Central Nexus Command Hierarchy described in section 2.1.3."
+      },
+      {
+        "term": "DCO, DSA, DSH, DET and DHR",
+        "meaning": "The five core divisions named in section 2.2 and its subsections."
+      },
+      {
+        "term": "GSCC",
+        "meaning": "Geo-Sector Command Center, described as a regional operational hub."
+      },
+      {
+        "term": "ICD-7",
+        "meaning": "Internal Compliance Division 7, the source's internal oversight body."
+      }
+    ]
+  },
+  "scenario": {
+    "content_type": "simulation",
+    "title": "The Octad Review: authority, evidence and internal oversight",
+    "situation": "A fictional governance review has been called after the five divisions submit conflicting accounts of a major policy decision. The Directorate must decide how the Inner Council, divisional leaders and ICD-7 should be held accountable. The source describes a hierarchy with concentrated authority and an internal compliance body that can itself act with substantial autonomy. The review is an invented game scenario, not an event narrated in the manual.",
+    "question": "What governance safeguard should the Directorate establish first?",
+    "options": [
+      {
+        "id": "independent-oversight",
+        "title": "Create independent review with protected challenge rights",
+        "description": "Require written reasons for major decisions, allow independent review of evidence and impacts, protect good-faith dissent, and make oversight findings available to affected stakeholders.",
+        "effects": {
+          "evidence_confidence": 2,
+          "accountability": 2,
+          "institutional_cohesion": -1,
+          "public_impact": 1
+        },
+        "debrief": "This design makes the basis for decisions more contestable and reduces the risk that internal loyalty substitutes for evidence. It may create disagreement and slow approvals. These are simulation consequences, not outcomes stated by the source."
+      },
+      {
+        "id": "centralized-command",
+        "title": "Concentrate approvals in the Directorate",
+        "description": "Resolve divisional disputes by requiring central approval and treating the existing hierarchy as the primary source of institutional coordination.",
+        "effects": {
+          "evidence_confidence": -1,
+          "accountability": -2,
+          "institutional_cohesion": 2,
+          "public_impact": -1
+        },
+        "debrief": "This design may produce clearer short-term command alignment, but it narrows independent challenge and concentrates responsibility. The source describes centralized authority; this option's numerical effects are game-only."
+      },
+      {
+        "id": "compliance-expansion",
+        "title": "Expand ICD-7's authority over internal disputes",
+        "description": "Give the internal compliance body broader discretion to investigate disagreements and issue binding findings, without adding an independent appeal mechanism.",
+        "effects": {
+          "evidence_confidence": -2,
+          "accountability": -2,
+          "institutional_cohesion": 1,
+          "public_impact": -2
+        },
+        "debrief": "This design prioritizes conformity over contestability. The chapter describes coercive compliance measures; the simulation makes their accountability and human-impact risks visible rather than endorsing them."
+      }
+    ],
+    "mechanics_note": "The four consequence dimensions and all numerical effects are game-only mechanics. They are not metrics defined by the manual. Values are bounded from 0 to 10."
+  },
+  "assessment": [
+    {
+      "id": "q1",
+      "question": "How many individuals make up the Inner Council, called The Octad?",
+      "options": [
+        "Five",
+        "Eight",
+        "Twelve"
+      ],
+      "answer": 1,
+      "explanation": "Section 2.1.2 describes The Octad as consisting of eight individuals.",
+      "section_ids": [
+        "2.1.2"
+      ]
+    },
+    {
+      "id": "q2",
+      "question": "Which list matches the five core divisions in section 2.2?",
+      "options": [
+        "DCO, DSA, DSH, DET and DHR",
+        "DCO, ICD-7, GSCC, CIET and NLI",
+        "Alpha, Beta, Gamma, Omega-6 and Omega-7"
+      ],
+      "answer": 0,
+      "explanation": "Section 2.2 identifies the five divisions as Cognitive Optimization, Somatic Adaptation, Social Harmonization, Evolutionary Trajectory and Historical Revision.",
+      "section_ids": [
+        "2.2",
+        "2.2.1",
+        "2.2.2",
+        "2.2.3",
+        "2.2.4",
+        "2.2.5"
+      ]
+    },
+    {
+      "id": "q3",
+      "question": "What does the source say Geo-Sector Command Centers do?",
+      "options": [
+        "Replace the Directorate",
+        "Serve as regional hubs for DHIE operations",
+        "Conduct the final knowledge assessment"
+      ],
+      "answer": 1,
+      "explanation": "Section 2.3.1 describes GSCCs as regional hubs responsible for implementing protocols within designated geographical areas.",
+      "section_ids": [
+        "2.3.1"
+      ]
+    },
+    {
+      "id": "q4",
+      "question": "Which body is described as the DHIE's internal oversight body?",
+      "options": [
+        "The Octad",
+        "Division of Historical Revision",
+        "Internal Compliance Division 7 (ICD-7)"
+      ],
+      "answer": 2,
+      "explanation": "Section 2.4 identifies ICD-7 as the dedicated internal oversight body and describes its monitoring and enforcement powers.",
+      "section_ids": [
+        "2.4",
+        "2.4.1",
+        "2.4.2",
+        "2.4.3"
+      ]
+    }
+  ],
+  "coverage": [
+    {
+      "section_id": "2.1",
+      "title": "The Directorate: Command and Control",
+      "source_page": "9",
+      "represented_in": "Chapter 2 briefing; organizational map; scenario context; debrief; assessment as mapped"
+    },
+    {
+      "section_id": "2.1.1",
+      "title": "Director Cican George Alin: The Chief Architect",
+      "source_page": "10",
+      "represented_in": "Chapter 2 briefing; organizational map; scenario context; debrief; assessment as mapped"
+    },
+    {
+      "section_id": "2.1.2",
+      "title": "The Inner Council (The Octad): Strategic Policy Makers",
+      "source_page": "10",
+      "represented_in": "Chapter 2 briefing; organizational map; scenario context; debrief; assessment as mapped"
+    },
+    {
+      "section_id": "2.1.3",
+      "title": "Central Nexus Command Hierarchy: Layers of Authority",
+      "source_page": "10–11",
+      "represented_in": "Chapter 2 briefing; organizational map; scenario context; debrief; assessment as mapped"
+    },
+    {
+      "section_id": "2.2",
+      "title": "Core Divisions: Pillars of DHIE Operations",
+      "source_page": "11",
+      "represented_in": "Chapter 2 briefing; organizational map; scenario context; debrief; assessment as mapped"
+    },
+    {
+      "section_id": "2.2.1",
+      "title": "Division of Cognitive Optimization (DCO): The Mind Sculptors",
+      "source_page": "11",
+      "represented_in": "Chapter 2 briefing; organizational map; scenario context; debrief; assessment as mapped"
+    },
+    {
+      "section_id": "2.2.2",
+      "title": "Division of Somatic Adaptation (DSA): The Body Forgers",
+      "source_page": "11–12",
+      "represented_in": "Chapter 2 briefing; organizational map; scenario context; debrief; assessment as mapped"
+    },
+    {
+      "section_id": "2.2.3",
+      "title": "Division of Social Harmonization (DSH): The Architects of Society",
+      "source_page": "12",
+      "represented_in": "Chapter 2 briefing; organizational map; scenario context; debrief; assessment as mapped"
+    },
+    {
+      "section_id": "2.2.4",
+      "title": "Division of Evolutionary Trajectory (DET): The Future Seers",
+      "source_page": "12",
+      "represented_in": "Chapter 2 briefing; organizational map; scenario context; debrief; assessment as mapped"
+    },
+    {
+      "section_id": "2.2.5",
+      "title": "Division of Historical Revision (DHR): The Custodians of Truth",
+      "source_page": "12",
+      "represented_in": "Chapter 2 briefing; organizational map; scenario context; debrief; assessment as mapped"
+    },
+    {
+      "section_id": "2.3",
+      "title": "Regional Bureaus and Field Operatives: Global Reach",
+      "source_page": "12–13",
+      "represented_in": "Chapter 2 briefing; organizational map; scenario context; debrief; assessment as mapped"
+    },
+    {
+      "section_id": "2.3.1",
+      "title": "Geo-Sector Command Centers",
+      "source_page": "13",
+      "represented_in": "Chapter 2 briefing; organizational map; scenario context; debrief; assessment as mapped"
+    },
+    {
+      "section_id": "2.3.2",
+      "title": "Field Operative Classification and Deployment",
+      "source_page": "13",
+      "represented_in": "Chapter 2 briefing; organizational map; scenario context; debrief; assessment as mapped"
+    },
+    {
+      "section_id": "2.3.3",
+      "title": "Covert Insertion and Extraction Teams",
+      "source_page": "13",
+      "represented_in": "Chapter 2 briefing; organizational map; scenario context; debrief; assessment as mapped"
+    },
+    {
+      "section_id": "2.4",
+      "title": "Internal Compliance Division (ICD-7): The Enforcers of Fidelity",
+      "source_page": "14",
+      "represented_in": "Chapter 2 briefing; organizational map; scenario context; debrief; assessment as mapped"
+    },
+    {
+      "section_id": "2.4.1",
+      "title": "Surveillance and Monitoring Protocols for Personnel",
+      "source_page": "14",
+      "represented_in": "Chapter 2 briefing; organizational map; scenario context; debrief; assessment as mapped"
+    },
+    {
+      "section_id": "2.4.2",
+      "title": "Re-Education and Service Re-Allocation for Violations",
+      "source_page": "14",
+      "represented_in": "Chapter 2 briefing; organizational map; scenario context; debrief; assessment as mapped"
+    },
+    {
+      "section_id": "2.4.3",
+      "title": "Threat Assessment and Suppression of Internal Dissent",
+      "source_page": "14",
+      "represented_in": "Chapter 2 briefing; organizational map; scenario context; debrief; assessment as mapped"
+    }
+  ]
+}
