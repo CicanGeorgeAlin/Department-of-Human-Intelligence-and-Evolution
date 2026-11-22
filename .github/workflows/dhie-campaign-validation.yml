@@ -24,6 +24,15 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 24
-      - name: Run DHIE campaign tests
+      - name: Install browser test dependency
+        run: npm install --no-save playwright
+        working-directory: experience
+      - name: Install Chromium
+        run: npx playwright install --with-deps chromium
+        working-directory: experience
+      - name: Run DHIE campaign regression tests
         run: node --test tests/dhie-campaign.test.mjs
+        working-directory: experience
+      - name: Run Chromium end-to-end smoke test
+        run: node --test tests/dhie-browser.test.mjs
         working-directory: experience
