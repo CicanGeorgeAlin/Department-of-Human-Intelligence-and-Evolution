@@ -120,7 +120,7 @@ test("campaign works in Chromium desktop and mobile viewports", async t => {
     await page.reload({ waitUntil: "networkidle" });
     await page.getByText("14 of 14 chapter records passed source and mechanics validation.").waitFor();
     await page.locator("#importSave").setInputFiles(savePath);
-    await page.getByText("Save imported. Resume the saved chapter from the campaign overview.").waitFor();
+    await page.locator("#campaignStatus").getByText("Save imported. Resume the saved chapter from the campaign overview.").waitFor();
     assert.match(await page.locator("#dashCompleted").textContent(), /14 \/ 14/);
     await page.locator('[data-chapter="14"]').click();
     await page.locator("#activeChapterTitle").waitFor();
