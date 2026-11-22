@@ -32,7 +32,7 @@
 </main>
 <script type="module">
 import { loadState, saveState, exportSave, importSave, switchChapter } from "./engine/state.js";
-import { applyDecision, setChapterProgress, applyAssessment } from "./engine/rules.js";
+import { applyDecision, setChapterProgress, applyAssessment, restartChapter } from "./engine/rules.js";
 import { loadCampaignInventory, loadChapter } from "./engine/content.js";
 
 const dims = [
@@ -205,6 +205,10 @@ function render() {
       esc(chapter.chapter_id) + ' knowledge check complete</strong><p>Your chapter progress and decision are saved locally on this device. Export a JSON backup to move the campaign to another device.</p></div>' +
       '<div class="actions">' + button("Return to campaign overview", "overview", false) + '</div>';
   }
+  if (state.step > 0 || state.decision) {
+    panel.insertAdjacentHTML("beforeend",
+      '<div class="actions">' + button("Restart this chapter", "restart", false) + '</div>');
+  }
   document.getElementById("campaignChapterStat").textContent = chapter.chapter_id + " / 14";
   document.getElementById("chapterCoverageStat").textContent = chapter.coverage.length + " / " + chapter.coverage.length;
   document.getElementById("decisionState").textContent = state.decision ? "Recorded" : "Pending";
@@ -273,6 +277,19 @@ panel.addEventListener("click", event => {
   const action = actionElement.dataset.action;
   if (action === "overview") {
     returnToOverview();
+    return;
+  }
+  if (action === "restart") {
+    const confirmed = window.confirm(
+      "Restart Chapter " + chapter.chapter_id + "? This clears its decision, answers and completion. Campaign indicators will be recalculated from the other chapters. Progress in every other chapter and cumulative archive unlocks will be preserved."
+    );
+    if (!confirmed) return;
+    saved = restartChapter(saved, chapter.chapter_id);
+    syncFromSaved();
+    render();
+    renderCampaignMap();
+    document.getElementById("saveStatus").textContent =
+      "Chapter " + chapter.chapter_id + " restarted. Other chapter progress and cumulative archive unlocks were preserved.";
     return;
   }
   if (action === "next") state.step = Math.min(5, state.step + 1);
