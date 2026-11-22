@@ -4,7 +4,7 @@
   "pdf_pages": 91,
   "verified_part_count": 4,
   "verified_chapter_count": 14,
-  "transcribed_numbered_heading_count": 277,
+  "transcribed_numbered_heading_count": 265,
   "chapter_titles": [
     "The Genesis of Oversight – From Anarchy to Architects",
     "Organizational Structure – The Labyrinth of Control",
@@ -128,7 +128,7 @@
       9
     ]
   ],
-  "status": "M0 in progress. Chapters 1–12 have section inventories and page references checked. Chapters 13–14 remain.",
+  "status": "M0 in progress. Chapters 1–13 have section inventories and page references checked. Chapter 14 remains.",
   "method": "Physical PDF page indexing (1-based), using the supplied 91-page PDF and checking page text directly. Page ranges are used where a section spans a page break. Heading extraction is tracked chapter by chapter; the preliminary global count of 277 remains unverified.",
   "editorial_rules": [
     "Preserve source wording, numbering, omissions, and contradictions; do not silently repair.",
@@ -1288,5 +1288,108 @@
       80
     ]
   ],
-  "chapter_12_page_mapping_status": "PDF pages 75–80 checked directly. Chapter 12 headings 12.1–12.5.3 verified; page 81 also checked to confirm the transition to Chapter 13. Page ranges use physical PDF pages (1-based)."
+  "chapter_12_page_mapping_status": "PDF pages 75–80 checked directly. Chapter 12 headings 12.1–12.5.3 verified; page 81 also checked to confirm the transition to Chapter 13. Page ranges use physical PDF pages (1-based).",
+  "chapter_13_sections": [
+    [
+      "13.1",
+      "Ubiquitous Biometric Monitoring: The Personal Dossier",
+      81
+    ],
+    [
+      "13.1.1",
+      "Neural Trace Scanners and Cognitive Resonance Monitors",
+      81
+    ],
+    [
+      "13.1.2",
+      "Optic and Audio Surveillance Networks (Global Surveillance Grid)",
+      "81–82"
+    ],
+    [
+      "13.1.3",
+      "Physiological Monitors and Behavioral Trackers",
+      82
+    ],
+    [
+      "13.2",
+      "The Social Credit System (SCS): Behavior as Currency",
+      82
+    ],
+    [
+      "13.2.1",
+      "Real-time Score Calculation and Dynamic Adjustment",
+      "82–83"
+    ],
+    [
+      "13.2.2",
+      "Automated Access Privileges and Punitive Recalibrations",
+      83
+    ],
+    [
+      "13.2.3",
+      "Indoctrination through Incentivized Compliance",
+      "83–84"
+    ],
+    [
+      "13.3",
+      "Public Information and Propaganda Management: The Curated Reality",
+      84
+    ],
+    [
+      "13.3.1",
+      "Curated News Feeds and Reality Broadcasts",
+      84
+    ],
+    [
+      "13.3.2",
+      "Educational Indoctrination Modules",
+      84
+    ],
+    [
+      "13.3.3",
+      "Counter-Narrative Suppression and Anomaly Neutralization",
+      "84–85"
+    ],
+    [
+      "13.4",
+      "Anomalous Behavior Intervention: Immediate Correction",
+      85
+    ],
+    [
+      "13.4.1",
+      "Automated Behavior Recalibration Triggers",
+      85
+    ],
+    [
+      "13.4.2",
+      "DSH Field Operative Deployment",
+      "85–86"
+    ],
+    [
+      "13.4.3",
+      "The \"Re-Patterning\" Sanction: Final Compliance",
+      86
+    ],
+    [
+      "13.5",
+      "Case Studies: The SSCS in Action",
+      86
+    ],
+    [
+      "13.5.1",
+      "The \"Harmonized Sector\" Initiative",
+      86
+    ],
+    [
+      "13.5.2",
+      "The \"Echo Chamber\" Protocol",
+      "86–87"
+    ],
+    [
+      "13.5.3",
+      "The \"Model Citizen\" Program",
+      87
+    ]
+  ],
+  "chapter_13_page_mapping_status": "PDF pages 81–87 checked directly. Chapter 13 headings 13.1–13.5.3 verified; page ranges use physical PDF pages (1-based). Page 87 also checked to confirm the transition to Chapter 14."
 }
