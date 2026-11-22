@@ -128,7 +128,7 @@
       9
     ]
   ],
-  "status": "M0 in progress. Chapters 1–7 have section inventories and page references checked. Chapters 8–14 remain.",
+  "status": "M0 in progress. Chapters 1–8 have section inventories and page references checked. Chapters 9–14 remain.",
   "method": "Physical PDF page indexing (1-based), using the supplied 91-page PDF and checking page text directly. Page ranges are used where a section spans a page break. Heading extraction is tracked chapter by chapter; the preliminary global count of 277 remains unverified.",
   "editorial_rules": [
     "Preserve source wording, numbering, omissions, and contradictions; do not silently repair.",
@@ -753,5 +753,128 @@
       48
     ]
   ],
-  "chapter_7_page_mapping_status": "PDF pages 42–48 checked directly. Chapter 7 headings 7.1–7.5.3 verified; page ranges use physical PDF pages (1-based). Page 48 also checked to confirm the transition to Part III and Chapter 8."
+  "chapter_7_page_mapping_status": "PDF pages 42–48 checked directly. Chapter 7 headings 7.1–7.5.3 verified; page ranges use physical PDF pages (1-based). Page 48 also checked to confirm the transition to Part III and Chapter 8.",
+  "chapter_8_sections": [
+    [
+      "8.1",
+      "Pre-Natal Genetic Screening and Selection: The Purified Lineage",
+      49
+    ],
+    [
+      "8.1.1",
+      "Mandatory Genetic Sequencing of Embryos",
+      49
+    ],
+    [
+      "8.1.2",
+      "Selective Elimination of \"Sub-Optimal\" Embryos",
+      49
+    ],
+    [
+      "8.1.3",
+      "Authorized Breeding Programs and Genetic Matching",
+      50
+    ],
+    [
+      "8.2",
+      "CRISPR-Cas9 Gene Editing: Precision Genome Manipulation",
+      50
+    ],
+    [
+      "8.2.1",
+      "Targeted Gene Correction for Disease Eradication",
+      50
+    ],
+    [
+      "8.2.2",
+      "Enhancing Desirable Traits Through Gene Insertion",
+      "50–51"
+    ],
+    [
+      "8.2.3",
+      "Ethical Sub-Protocols and Controlled Application",
+      51
+    ],
+    [
+      "8.3",
+      "Epigenetic Conditioning: Shaping Gene Expression",
+      51
+    ],
+    [
+      "8.3.1",
+      "Environmental Factors and Gene Expression",
+      51
+    ],
+    [
+      "8.3.2",
+      "Controlled Environments for Optimal Development",
+      52
+    ],
+    [
+      "8.3.3",
+      "Reversing \"Undesirable\" Gene Expression",
+      52
+    ],
+    [
+      "8.4",
+      "Somatic Augmentation: Enhancing Physical Capabilities",
+      52
+    ],
+    [
+      "8.4.1",
+      "Cybernetic Enhancements and Bionic Integration",
+      "52–53"
+    ],
+    [
+      "8.4.2",
+      "Regenerative Medicine and Accelerated Healing",
+      53
+    ],
+    [
+      "8.4.3",
+      "The \"Apex Body\" Project",
+      53
+    ],
+    [
+      "8.5",
+      "Longevity and Immortality Protocols: Transcending Biological Limits",
+      53
+    ],
+    [
+      "8.5.1",
+      "Genetic Engineering for Extended Lifespan",
+      "53–54"
+    ],
+    [
+      "8.5.2",
+      "Advanced Regenerative Medicine and Organ Replacement",
+      54
+    ],
+    [
+      "8.5.3",
+      "The \"Digital Consciousness Transfer\" Project",
+      54
+    ],
+    [
+      "8.6",
+      "Case Studies: Successes and Future Trajectories",
+      54
+    ],
+    [
+      "8.6.1",
+      "Project Chimera II: The Genetically Optimized Operative",
+      "54–55"
+    ],
+    [
+      "8.6.2",
+      "The \"Centennial Cohort\": Extended Lifespan Study",
+      55
+    ],
+    [
+      "8.6.3",
+      "The \"Aquatic Adaptation\" Initiative",
+      55
+    ]
+  ],
+  "chapter_8_page_mapping_status": "PDF pages 48–55 checked directly. Chapter 8 headings 8.1–8.6.3 verified; page ranges use physical PDF pages (1-based). Page 55 also checked to confirm the transition to Chapter 9."
 }
