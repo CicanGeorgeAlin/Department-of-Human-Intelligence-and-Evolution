@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#080b10">
+<title>DHIE: The Living District — Playable Mission</title>
+<meta name="description" content="Explore a living district, help residents, restore power and complete a hands-on civic recovery mission.">
+<link rel="stylesheet" href="./world.css">
+</head>
+<body>
+<main class="game-shell">
+  <header class="game-header">
+    <a class="brand" href="./index.html">CICAN <span>/</span> DHIE</a>
+    <div class="header-right"><span class="live-dot"></span> THE LIVING DISTRICT <span class="build-tag">PLAYABLE PROTOTYPE 0.1</span></div>
+  </header>
+
+  <section class="intro">
+    <p class="eyebrow">MISSION 01 · NEW MERIDIAN</p>
+    <h1>Restore the <em>Commons.</em></h1>
+    <p>A storm has knocked out the neighbourhood's shared power and water systems. Explore the district, gather repair parts, listen to residents, solve the power-routing puzzle and bring the community hub back online.</p>
+  </section>
+
+  <section class="game-layout" aria-label="Playable mission">
+    <div class="world-card">
+      <div class="world-topline"><span>NEW MERIDIAN · DISTRICT 04</span><span id="worldStatus" role="status">FIELD TEAM READY</span></div>
+      <canvas id="world" width="800" height="500" tabindex="0" role="img" aria-label="Top-down game map. Move with arrow keys or WASD, then interact with nearby locations."></canvas>
+      <div class="touch-controls" aria-label="Touch movement controls">
+        <button data-move="up" aria-label="Move up">▲</button>
+        <div><button data-move="left" aria-label="Move left">◀</button><button data-move="down" aria-label="Move down">▼</button><button data-move="right" aria-label="Move right">▶</button></div>
+      </div>
+      <div class="world-controls">
+        <span><kbd>W A S D</kbd> / <kbd>↑ ↓ ← →</kbd> Move</span>
+        <span><kbd>E</kbd> / <kbd>SPACE</kbd> Interact</span>
+        <button id="interact" class="action-button">INTERACT <span>↵</span></button>
+      </div>
+    </div>
+
+    <aside class="mission-panel">
+      <div class="panel-heading"><span class="eyebrow">YOUR FIELD KIT</span><span class="avatar-mark">CG</span></div>
+      <div class="resources">
+        <div class="resource"><span class="resource-icon">▣</span><div><strong id="parts">0</strong><small>Repair parts</small></div></div>
+        <div class="resource"><span class="resource-icon">≈</span><div><strong id="water">0</strong><small>Water supply</small></div></div>
+        <div class="resource"><span class="resource-icon">♡</span><div><strong id="trust">0</strong><small>Community trust</small></div></div>
+        <div class="resource"><span class="resource-icon">ϟ</span><div><strong id="power">OFF</strong><small>Solar network</small></div></div>
+      </div>
+      <div class="mission-objectives">
+        <p class="eyebrow">MISSION OBJECTIVES</p>
+        <ul id="objectives">
+          <li data-goal="parts">Find two repair caches</li>
+          <li data-goal="water">Restore the water supply</li>
+          <li data-goal="trust">Speak with both residents</li>
+          <li data-goal="power">Reconnect the solar network</li>
+          <li data-goal="hub">Activate the Commons</li>
+        </ul>
+      </div>
+      <div class="interaction-box" id="interaction" aria-live="polite">
+        <p class="eyebrow">FIELD COMMS</p>
+        <h2 id="interactionTitle">You're on the ground.</h2>
+        <p id="interactionText">Move around the district. Walk up to a marked location and press INTERACT to see what you can do.</p>
+      </div>
+      <div class="panel-footer"><span id="saveStatus">Progress saves on this device</span><button id="reset" class="reset-button">Restart mission</button></div>
+    </aside>
+  </section>
+  <footer><span>DHIE · A fictional civic-recovery simulation</span><a href="./index.html">Back to campaign archive ↗</a></footer>
+</main>
+
+<div id="puzzleModal" class="modal" hidden>
+  <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="puzzleTitle">
+    <p class="eyebrow">HANDS-ON PUZZLE · SOLAR ARRAY</p>
+    <h2 id="puzzleTitle">Route the power.</h2>
+    <p>The field notes show the correct flow: capture sunlight, store the energy, then reconnect the district grid. Activate the three nodes in that order.</p>
+    <div class="puzzle-progress" id="puzzleProgress">0 / 3 nodes connected</div>
+    <div class="puzzle-nodes">
+      <button data-node="sun"><span>☼</span><strong>Sun</strong><small>Capture</small></button>
+      <button data-node="storage"><span>▤</span><strong>Storage</strong><small>Hold</small></button>
+      <button data-node="grid"><span>ϟ</span><strong>Grid</strong><small>Connect</small></button>
+    </div>
+    <p id="puzzleMessage" role="status">Choose the first node.</p>
+    <button id="closePuzzle" class="reset-button">Leave puzzle</button>
+  </div>
+</div>
+
+<div id="endingModal" class="modal" hidden>
+  <div class="modal-card ending-card" role="dialog" aria-modal="true" aria-labelledby="endingTitle">
+    <p class="eyebrow">MISSION COMPLETE · NEW MERIDIAN</p>
+    <h2 id="endingTitle">The Commons is alive.</h2>
+    <p id="endingText"></p>
+    <div class="ending-stats" id="endingStats"></div>
+    <button id="playAgain" class="action-button">PLAY AGAIN ↻</button>
+  </div>
+</div>
+<script type="module" src="./world.js"></script>
+</body>
+</html>
