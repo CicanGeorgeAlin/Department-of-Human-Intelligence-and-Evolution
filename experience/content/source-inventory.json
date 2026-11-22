@@ -1,0 +1,138 @@
+{
+  "source_document": "The DHIE Protocols: A Manual for Humanity's Directed Evolution (Restricted Access)",
+  "source_file": "The DHIE Protocols_ A Manual for Humanity's Directed Evolution (Restricted Access).pdf",
+  "pdf_pages": 91,
+  "verified_part_count": 4,
+  "verified_chapter_count": 14,
+  "transcribed_numbered_heading_count": 277,
+  "chapter_titles": [
+    "The Genesis of Oversight – From Anarchy to Architects",
+    "Organizational Structure – The Labyrinth of Control",
+    "Methodologies and Data Acquisition – The Panopticon of Progress",
+    "Cognitive Optimization Protocols (COPs) – Enhancing the Mind",
+    "Emotional Harmonization and Stability Protocols (EHSPs)",
+    "Creativity and Innovation Directives (CIDs)",
+    "Memory Calibration and Recall (MCRs) – The Curated Past",
+    "Genetic Trajectory Management (GTMs)",
+    "Reproductive Oversight and Population Control (ROPCs)",
+    "Physiological Augmentation and Adaptation (PAAs)",
+    "Resource Allocation and Equity Frameworks (RAEFs)",
+    "Environmental Control and Habitat Engineering (ECHE)",
+    "Surveillance and Social Credit Systems (SSCS)",
+    "The Homo Optima and the Final Ascendance – The Zenith of Directed Evolution"
+  ],
+  "chapter_1_sections": [
+    [
+      "1.1",
+      "The Great Stagnation/Regression: A Planetary Decline",
+      3
+    ],
+    [
+      "1.1.1",
+      "The Pre-DHIE Epoch: Unmanaged Chaos",
+      4
+    ],
+    [
+      "1.1.2",
+      "Ecological Collapse and Resource Wars",
+      4
+    ],
+    [
+      "1.1.3",
+      "Cognitive Drift and Societal Fragmentation",
+      4
+    ],
+    [
+      "1.1.4",
+      "The Global Impasse and the Need for Intervention",
+      5
+    ],
+    [
+      "1.2",
+      "The \"CICAN Doctrine\": Principles of Directed Evolution",
+      5
+    ],
+    [
+      "1.2.1",
+      "Overriding Natural Selection: A Moral Imperative",
+      6
+    ],
+    [
+      "1.2.2",
+      "The Burden of Benevolence: Our Guiding Philosophy",
+      6
+    ],
+    [
+      "1.2.3",
+      "From Sapient to Managed Species: The Paradigm Shift",
+      7
+    ],
+    [
+      "1.3",
+      "Early Iterations and Predecessors: Seeds of Control",
+      7
+    ],
+    [
+      "1.3.1",
+      "Disparate Efforts: Early Bio-Engineering and Behavioral Science Groups",
+      7
+    ],
+    [
+      "1.3.2",
+      "The Unification Conferences: Forging a Global Consensus",
+      8
+    ],
+    [
+      "1.3.3",
+      "Proto-Organizations and Failed Models",
+      8
+    ],
+    [
+      "1.4",
+      "The Global Mandate: Achieving Planetary Authority",
+      9
+    ],
+    [
+      "1.4.1",
+      "The Consolidation Wars and \"Pax DHIE\"",
+      9
+    ],
+    [
+      "1.4.2",
+      "Treaty of Geneva (Revised): Granting Universal Jurisdiction",
+      10
+    ],
+    [
+      "1.4.3",
+      "The Establishment of the Central Nexus",
+      10
+    ],
+    [
+      "1.5",
+      "Founding Charter and Core Values: The DHIE Credo",
+      10
+    ],
+    [
+      "1.5.1",
+      "The Seven Pillars of Optimization",
+      10
+    ],
+    [
+      "1.5.2",
+      "Mission Statement: Cultivating the Homo Optima",
+      11
+    ],
+    [
+      "1.5.3",
+      "Oath of Allegiance: The Unbreakable Vow",
+      11
+    ]
+  ],
+  "status": "M0 preliminary source inventory; full section-by-section page mapping and visual verification of wrapped headings remain open.",
+  "method": "Text extracted from the supplied 91-page PDF with physical PDF page indexing (1-based). Chapter 1 entries include initial page checks; total heading count is a text-extraction count, not final editorial sign-off.",
+  "editorial_rules": [
+    "Preserve source wording, numbering, omissions, and contradictions; do not silently repair.",
+    "Chapter title strings are transcribed as printed where confirmed; some titles wrap across lines.",
+    "The manual is treated as fictional/speculative source material, not verified real-world fact or policy guidance."
+  ]
+}
