@@ -128,7 +128,7 @@
       9
     ]
   ],
-  "status": "M0 in progress. Chapters 1–9 have section inventories and page references checked. Chapters 10–14 remain.",
+  "status": "M0 in progress. Chapters 1–10 have section inventories and page references checked. Chapters 11–14 remain.",
   "method": "Physical PDF page indexing (1-based), using the supplied 91-page PDF and checking page text directly. Page ranges are used where a section spans a page break. Heading extraction is tracked chapter by chapter; the preliminary global count of 277 remains unverified.",
   "editorial_rules": [
     "Preserve source wording, numbering, omissions, and contradictions; do not silently repair.",
@@ -979,5 +979,108 @@
       62
     ]
   ],
-  "chapter_9_page_mapping_status": "PDF pages 55–62 checked directly. Chapter 9 begins on physical PDF page 56; headings 9.1–9.5.3 verified, including the transition to Chapter 10 on page 62. Page ranges use physical PDF pages (1-based)."
+  "chapter_9_page_mapping_status": "PDF pages 55–62 checked directly. Chapter 9 begins on physical PDF page 56; headings 9.1–9.5.3 verified, including the transition to Chapter 10 on page 62. Page ranges use physical PDF pages (1-based).",
+  "chapter_10_sections": [
+    [
+      "10.1",
+      "Nanobot Integration and Maintenance: The Microscopic Engineers",
+      62
+    ],
+    [
+      "10.1.1",
+      "Cellular Repair and Anti-Degradation Units",
+      62
+    ],
+    [
+      "10.1.2",
+      "Targeted Pharmaceutical Delivery Systems",
+      63
+    ],
+    [
+      "10.1.3",
+      "Micro-Sensors for Real-time Physiological Data",
+      63
+    ],
+    [
+      "10.2",
+      "Organ and System Enhancement: Superior Biological Function",
+      63
+    ],
+    [
+      "10.2.1",
+      "Enhanced Respiratory and Circulatory Systems",
+      "63–64"
+    ],
+    [
+      "10.2.2",
+      "Musculoskeletal Augmentation: Strength and Resilience",
+      64
+    ],
+    [
+      "10.2.3",
+      "Augmented Sensory Organs: Perceiving the Unseen",
+      "64–65"
+    ],
+    [
+      "10.3",
+      "Environmental Adaptation Protocols: Global Habitation",
+      65
+    ],
+    [
+      "10.3.1",
+      "High-Altitude and Pressure Tolerance Conditioning",
+      65
+    ],
+    [
+      "10.3.2",
+      "Radiation and Toxin Resistance",
+      65
+    ],
+    [
+      "10.3.3",
+      "Sustained Sub-Optimal Condition Functionality",
+      "65–66"
+    ],
+    [
+      "10.4",
+      "Bio-Luminal Regulation and Sensory Management: Optimal Performance",
+      66
+    ],
+    [
+      "10.4.1",
+      "Circadian Rhythm Synchronization: Maximizing Productivity",
+      66
+    ],
+    [
+      "10.4.2",
+      "Pain Management and Threshold Adjustment",
+      "66–67"
+    ],
+    [
+      "10.4.3",
+      "Sub-Sensory Conditioning for Environmental Adaptation",
+      67
+    ],
+    [
+      "10.5",
+      "Case Studies: The Engineered Body in Action",
+      67
+    ],
+    [
+      "10.5.1",
+      "The \"Atlas Cohort\": Extreme Environment Operatives",
+      67
+    ],
+    [
+      "10.5.2",
+      "Project Sentinel: The Bio-Integrated Defense Units",
+      68
+    ],
+    [
+      "10.5.3",
+      "The \"Silent Adaptation\" of Urban Populations",
+      68
+    ]
+  ],
+  "chapter_10_page_mapping_status": "PDF pages 62–68 checked directly. Chapter 10 headings 10.1–10.5.3 verified; page 68 also checked to confirm transition to Part IV and Chapter 11. Page ranges use physical PDF pages (1-based)."
 }
