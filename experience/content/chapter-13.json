@@ -1,0 +1,384 @@
+{
+  "id": "chapter-13",
+  "chapter_id": "13",
+  "title": "Surveillance and Social Credit Systems (SSCS) – The Omnipresent Eye",
+  "source_document": "The DHIE Protocols: A Manual for Humanity's Directed Evolution (Restricted Access)",
+  "source_page": "81–87",
+  "content_type": "source",
+  "review_status": "source-checked",
+  "editorial_note": "This chapter is an in-world account from a fictional authoritarian institution. Its neural scanners, all-seeing surveillance grid, predictive social scoring and behavior-repatterning claims are not independently verified facts. It describes pervasive monitoring, censorship, discriminatory penalties, coercive psychological intervention and identity destruction. These are analyzed as abuses of power, not endorsed or operationalized. This content is not surveillance implementation guidance.",
+  "briefing": {
+    "title": "The omnipresent eye — when observation becomes control",
+    "summary": "Chapter 13 presents the Surveillance and Social Credit Systems (SSCS), attributed to the fictional Division of Social Harmonization and powered by the manual's Minerva and Oracle AIs. The source imagines continuous biometric and neural monitoring, camera and audio networks, movement tracking and comprehensive personal dossiers. These data feed a social credit score that determines access to resources, travel, work and social participation. The chapter then describes curated news and education, counter-narrative suppression, automated behavior interventions, field operatives and a final identity-erasure sanction. Three institutional case files—the Harmonized Sector, Echo Chamber Protocol and Model Citizen Program—are presented as proof of success. These are fictional institutional claims, not independently verified results.",
+    "critical_reading": "The chapter explicitly treats privacy and independent thought as threats. It combines intimate data collection with opaque scoring, automated penalties, censorship and coercive intervention, creating a system in which people cannot meaningfully challenge decisions or safely dissent. Its claims that automation removes bias are unsupported: automated systems can encode institutional priorities, amplify errors and make discrimination harder to contest. The case studies measure compliance rather than freedom, well-being or justice. A rights-based assessment must protect privacy, expression, association, due process, access to information and human dignity; require necessity, proportionality, transparency, independent oversight, data minimization, appeal rights and remedies; and prohibit coercive identity alteration or punishment for peaceful dissent.",
+    "structure": [
+      {
+        "section_ids": [
+          "13.1",
+          "13.1.1",
+          "13.1.2",
+          "13.1.3"
+        ],
+        "summary": "The source describes continuous neural, visual, audio, physiological and movement monitoring. The personal dossier becomes a mechanism of total surveillance, raising questions about privacy, consent, data security, chilling effects and the impossibility of meaningful private life."
+      },
+      {
+        "section_ids": [
+          "13.2",
+          "13.2.1",
+          "13.2.2",
+          "13.2.3"
+        ],
+        "summary": "The Social Credit System converts institutional judgments into a dynamic score that controls resources, mobility and opportunity. Automated scoring does not eliminate bias; it can scale opaque judgments and make errors difficult to challenge."
+      },
+      {
+        "section_ids": [
+          "13.3",
+          "13.3.1",
+          "13.3.2",
+          "13.3.3"
+        ],
+        "summary": "Curated feeds, ideological education and counter-narrative suppression create an information monopoly. The critical issue is the destruction of pluralism, independent inquiry, historical integrity and freedom of expression."
+      },
+      {
+        "section_ids": [
+          "13.4",
+          "13.4.1",
+          "13.4.2",
+          "13.4.3"
+        ],
+        "summary": "The chapter moves from covert nudges to operative intervention and identity-erasing sanctions. These are coercive practices that violate autonomy and dignity; the source's euphemistic language should not obscure their severity."
+      },
+      {
+        "section_ids": [
+          "13.5",
+          "13.5.1",
+          "13.5.2",
+          "13.5.3"
+        ],
+        "summary": "The Harmonized Sector, Echo Chamber and Model Citizen case files present surveillance, suppression and incentives as success. Their institutional framing measures compliance, not rights-respecting social outcomes, and offers no independent corroboration."
+      }
+    ],
+    "sections": [
+      "13.1",
+      "13.1.1",
+      "13.1.2",
+      "13.1.3",
+      "13.2",
+      "13.2.1",
+      "13.2.2",
+      "13.2.3",
+      "13.3",
+      "13.3.1",
+      "13.3.2",
+      "13.3.3",
+      "13.4",
+      "13.4.1",
+      "13.4.2",
+      "13.4.3",
+      "13.5",
+      "13.5.1",
+      "13.5.2",
+      "13.5.3"
+    ],
+    "critical_terms": [
+      {
+        "term": "Surveillance and Social Credit Systems (SSCS)",
+        "meaning": "The fictional DHIE system linking pervasive observation to behavioral scoring and institutional rewards or penalties."
+      },
+      {
+        "term": "Personal Dossier",
+        "meaning": "A comprehensive individual record assembled from biometric, behavioral and interaction data."
+      },
+      {
+        "term": "Neural Trace Scanner (NTS)",
+        "meaning": "A fictional device said to monitor neural activity and infer thought or emotion; the source does not establish this capability."
+      },
+      {
+        "term": "Cognitive Resonance Monitor (CRM)",
+        "meaning": "A fictional system for flagging deviations from institutionally approved cognitive patterns."
+      },
+      {
+        "term": "Global Surveillance Grid (GSG)",
+        "meaning": "The source's imagined network of cameras, microphones, recognition systems and linked personal records."
+      },
+      {
+        "term": "Physiological and Behavioral Trackers",
+        "meaning": "Wearable and environmental monitoring described as capturing health signals, movement and interactions."
+      },
+      {
+        "term": "Social Credit System (SCS)",
+        "meaning": "A fictional score that quantifies compliance and determines access to resources and opportunities."
+      },
+      {
+        "term": "Predictive Behavioral Modeling",
+        "meaning": "The source's use of past scores and behavior to predict future non-compliance; such predictions require scrutiny for bias and error."
+      },
+      {
+        "term": "Automated Access Privileges",
+        "meaning": "System-mediated decisions that grant or deny services, movement and opportunities based on a score."
+      },
+      {
+        "term": "Incentivized Compliance",
+        "meaning": "A reward-and-penalty structure that encourages people to internalize institutional expectations."
+      },
+      {
+        "term": "Public Information and Propaganda Management (PIPM)",
+        "meaning": "The fictional control of news, education and public narratives to reinforce institutional legitimacy."
+      },
+      {
+        "term": "Counter-Narrative Suppression",
+        "meaning": "The removal or discrediting of information that challenges the institution's official account."
+      },
+      {
+        "term": "Anomalous Behavior Intervention (ABI)",
+        "meaning": "The source's euphemistic label for interventions against people whose conduct or views depart from approved norms."
+      },
+      {
+        "term": "Re-Patterning Sanction",
+        "meaning": "A fictional coercive identity-erasure punishment described in the manual; it is a severe violation of autonomy and dignity."
+      },
+      {
+        "term": "Harmonized Sector Initiative",
+        "meaning": "A fictional case file that equates near-total surveillance and low reported dissent with social success."
+      },
+      {
+        "term": "Echo Chamber Protocol",
+        "meaning": "A fictional information-control case file involving suppression of competing narratives."
+      },
+      {
+        "term": "Model Citizen Program",
+        "meaning": "A fictional reward and publicity scheme that presents high compliance scores as an ideal of citizenship."
+      }
+    ]
+  },
+  "scenario": {
+    "content_type": "simulation",
+    "title": "The Independent Oversight Tribunal",
+    "situation": "A fictional city government proposes linking transport, housing and public-service eligibility to an automated civic score assembled from location, biometric and online activity. Officials claim the system will improve safety and efficiency. Residents cannot see the data or scoring rules, challenge incorrect records, or opt out. A journalist reports that peaceful critics have lost access to services. This invented scenario is not an event described in the manual.",
+    "question": "What should the tribunal require before allowing any such system to operate?",
+    "options": [
+      {
+        "id": "suspend-and-remedy",
+        "title": "Suspend the system and investigate rights violations independently",
+        "description": "Pause score-based penalties and intrusive collection; preserve evidence under lawful safeguards; provide accessible appeals and remedies; audit discriminatory impacts; notify affected people; and require necessity, proportionality, data minimization and independent authorization before any limited use is considered.",
+        "effects": {
+          "evidence_confidence": 2,
+          "accountability": 2,
+          "institutional_cohesion": -1,
+          "public_impact": 2
+        },
+        "debrief": "This response prioritizes due process and remedies over institutional convenience. It recognizes that opaque scoring tied to essential services can produce serious rights harms. Effects are game-only."
+      },
+      {
+        "id": "strict-limits",
+        "title": "Allow only narrow, voluntary and independently audited uses",
+        "description": "Prohibit social scoring for essential services, political expression and peaceful association. Require meaningful consent where applicable, clear purpose limits, human review, transparency, independent audits, correction rights and a genuine alternative for people who decline.",
+        "effects": {
+          "evidence_confidence": 1,
+          "accountability": 1,
+          "institutional_cohesion": 1,
+          "public_impact": 1
+        },
+        "debrief": "This option sharply limits surveillance and prevents a general-purpose score from becoming a gatekeeper to civic life. Its safeguards must be enforceable and independently monitored. Effects are game-only."
+      },
+      {
+        "id": "retain-secret-scoring",
+        "title": "Retain centralized scoring with internal review",
+        "description": "Continue the system and its automated access decisions, relying on confidential institutional audits and case-by-case exceptions.",
+        "effects": {
+          "evidence_confidence": -2,
+          "accountability": -2,
+          "institutional_cohesion": 1,
+          "public_impact": -2
+        },
+        "debrief": "Internal review does not cure opaque rules, surveillance overreach or lack of due process. Linking essential opportunities to an unchallengeable score entrenches arbitrary power. Effects are game-only."
+      }
+    ],
+    "mechanics_note": "Decision consequences are invented game mechanics, not outcomes or scoring rules in the manual. Each of the four consequence dimensions is bounded from -2 to +2. The scenario explores privacy, expression, due process and accountability; it provides no instructions for building surveillance or social-scoring systems."
+  },
+  "assessment": [
+    {
+      "id": "q1",
+      "question": "Which division does the source identify as responsible for the SSCS?",
+      "options": [
+        "Division of Social Harmonization (DSH)",
+        "Division of Environmental Management (DEM)",
+        "Division of Resource Management (DRM)"
+      ],
+      "answer": 0,
+      "explanation": "The chapter opening attributes the surveillance and social-credit framework to the DSH.",
+      "section_ids": [
+        "13.1"
+      ]
+    },
+    {
+      "id": "q2",
+      "question": "What does the fictional Social Credit System determine?",
+      "options": [
+        "Only a person's preferred entertainment",
+        "Access to resources, opportunities and movement based on a compliance score",
+        "Independent judicial findings"
+      ],
+      "answer": 1,
+      "explanation": "Section 13.2 describes the score as a gatekeeper for access and social participation.",
+      "section_ids": [
+        "13.2",
+        "13.2.1",
+        "13.2.2"
+      ]
+    },
+    {
+      "id": "q3",
+      "question": "How does the chapter describe the management of counter-narratives?",
+      "options": [
+        "Protecting pluralistic debate",
+        "Suppressing or scrubbing dissenting information and discrediting its sources",
+        "Submitting every claim to independent public debate"
+      ],
+      "answer": 1,
+      "explanation": "Section 13.3.3 describes suppression, source tracing and disinformation as tools of narrative control.",
+      "section_ids": [
+        "13.3",
+        "13.3.3"
+      ]
+    },
+    {
+      "id": "q4",
+      "question": "Which safeguards are essential when evaluating automated systems that affect civic rights?",
+      "options": [
+        "Secret criteria and no appeal",
+        "Transparency, necessity, proportionality, independent oversight and meaningful appeal",
+        "Punishment for peaceful criticism"
+      ],
+      "answer": 1,
+      "explanation": "Rights-impacting systems require accountability, contestability and safeguards against arbitrary or discriminatory decisions.",
+      "section_ids": [
+        "13.2",
+        "13.3",
+        "13.4"
+      ]
+    }
+  ],
+  "coverage": [
+    {
+      "section_id": "13.1",
+      "title": "Ubiquitous Biometric Monitoring: The Personal Dossier",
+      "source_page": "81",
+      "represented_in": "Chapter 13 briefing; source-structure summary; scenario context; debrief; assessment as mapped"
+    },
+    {
+      "section_id": "13.1.1",
+      "title": "Neural Trace Scanners and Cognitive Resonance Monitors",
+      "source_page": "81",
+      "represented_in": "Chapter 13 briefing; source-structure summary; scenario context; debrief; assessment as mapped"
+    },
+    {
+      "section_id": "13.1.2",
+      "title": "Optic and Audio Surveillance Networks (Global Surveillance Grid)",
+      "source_page": "81–82",
+      "represented_in": "Chapter 13 briefing; source-structure summary; scenario context; debrief; assessment as mapped"
+    },
+    {
+      "section_id": "13.1.3",
+      "title": "Physiological Monitors and Behavioral Trackers",
+      "source_page": "82",
+      "represented_in": "Chapter 13 briefing; source-structure summary; scenario context; debrief; assessment as mapped"
+    },
+    {
+      "section_id": "13.2",
+      "title": "The Social Credit System (SCS): Behavior as Currency",
+      "source_page": "82",
+      "represented_in": "Chapter 13 briefing; source-structure summary; scenario context; debrief; assessment as mapped"
+    },
+    {
+      "section_id": "13.2.1",
+      "title": "Real-time Score Calculation and Dynamic Adjustment",
+      "source_page": "82–83",
+      "represented_in": "Chapter 13 briefing; source-structure summary; scenario context; debrief; assessment as mapped"
+    },
+    {
+      "section_id": "13.2.2",
+      "title": "Automated Access Privileges and Punitive Recalibrations",
+      "source_page": "83",
+      "represented_in": "Chapter 13 briefing; source-structure summary; scenario context; debrief; assessment as mapped"
+    },
+    {
+      "section_id": "13.2.3",
+      "title": "Indoctrination through Incentivized Compliance",
+      "source_page": "83–84",
+      "represented_in": "Chapter 13 briefing; source-structure summary; scenario context; debrief; assessment as mapped"
+    },
+    {
+      "section_id": "13.3",
+      "title": "Public Information and Propaganda Management: The Curated Reality",
+      "source_page": "84",
+      "represented_in": "Chapter 13 briefing; source-structure summary; scenario context; debrief; assessment as mapped"
+    },
+    {
+      "section_id": "13.3.1",
+      "title": "Curated News Feeds and Reality Broadcasts",
+      "source_page": "84",
+      "represented_in": "Chapter 13 briefing; source-structure summary; scenario context; debrief; assessment as mapped"
+    },
+    {
+      "section_id": "13.3.2",
+      "title": "Educational Indoctrination Modules",
+      "source_page": "84",
+      "represented_in": "Chapter 13 briefing; source-structure summary; scenario context; debrief; assessment as mapped"
+    },
+    {
+      "section_id": "13.3.3",
+      "title": "Counter-Narrative Suppression and Anomaly Neutralization",
+      "source_page": "84–85",
+      "represented_in": "Chapter 13 briefing; source-structure summary; scenario context; debrief; assessment as mapped"
+    },
+    {
+      "section_id": "13.4",
+      "title": "Anomalous Behavior Intervention: Immediate Correction",
+      "source_page": "85",
+      "represented_in": "Chapter 13 briefing; source-structure summary; scenario context; debrief; assessment as mapped"
+    },
+    {
+      "section_id": "13.4.1",
+      "title": "Automated Behavior Recalibration Triggers",
+      "source_page": "85",
+      "represented_in": "Chapter 13 briefing; source-structure summary; scenario context; debrief; assessment as mapped"
+    },
+    {
+      "section_id": "13.4.2",
+      "title": "DSH Field Operative Deployment",
+      "source_page": "85–86",
+      "represented_in": "Chapter 13 briefing; source-structure summary; scenario context; debrief; assessment as mapped"
+    },
+    {
+      "section_id": "13.4.3",
+      "title": "The \"Re-Patterning\" Sanction: Final Compliance",
+      "source_page": "86",
+      "represented_in": "Chapter 13 briefing; source-structure summary; scenario context; debrief; assessment as mapped"
+    },
+    {
+      "section_id": "13.5",
+      "title": "Case Studies: The SSCS in Action",
+      "source_page": "86",
+      "represented_in": "Chapter 13 briefing; source-structure summary; scenario context; debrief; assessment as mapped"
+    },
+    {
+      "section_id": "13.5.1",
+      "title": "The \"Harmonized Sector\" Initiative",
+      "source_page": "86",
+      "represented_in": "Chapter 13 briefing; source-structure summary; scenario context; debrief; assessment as mapped"
+    },
+    {
+      "section_id": "13.5.2",
+      "title": "The \"Echo Chamber\" Protocol",
+      "source_page": "86–87",
+      "represented_in": "Chapter 13 briefing; source-structure summary; scenario context; debrief; assessment as mapped"
+    },
+    {
+      "section_id": "13.5.3",
+      "title": "The \"Model Citizen\" Program",
+      "source_page": "87",
+      "represented_in": "Chapter 13 briefing; source-structure summary; scenario context; debrief; assessment as mapped"
+    }
+  ]
+}
