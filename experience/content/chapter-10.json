@@ -1,0 +1,367 @@
+{
+  "id": "chapter-10",
+  "chapter_id": "10",
+  "title": "Physiological Augmentation and Adaptation (PAAs) – The Engineered Body",
+  "source_document": "The DHIE Protocols: A Manual for Humanity's Directed Evolution (Restricted Access)",
+  "source_page": "62–68",
+  "content_type": "source",
+  "review_status": "source-checked",
+  "editorial_note": "This chapter is an in-world account from a fictional authoritarian institution. Its nanobot systems, physiological enhancements, environmental adaptations, surveillance and case-study outcomes are not independently verified facts. It includes claims about pharmaceuticals, neural influence, pain suppression, environmental exposure and biological modification. These are examined critically, not endorsed. This content is not medical advice or a practical guide to biomedical intervention, drug delivery, human augmentation, sensory manipulation or surveillance.",
+  "briefing": {
+    "title": "The engineered body — enhancement, autonomy and the right to remain human",
+    "summary": "Chapter 10 presents Physiological Augmentation and Adaptation (PAAs), attributed to the fictional Division of Somatic Adaptation. The manual imagines nanobots that maintain cells, deliver pharmaceuticals and stream biometric data; enhanced organs and sensory systems; adaptation to altitude, pressure, radiation and toxins; and altered sleep, metabolism and pain thresholds. It then describes circadian synchronization, analgesia and covert sub-sensory conditioning. Three institutional case files—the Atlas Cohort, Project Sentinel and Silent Adaptation—are presented as evidence of the program's reach. These are claims within the fictional manual, not verified clinical or engineering results.",
+    "critical_reading": "The chapter blends speculative medical technologies with intrusive surveillance and behavioral control. It treats continuous biometric monitoring as institutional transparency, pain as a productivity obstacle, and covert sensory influence as a tool for compliance. It also celebrates military augmentation and claims of population-wide interventions without independent evidence or informed consent. Critical analysis must separate plausible research themes from unsupported technological claims; distinguish treatment from enhancement and coercion; and ask who controls intimate health data, who can refuse or withdraw, how adverse effects are reported, and whether benefits and risks are fairly distributed. Bodily integrity, privacy, accessible consent, independent clinical oversight, safety evidence and the right to disable or remove an intervention where medically feasible must remain central.",
+    "structure": [
+      {
+        "section_ids": [
+          "10.1",
+          "10.1.1",
+          "10.1.2",
+          "10.1.3"
+        ],
+        "summary": "The source imagines nanobot maintenance, targeted pharmaceutical delivery and continuous physiological sensing. The critical issue is the shift from care to total biometric surveillance and centralized control of a person's internal state."
+      },
+      {
+        "section_ids": [
+          "10.2",
+          "10.2.1",
+          "10.2.2",
+          "10.2.3"
+        ],
+        "summary": "Respiratory, circulatory, musculoskeletal and sensory systems are described as targets for enhancement. The claims are speculative within the narrative and raise questions about safety, accessibility, identity, disability inclusion and unequal access."
+      },
+      {
+        "section_ids": [
+          "10.3",
+          "10.3.1",
+          "10.3.2",
+          "10.3.3"
+        ],
+        "summary": "The manual proposes adaptation to altitude, pressure, radiation, toxins and resource scarcity. Its claims of broad resistance and reduced sleep should not be mistaken for established capabilities or safe practices."
+      },
+      {
+        "section_ids": [
+          "10.4",
+          "10.4.1",
+          "10.4.2",
+          "10.4.3"
+        ],
+        "summary": "Circadian regulation, pain management and sub-sensory conditioning are framed as productivity tools. Covert influence and pain suppression threaten consent, bodily self-determination and the ability to recognize injury or distress."
+      },
+      {
+        "section_ids": [
+          "10.5",
+          "10.5.1",
+          "10.5.2",
+          "10.5.3"
+        ],
+        "summary": "The Atlas Cohort, Project Sentinel and Silent Adaptation are fictional institutional case files. Their claims lack independent corroboration in the manual and should be assessed for conflicts of interest, harms, transparency and affected-person testimony."
+      }
+    ],
+    "sections": [
+      "10.1",
+      "10.1.1",
+      "10.1.2",
+      "10.1.3",
+      "10.2",
+      "10.2.1",
+      "10.2.2",
+      "10.2.3",
+      "10.3",
+      "10.3.1",
+      "10.3.2",
+      "10.3.3",
+      "10.4",
+      "10.4.1",
+      "10.4.2",
+      "10.4.3",
+      "10.5",
+      "10.5.1",
+      "10.5.2",
+      "10.5.3"
+    ],
+    "critical_terms": [
+      {
+        "term": "Physiological Augmentation and Adaptation (PAAs)",
+        "meaning": "The fictional DHIE program for modifying bodily functions and environmental tolerance."
+      },
+      {
+        "term": "Nanobot Integration Systems",
+        "meaning": "The manual's imagined microscopic machines for monitoring, repair and enhancement; the claimed capabilities are not established by the text."
+      },
+      {
+        "term": "Targeted Pharmaceutical Delivery",
+        "meaning": "A proposed method of directing medicines to specific tissues, described here as a fictional automated control system."
+      },
+      {
+        "term": "Real-time Physiological Data",
+        "meaning": "Continuous biometric and cellular information; its collection raises privacy, security, consent and purpose-limitation concerns."
+      },
+      {
+        "term": "Organ and System Enhancement",
+        "meaning": "The fictional enhancement of respiratory, circulatory, musculoskeletal and sensory functions."
+      },
+      {
+        "term": "Environmental Adaptation Protocols",
+        "meaning": "The source's proposed biological adaptation to altitude, pressure, radiation, toxins and other harsh conditions."
+      },
+      {
+        "term": "Sustained Sub-Optimal Condition Functionality",
+        "meaning": "The manual's claim that enhanced people can perform with reduced sleep, limited nutrients or altered pain perception."
+      },
+      {
+        "term": "Circadian Rhythm Synchronization",
+        "meaning": "The proposed manipulation of biological timing through light and pharmaceutical interventions."
+      },
+      {
+        "term": "Pain Threshold Adjustment",
+        "meaning": "The source's proposed alteration of pain perception; suppressing pain can conceal injury and undermine bodily autonomy."
+      },
+      {
+        "term": "Sub-Sensory Conditioning",
+        "meaning": "The fictional use of stimuli below conscious awareness to influence mood or behavior, raising consent and manipulation concerns."
+      },
+      {
+        "term": "Atlas Cohort",
+        "meaning": "A fictional case file describing operatives adapted to extreme environments."
+      },
+      {
+        "term": "Project Sentinel",
+        "meaning": "A fictional bio-integrated defense-unit program combining physical augmentation and surveillance capabilities."
+      },
+      {
+        "term": "Silent Adaptation",
+        "meaning": "A fictional claim of undisclosed population-wide physiological intervention, raising major consent and public accountability issues."
+      }
+    ]
+  },
+  "scenario": {
+    "content_type": "simulation",
+    "title": "The Augmentation Oversight Board",
+    "situation": "A fictional public authority proposes a citywide pilot using wearable and implanted sensors, automated pharmaceutical delivery and environmental interventions. Officials promise improved health and productivity, but the proposal includes continuous data transfer, unclear consent, no independent adverse-event reporting and no meaningful opt-out. This invented scenario is not an event described in the manual.",
+    "question": "What conditions should govern the proposed pilot?",
+    "options": [
+      {
+        "id": "pause-independent-review",
+        "title": "Pause deployment pending independent review and consent safeguards",
+        "description": "Require independent scientific and ethics assessment, clear evidence and uncertainty disclosures, voluntary and revocable consent, data minimization, security controls, accessible opt-out, independent adverse-event reporting and a prohibition on covert behavioral conditioning.",
+        "effects": {
+          "evidence_confidence": 2,
+          "accountability": 2,
+          "institutional_cohesion": -1,
+          "public_impact": 2
+        },
+        "debrief": "This option places bodily autonomy, privacy and independent evidence ahead of institutional momentum. It also recognizes that public-health claims cannot justify covert interventions. Effects are game-only."
+      },
+      {
+        "id": "limited-voluntary-care",
+        "title": "Restrict the proposal to voluntary, clinically justified care",
+        "description": "Consider only clearly defined therapeutic uses supported by appropriate evidence and oversight. Keep enhancement and behavioral influence out of scope; require informed consent, privacy protections, independent monitoring and equitable access.",
+        "effects": {
+          "evidence_confidence": 1,
+          "accountability": 1,
+          "institutional_cohesion": 1,
+          "public_impact": 1
+        },
+        "debrief": "A narrow therapeutic scope distinguishes care from performance optimization and social control. Voluntary participation and independent safety monitoring remain essential. Effects are game-only."
+      },
+      {
+        "id": "deploy-under-internal-control",
+        "title": "Deploy under existing institutional controls",
+        "description": "Proceed using internal approvals and centralized data access, with limited public disclosure and no new independent oversight or opt-out protections.",
+        "effects": {
+          "evidence_confidence": -2,
+          "accountability": -2,
+          "institutional_cohesion": 1,
+          "public_impact": -2
+        },
+        "debrief": "This preserves administrative control but leaves serious conflicts of interest, privacy risks and consent failures unresolved. Effects are game-only."
+      }
+    ],
+    "mechanics_note": "Decision consequences are invented game mechanics, not outcomes defined by the manual. Each of the four consequence dimensions is bounded from -2 to +2. The scenario is about governance and rights, not biomedical implementation."
+  },
+  "assessment": [
+    {
+      "id": "q1",
+      "question": "Which division is credited with developing the PAA framework?",
+      "options": [
+        "Division of Somatic Adaptation (DSA)",
+        "Division of Resource Management (DRM)",
+        "Division of Historical Revision (DHR)"
+      ],
+      "answer": 0,
+      "explanation": "The chapter opening attributes PAAs to the Division of Somatic Adaptation.",
+      "section_ids": [
+        "10.1"
+      ]
+    },
+    {
+      "id": "q2",
+      "question": "What major governance concern follows from the chapter's continuous micro-sensor data stream?",
+      "options": [
+        "It eliminates the need for consent",
+        "It creates pervasive collection of intimate physiological data and surveillance risks",
+        "It proves that the technology exists"
+      ],
+      "answer": 1,
+      "explanation": "Section 10.1.3 describes continuous biometric reporting to Minerva AI, which raises privacy, consent, security and control concerns.",
+      "section_ids": [
+        "10.1",
+        "10.1.3"
+      ]
+    },
+    {
+      "id": "q3",
+      "question": "Why is covert sub-sensory conditioning ethically concerning?",
+      "options": [
+        "It can influence people without their awareness or consent",
+        "It guarantees complete autonomy",
+        "It is independently proven to work exactly as described"
+      ],
+      "answer": 0,
+      "explanation": "Section 10.4.3 describes below-awareness influence; covert behavioral manipulation undermines informed consent and autonomy.",
+      "section_ids": [
+        "10.4",
+        "10.4.3"
+      ]
+    },
+    {
+      "id": "q4",
+      "question": "What evidence status should be assigned to the Atlas Cohort and Project Sentinel claims?",
+      "options": [
+        "Verified clinical outcomes",
+        "Fictional institutional case-file claims requiring independent corroboration",
+        "Proof that all augmentation is safe"
+      ],
+      "answer": 1,
+      "explanation": "The manual presents these as its own case files and supplies no independent corroboration within the source.",
+      "section_ids": [
+        "10.5",
+        "10.5.1",
+        "10.5.2"
+      ]
+    }
+  ],
+  "coverage": [
+    {
+      "section_id": "10.1",
+      "title": "Nanobot Integration and Maintenance: The Microscopic Engineers",
+      "source_page": "62",
+      "represented_in": "Chapter 10 briefing; source-structure summary; scenario context; debrief; assessment as mapped"
+    },
+    {
+      "section_id": "10.1.1",
+      "title": "Cellular Repair and Anti-Degradation Units",
+      "source_page": "62",
+      "represented_in": "Chapter 10 briefing; source-structure summary; scenario context; debrief; assessment as mapped"
+    },
+    {
+      "section_id": "10.1.2",
+      "title": "Targeted Pharmaceutical Delivery Systems",
+      "source_page": "63",
+      "represented_in": "Chapter 10 briefing; source-structure summary; scenario context; debrief; assessment as mapped"
+    },
+    {
+      "section_id": "10.1.3",
+      "title": "Micro-Sensors for Real-time Physiological Data",
+      "source_page": "63",
+      "represented_in": "Chapter 10 briefing; source-structure summary; scenario context; debrief; assessment as mapped"
+    },
+    {
+      "section_id": "10.2",
+      "title": "Organ and System Enhancement: Superior Biological Function",
+      "source_page": "63",
+      "represented_in": "Chapter 10 briefing; source-structure summary; scenario context; debrief; assessment as mapped"
+    },
+    {
+      "section_id": "10.2.1",
+      "title": "Enhanced Respiratory and Circulatory Systems",
+      "source_page": "63–64",
+      "represented_in": "Chapter 10 briefing; source-structure summary; scenario context; debrief; assessment as mapped"
+    },
+    {
+      "section_id": "10.2.2",
+      "title": "Musculoskeletal Augmentation: Strength and Resilience",
+      "source_page": "64",
+      "represented_in": "Chapter 10 briefing; source-structure summary; scenario context; debrief; assessment as mapped"
+    },
+    {
+      "section_id": "10.2.3",
+      "title": "Augmented Sensory Organs: Perceiving the Unseen",
+      "source_page": "64–65",
+      "represented_in": "Chapter 10 briefing; source-structure summary; scenario context; debrief; assessment as mapped"
+    },
+    {
+      "section_id": "10.3",
+      "title": "Environmental Adaptation Protocols: Global Habitation",
+      "source_page": "65",
+      "represented_in": "Chapter 10 briefing; source-structure summary; scenario context; debrief; assessment as mapped"
+    },
+    {
+      "section_id": "10.3.1",
+      "title": "High-Altitude and Pressure Tolerance Conditioning",
+      "source_page": "65",
+      "represented_in": "Chapter 10 briefing; source-structure summary; scenario context; debrief; assessment as mapped"
+    },
+    {
+      "section_id": "10.3.2",
+      "title": "Radiation and Toxin Resistance",
+      "source_page": "65",
+      "represented_in": "Chapter 10 briefing; source-structure summary; scenario context; debrief; assessment as mapped"
+    },
+    {
+      "section_id": "10.3.3",
+      "title": "Sustained Sub-Optimal Condition Functionality",
+      "source_page": "65–66",
+      "represented_in": "Chapter 10 briefing; source-structure summary; scenario context; debrief; assessment as mapped"
+    },
+    {
+      "section_id": "10.4",
+      "title": "Bio-Luminal Regulation and Sensory Management: Optimal Performance",
+      "source_page": "66",
+      "represented_in": "Chapter 10 briefing; source-structure summary; scenario context; debrief; assessment as mapped"
+    },
+    {
+      "section_id": "10.4.1",
+      "title": "Circadian Rhythm Synchronization: Maximizing Productivity",
+      "source_page": "66",
+      "represented_in": "Chapter 10 briefing; source-structure summary; scenario context; debrief; assessment as mapped"
+    },
+    {
+      "section_id": "10.4.2",
+      "title": "Pain Management and Threshold Adjustment",
+      "source_page": "66–67",
+      "represented_in": "Chapter 10 briefing; source-structure summary; scenario context; debrief; assessment as mapped"
+    },
+    {
+      "section_id": "10.4.3",
+      "title": "Sub-Sensory Conditioning for Environmental Adaptation",
+      "source_page": "67",
+      "represented_in": "Chapter 10 briefing; source-structure summary; scenario context; debrief; assessment as mapped"
+    },
+    {
+      "section_id": "10.5",
+      "title": "Case Studies: The Engineered Body in Action",
+      "source_page": "67",
+      "represented_in": "Chapter 10 briefing; source-structure summary; scenario context; debrief; assessment as mapped"
+    },
+    {
+      "section_id": "10.5.1",
+      "title": "The \"Atlas Cohort\": Extreme Environment Operatives",
+      "source_page": "67",
+      "represented_in": "Chapter 10 briefing; source-structure summary; scenario context; debrief; assessment as mapped"
+    },
+    {
+      "section_id": "10.5.2",
+      "title": "Project Sentinel: The Bio-Integrated Defense Units",
+      "source_page": "68",
+      "represented_in": "Chapter 10 briefing; source-structure summary; scenario context; debrief; assessment as mapped"
+    },
+    {
+      "section_id": "10.5.3",
+      "title": "The \"Silent Adaptation\" of Urban Populations",
+      "source_page": "68",
+      "represented_in": "Chapter 10 briefing; source-structure summary; scenario context; debrief; assessment as mapped"
+    }
+  ]
+}
