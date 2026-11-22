@@ -196,6 +196,7 @@ test("campaign works in Chromium desktop and mobile viewports", async t => {
     await page.locator("#activeChapterTitle").waitFor();
     assert.equal(await page.locator("#campaignChapterStat").textContent(), "14 / 14");
     assert.equal(await page.locator("#chapterCoverageStat").textContent(), "12 / 12");
+    await page.getByRole("button", { name: "← Campaign overview" }).click();
 
     // A cancelled restart must be a no-op. Confirmed restart resets only Chapter 6.
     await page.locator('[data-chapter="6"]').click();
