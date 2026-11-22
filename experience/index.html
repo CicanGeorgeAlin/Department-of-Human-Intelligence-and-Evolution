@@ -3,15 +3,15 @@
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#080a0d">
-<title>DHIE: Director's Mandate — Chapter 01</title>
+<title>DHIE: Director's Mandate — 14-Chapter Campaign</title>
 <meta name="description" content="A fictional, source-mapped strategy simulation based on Chapter 1 of The DHIE Protocols.">
 <style>
 :root{color-scheme:dark;--bg:#080a0d;--panel:#10151b;--panel2:#151c24;--line:#283541;--text:#f3f7fa;--muted:#aab7c3;--cyan:#63e4f4;--pink:#ff73bd;--good:#83e0b2;--warn:#ffd28b}*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 80% -15%,#142a35 0,transparent 42%),var(--bg);color:var(--text);font:16px/1.55 system-ui,-apple-system,Segoe UI,sans-serif}a{color:var(--cyan)}button{font:inherit}.shell{max-width:1050px;margin:auto;padding:22px 18px 64px}.top{display:flex;justify-content:space-between;gap:14px;align-items:center;border-bottom:1px solid var(--line);padding-bottom:16px}.brand{font-weight:800;letter-spacing:.18em;color:#fff}.brand span{color:var(--cyan)}.top small,.muted{color:var(--muted)}.eyebrow{font-size:.75rem;letter-spacing:.16em;text-transform:uppercase;color:var(--cyan);font-weight:700;margin:0 0 8px}.hero{padding:36px 0 24px}.hero h1{font-size:clamp(2rem,6vw,3.5rem);line-height:1.04;letter-spacing:-.045em;margin:0;max-width:850px}.hero p{max-width:760px;color:var(--muted)}.notice{border:1px solid #715a37;background:#211b12;color:#f2d8a8;border-radius:12px;padding:12px 14px;font-size:.9rem}.grid{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(240px,.8fr);gap:16px;margin-top:20px}.panel{background:linear-gradient(145deg,#121920,#0e1319);border:1px solid var(--line);border-radius:16px;padding:20px;min-width:0}.panel h2{margin:0 0 12px;font-size:1.25rem}.panel h3{margin:20px 0 8px;font-size:1rem}.stepbar{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0}.step{border:1px solid var(--line);border-radius:99px;padding:6px 11px;color:var(--muted);font-size:.78rem}.step.active{border-color:var(--cyan);color:var(--cyan);background:#0d252b}.step.done{color:var(--good);border-color:#376c58}.metric{display:flex;justify-content:space-between;gap:10px;margin:13px 0 5px;font-size:.86rem}.track{height:7px;background:#25313a;border-radius:9px;overflow:hidden}.fill{height:100%;background:linear-gradient(90deg,var(--cyan),var(--pink));width:50%;transition:width .2s}.option{display:block;width:100%;text-align:left;background:var(--panel2);border:1px solid var(--line);border-radius:12px;padding:14px;margin:10px 0;color:var(--text);cursor:pointer}.option:hover,.option:focus-visible{border-color:var(--cyan);outline:2px solid transparent}.option strong{display:block;margin-bottom:5px}.option.selected{border-color:var(--cyan);box-shadow:inset 0 0 0 1px var(--cyan)}.actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}.primary,.secondary{border-radius:10px;padding:11px 16px;border:1px solid var(--cyan);cursor:pointer}.primary{background:var(--cyan);color:#071014;font-weight:750}.secondary{background:transparent;color:var(--text);border-color:var(--line)}button:disabled{opacity:.4;cursor:not-allowed}.hidden{display:none!important}.stat{padding:12px 0;border-bottom:1px solid var(--line)}.stat:last-child{border:0}.stat b{float:right;color:var(--cyan);font-variant-numeric:tabular-nums}.source{font-size:.84rem;color:var(--muted)}.question{padding:15px 0;border-bottom:1px solid var(--line)}.answer{display:block;margin:8px 0;color:var(--muted)}.answer input{accent-color:var(--cyan);margin-right:8px}.result{border-left:3px solid var(--cyan);padding:10px 14px;background:#101b22;border-radius:0 10px 10px 0;margin-top:14px}.coverage{width:100%;border-collapse:collapse;font-size:.85rem}.coverage td{padding:8px 6px;border-bottom:1px solid var(--line);vertical-align:top}.coverage td:first-child{color:var(--cyan);white-space:nowrap}.footer{margin-top:26px;color:var(--muted);font-size:.82rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}.pill{display:inline-block;border:1px solid var(--line);border-radius:99px;padding:4px 9px;color:var(--muted);font-size:.75rem}.command{margin:26px 0 24px}.command-head{display:flex;justify-content:space-between;gap:16px;align-items:flex-end;flex-wrap:wrap}.command-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:18px 0}.command-stat{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:15px}.command-stat strong{display:block;font-size:1.7rem;color:var(--cyan);font-variant-numeric:tabular-nums}.part{border:1px solid var(--line);border-radius:14px;padding:15px;margin:12px 0;background:#0e141a}.part h3{margin:0 0 10px;font-size:1rem}.chapter-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.chapter-tile{display:flex;gap:12px;align-items:flex-start;background:var(--panel2);border:1px solid var(--line);border-radius:10px;padding:12px}.chapter-tile.available{border-color:#39717a}.chapter-tile .number{color:var(--cyan);font-weight:800;min-width:28px}.chapter-tile small{display:block;color:var(--muted);margin-top:3px}.chapter-tile button{margin-left:auto;white-space:nowrap}.command-actions{display:flex;gap:10px;flex-wrap:wrap;margin:16px 0}.nav-home{margin:0 0 14px}.locked{opacity:.72}.command-note{font-size:.84rem;color:var(--muted)}@media(max-width:760px){.grid{grid-template-columns:1fr}.command-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.chapter-grid{grid-template-columns:1fr}}.shell{padding:16px 13px 44px}.panel{padding:16px}.top{align-items:flex-start;flex-direction:column}}@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
 </style></head>
 <body><main class="shell">
-<header class="top"><div class="brand">CICAN<span> / </span>DHIE</div><small>DIRECTOR'S MANDATE · PROTOTYPE 0.1</small></header>
+<header class="top"><div class="brand">CICAN<span> / </span>DHIE</div><small>DIRECTOR'S MANDATE · PROTOTYPE 0.3</small></header>
 <section class="command" id="commandDashboard">
-<div class="command-head"><div><p class="eyebrow">Director's command interface</p><h2 style="margin:0">Campaign overview</h2><p class="muted">A source-ordered campaign map. Locked chapters are listed for orientation and are not yet playable.</p></div><span class="pill">PROTOTYPE 0.2</span></div>
+<div class="command-head"><div><p class="eyebrow">Director's command interface</p><h2 style="margin:0">Campaign overview</h2><p class="muted">Select any chapter that passes source, assessment and decision validation to continue the campaign.</p></div><span class="pill">PROTOTYPE 0.3</span></div>
 <div class="command-grid">
 <div class="command-stat"><strong>14</strong><span>Source chapters</span></div>
 <div class="command-stat"><strong>277</strong><span>Numbered headings inventoried</span></div>
@@ -20,70 +20,345 @@
 </div>
 <div id="campaignMap"></div>
 <div class="command-actions"><button class="primary" id="launchChapter">Resume Chapter 1</button><a class="secondary" href="../" style="text-decoration:none;padding:10px 14px;border-radius:10px">Open main archive</a></div>
-<p class="command-note">Chapter titles and heading counts are taken from the verified source inventory. A listing in this map does not mean its chapter content has been adapted into a playable scenario.</p>
+<p class="command-note"><span id="campaignStatus" role="status">Checking chapter content against the source inventory…</span></p>
 </section>
 <div id="campaignExperience" hidden>
-<div class="nav-home"><button class="secondary" id="backToCommand">← Campaign overview</button></div><section class="hero"><p class="eyebrow">Stage Three · Chapter 01 · Vertical Slice</p><h1>The Genesis of Oversight</h1><p>A strategy simulation about institutional power, evidence, legitimacy and human consequences. You are reviewing the founding dossier as Director Cican George Alin.</p><div class="notice"><strong>Fiction notice:</strong> The manual is a fictional/speculative source. Its historical and institutional claims are presented as claims made by the in-world narrator, not verified real-world facts. Scenario mechanics are clearly marked as simulation design.</div></section>
+<div class="nav-home"><button class="secondary" id="backToCommand">← Campaign overview</button></div><section class="hero"><p class="eyebrow" id="activeChapterEyebrow">Stage Three · Chapter 01</p><h1 id="activeChapterTitle">The Genesis of Oversight</h1><p>A strategy simulation about institutional power, evidence, legitimacy and human consequences. You are reviewing the founding dossier as Director Cican George Alin.</p><div class="notice"><strong>Fiction notice:</strong> The manual is a fictional/speculative source. Its historical and institutional claims are presented as claims made by the in-world narrator, not verified real-world facts. Scenario mechanics are clearly marked as simulation design.</div></section>
 <div class="stepbar" id="steps"><span class="step active">01 Briefing</span><span class="step">02 Situation</span><span class="step">03 Decision</span><span class="step">04 Debrief</span><span class="step">05 Assessment</span><span class="step">06 Archive</span></div>
-<div class="grid"><section class="panel" id="mainPanel" aria-live="polite"></section><aside class="panel"><p class="eyebrow">Director's ledger</p><h2>Simulation indicators</h2><p class="source">Game-only values · start at 5/10</p><div id="ledger"></div><div class="stat">Campaign <b>1 / 14</b></div><div class="stat">Chapter coverage <b>21 / 21</b></div><div class="stat">Decision record <b id="decisionState">Pending</b></div><p class="source">The manual does not define these scores. They exist only to make trade-offs legible in this prototype.</p></aside></div>
+<div class="grid"><section class="panel" id="mainPanel" aria-live="polite"></section><aside class="panel"><p class="eyebrow">Director's ledger</p><h2>Simulation indicators</h2><p class="source">Game-only values · start at 5/10</p><div id="ledger"></div><div class="stat">Campaign <b id="campaignChapterStat">1 / 14</b></div><div class="stat">Chapter coverage <b id="chapterCoverageStat">21 / 21</b></div><div class="stat">Decision record <b id="decisionState">Pending</b></div><p class="source">The manual does not define these scores. They exist only to make trade-offs legible in this prototype.</p></aside></div>
 <div class="actions"><button class="secondary" id="exportSave">Export save</button><label class="secondary" for="importSave" style="display:inline-block;cursor:pointer">Import save</label><input id="importSave" type="file" accept="application/json,.json" hidden></div><p class="source" id="saveStatus" aria-live="polite">Progress is saved locally on this device. Export a JSON backup to move it to another device.</p>
 </div>
 <footer class="footer"><span>DHIE: Director's Mandate · CICAN</span><a href="../">Return to the DHIE archive</a></footer>
 </main>
 <script type="module">
-import { loadState, saveState, exportSave, importSave, resetSavedState } from "./engine/state.js";
+import { loadState, saveState, exportSave, importSave, switchChapter } from "./engine/state.js";
 import { applyDecision, setChapterProgress, applyAssessment } from "./engine/rules.js";
-const chapter = {"id":"chapter-01","chapter_id":"1","title":"The Genesis of Oversight — From Anarchy to Architects","source_document":"The DHIE Protocols: A Manual for Humanity's Directed Evolution (Restricted Access)","source_page":"3–9","content_type":"source","review_status":"source-checked","editorial_note":"The manual is fictional/speculative. Statements about the Pre-DHIE Epoch, historical events, technologies and institutional authority are claims made by the in-world document, not verified real-world facts.","briefing":{"title":"A crisis narrative — and the authority it seeks","summary":"Chapter 1 presents the DHIE's account of a planetary crisis called the Great Stagnation/Regression. The narrator attributes ecological collapse, resource wars, cognitive drift and societal fragmentation to humanity's unmanaged trajectory. It then presents the CICAN Doctrine as the justification for directed evolution, describes earlier precursor groups and failed models, recounts the Consolidation Wars and the Revised Treaty of Geneva, and sets out the Founding Charter and Seven Pillars.","critical_reading":"This is the institution's own legitimizing account. It asserts that intervention was necessary, but the chapter itself does not independently establish the truth of its historical claims or demonstrate consent from the people affected.","sections":["1.1","1.1.1","1.1.2","1.1.3","1.1.4","1.2","1.2.1","1.2.2","1.2.3","1.3","1.3.1","1.3.2","1.3.3","1.4","1.4.1","1.4.2","1.4.3","1.5","1.5.1","1.5.2","1.5.3"]},"scenario":{"content_type":"simulation","title":"The Central Nexus: first mandate review","situation":"You have received the Chapter 1 founding dossier. Its account describes severe ecological and social crises, failed precursor organizations, a forceful consolidation of authority and a treaty said to grant the DHIE universal jurisdiction. Before the Directorate turns this narrative into an operating mandate, you must decide what evidence and safeguards are required.","question":"What is your first directive?","options":[{"id":"independent-review","title":"Commission an independent evidence and impact review","description":"Separate documented observations from institutional interpretation; publish uncertainties; invite affected communities and independent reviewers to challenge the dossier.","effects":{"evidence_confidence":2,"accountability":2,"institutional_cohesion":-1,"public_impact":1},"debrief":"This choice prioritizes verification and contestability. It may slow institutional action and create internal disagreement, but it exposes where the founding narrative is uncertain and makes affected people visible in the decision process."},{"id":"rapid-mandate","title":"Adopt the dossier and centralize the mandate immediately","description":"Treat the founding account as sufficient authority and move directly to unified implementation.","effects":{"evidence_confidence":-2,"accountability":-2,"institutional_cohesion":2,"public_impact":-2},"debrief":"This choice creates rapid internal alignment, but it treats the narrator's claims as settled evidence. The simulation records weaker accountability and greater risk that disputed assumptions become irreversible policy."},{"id":"limited-pilot","title":"Authorize a narrow, time-limited pilot with public safeguards","description":"Test only a reversible, non-coercive response to one clearly evidenced problem; require consent, independent monitoring, a public report and a stop condition.","effects":{"evidence_confidence":1,"accountability":2,"institutional_cohesion":0,"public_impact":2},"debrief":"This choice limits the scope of action and makes it reversible. It produces less immediate institutional reach, but allows learning while keeping oversight and the ability to stop the pilot."}],"mechanics_note":"All four consequence dimensions and their numerical effects are game-only mechanics. They are not metrics defined by the manual. Values are bounded from 0 to 10."},"assessment":[{"id":"q1","question":"Which four conditions does section 1.1 associate with the Great Stagnation/Regression?","options":["Ecological collapse, resource wars, cognitive drift and societal fragmentation","Digital immortality, planetary expansion, habitat engineering and universal harmony","Genetic screening, neural downloads, social credit and nanobot integration"],"answer":0,"explanation":"The chapter's opening diagnosis names ecological collapse, resource wars, cognitive drift and societal fragmentation. These are presented as claims within the fictional manual."},{"id":"q2","question":"What does section 1.2 call the philosophical cornerstone of the DHIE?","options":["The Universal Resource Ledger","The CICAN Doctrine","The Global Surveillance Grid"],"answer":1,"explanation":"Section 1.2 names the CICAN Doctrine as the philosophical cornerstone and describes directed evolution as its central principle."},{"id":"q3","question":"How does the chapter describe the Revised Treaty of Geneva?","options":["As a local environmental pilot","As a treaty dissolving the Central Nexus","As granting the DHIE universal jurisdiction"],"answer":2,"explanation":"Section 1.4.2 says the treaty granted the DHIE universal jurisdiction. This is a statement made by the fictional source, not a real-world treaty claim."},{"id":"q4","question":"How many pillars are listed in section 1.5.1?","options":["Five","Seven","Ten"],"answer":1,"explanation":"Section 1.5.1 lists seven pillars: Cognitive Advancement, Somatic Perfection, Emotional Stability, Social Cohesion, Environmental Symbiosis, Resource Efficiency and Evolutionary Trajectory."}],"coverage":[{"section_id":"1.1","title":"The Great Stagnation/Regression: A Planetary Decline","represented_in":"Briefing; scenario context; Q1"},{"section_id":"1.1.1","title":"The Pre-DHIE Epoch: Unmanaged Chaos","represented_in":"Briefing; scenario context"},{"section_id":"1.1.2","title":"Ecological Collapse and Resource Wars","represented_in":"Briefing; scenario context; Q1"},{"section_id":"1.1.3","title":"Cognitive Drift and Societal Fragmentation","represented_in":"Briefing; scenario context; Q1"},{"section_id":"1.1.4","title":"The Global Impasse and the Need for Intervention","represented_in":"Briefing; scenario context"},{"section_id":"1.2","title":"The CICAN Doctrine: Principles of Directed Evolution","represented_in":"Briefing; Q2"},{"section_id":"1.2.1","title":"Overriding Natural Selection: A Moral Imperative","represented_in":"Briefing; decision debrief"},{"section_id":"1.2.2","title":"The Burden of Benevolence: Our Guiding Philosophy","represented_in":"Briefing; decision debrief"},{"section_id":"1.2.3","title":"From Sapient to Managed Species: The Paradigm Shift","represented_in":"Briefing; decision debrief"},{"section_id":"1.3","title":"Early Iterations and Predecessors: Seeds of Control","represented_in":"Briefing; scenario context"},{"section_id":"1.3.1","title":"Disparate Efforts: Early Bio-Engineering and Behavioral Science Groups","represented_in":"Briefing"},{"section_id":"1.3.2","title":"The Unification Conferences: Forging a Global Consensus","represented_in":"Briefing"},{"section_id":"1.3.3","title":"Proto-Organizations and Failed Models","represented_in":"Briefing"},{"section_id":"1.4","title":"The Global Mandate: Achieving Planetary Authority","represented_in":"Briefing; scenario context"},{"section_id":"1.4.1","title":"The Consolidation Wars and Pax DHIE","represented_in":"Briefing; scenario context"},{"section_id":"1.4.2","title":"Treaty of Geneva (Revised): Granting Universal Jurisdiction","represented_in":"Briefing; scenario context; Q3"},{"section_id":"1.4.3","title":"The Establishment of the Central Nexus","represented_in":"Briefing; scenario"},{"section_id":"1.5","title":"Founding Charter and Core Values: The DHIE Credo","represented_in":"Briefing; assessment"},{"section_id":"1.5.1","title":"The Seven Pillars of Optimization","represented_in":"Briefing; Q4"},{"section_id":"1.5.2","title":"Mission Statement: Cultivating the Homo Optima","represented_in":"Briefing"},{"section_id":"1.5.3","title":"Oath of Allegiance: The Unbreakable Vow","represented_in":"Briefing; critical-reading debrief"}]};
-const dims=[["evidence_confidence","Evidence confidence"],["accountability","Accountability"],["institutional_cohesion","Institutional cohesion"],["public_impact","Public impact"]];
-let saved=loadState();
-let state={step:saved.chapter.step,selected:saved.chapter.selectedOptionId,decision:saved.chapter.decision,metrics:saved.metrics,answers:saved.chapter.answers,submitted:saved.chapter.assessmentSubmitted};
-function persist(){saved=setChapterProgress(saved,{step:state.step,selectedOptionId:state.selected,answers:state.answers,assessmentSubmitted:state.submitted,completed:state.step===5,unlockedSections:state.step===5?chapter.briefing.sections:[]});saved.metrics={...state.metrics};saved=saveState(saved);}
-function syncFromSaved(){state={step:saved.chapter.step,selected:saved.chapter.selectedOptionId,decision:saved.chapter.decision,metrics:saved.metrics,answers:saved.chapter.answers,submitted:saved.chapter.assessmentSubmitted};}
-const panel=document.getElementById("mainPanel");
-const campaignChapters=[{"id":1,"title":"The Genesis of Oversight – From Anarchy to Architects","sections":21},{"id":2,"title":"Organizational Structure – The Labyrinth of Control","sections":18},{"id":3,"title":"Methodologies and Data Acquisition – The Panopticon of Progress","sections":21},{"id":4,"title":"Cognitive Optimization Protocols (COPs) – Enhancing the Mind","sections":21},{"id":5,"title":"Emotional Harmonization and Stability Protocols (EHSPs)","sections":20},{"id":6,"title":"Creativity and Innovation Directives (CIDs)","sections":20},{"id":7,"title":"Memory Calibration and Recall (MCRs) – The Curated Past","sections":20},{"id":8,"title":"Genetic Trajectory Management (GTMs)","sections":24},{"id":9,"title":"Reproductive Oversight and Population Control (ROPCs)","sections":20},{"id":10,"title":"Physiological Augmentation and Adaptation (PAAs)","sections":20},{"id":11,"title":"Resource Allocation and Equity Frameworks (RAEFs)","sections":20},{"id":12,"title":"Environmental Control and Habitat Engineering (ECHE)","sections":20},{"id":13,"title":"Surveillance and Social Credit Systems (SSCS)","sections":20},{"id":14,"title":"The Homo Optima and the Final Ascendance – The Zenith of Directed Evolution","sections":12}];
-function esc(s){return String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));}
-function renderLedger(){document.getElementById("ledger").innerHTML=dims.map(([k,n])=>'<div class="metric"><span>'+n+'</span><strong>'+state.metrics[k]+'/10</strong></div><div class="track"><div class="fill" style="width:'+state.metrics[k]*10+'%"></div></div>').join("");}
-function renderSteps(){document.querySelectorAll(".step").forEach((el,i)=>{el.classList.toggle("active",i===state.step);el.classList.toggle("done",i<state.step);});}
-function button(label,fn,primary=true,disabled=false){return '<button class="'+(primary?'primary':'secondary')+'" '+(disabled?'disabled':'')+' data-action="'+fn+'">'+label+'</button>';}
-function render(){
- persist();renderLedger();renderSteps();
- if(state.step===0){panel.innerHTML='<p class="eyebrow">01 / Briefing · Source-derived</p><h2>'+esc(chapter.briefing.title)+'</h2><p>'+esc(chapter.briefing.summary)+'</p><div class="result"><strong>Critical reading</strong><p>'+esc(chapter.briefing.critical_reading)+'</p></div><h3>Source coverage</h3><p class="source">This chapter maps all 21 numbered headings from physical PDF pages 3–9. Exact section IDs are retained in the archive at the end of this experience.</p><p class="source">Sections: '+chapter.briefing.sections.join(" · ")+'</p><div class="actions">'+button("Enter the situation","next")+'</div>';}
- if(state.step===1){panel.innerHTML='<p class="eyebrow">02 / Situation · Simulation design</p><h2>'+esc(chapter.scenario.title)+'</h2><p>'+esc(chapter.scenario.situation)+'</p><div class="result"><strong>Decision question</strong><p>'+esc(chapter.scenario.question)+'</p></div><p class="source">The scenario is invented for the game. It is not a scene or event narrated in the source PDF.</p><div class="actions">'+button("Review directives","next")+'</div>';}
- if(state.step===2){panel.innerHTML='<p class="eyebrow">03 / Decision · Simulation design</p><h2>'+esc(chapter.scenario.question)+'</h2>'+chapter.scenario.options.map(o=>'<button class="option '+(state.selected===o.id?'selected':'')+'" data-option="'+o.id+'"><strong>'+esc(o.title)+'</strong>'+esc(o.description)+'</button>').join("")+'<p class="source">'+esc(chapter.scenario.mechanics_note)+'</p><div class="actions">'+button("Record directive","decide",true,!state.selected)+'</div>';}
- if(state.step===3){const o=chapter.scenario.options.find(x=>x.id===state.decision);panel.innerHTML='<p class="eyebrow">04 / Consequences and debrief</p><h2>'+esc(o.title)+'</h2><p>'+esc(o.debrief)+'</p><div class="result"><strong>Decision recorded</strong><p>'+dims.map(([k,n])=>n+': '+(o.effects[k]>0?"+":"")+o.effects[k]).join(" · ")+'</p></div><h3>Source connection</h3><p>The dossier's account of the Great Stagnation, the CICAN Doctrine, the Burden of Benevolence, the transition to a managed species, and the claimed global mandate are the source context for this decision (sections 1.1–1.4.2). The choice to require independent review, a limited pilot or immediate centralization is a game-design interpretation, not a prescribed source procedure.</p><p class="source">The source also describes the Seven Pillars, mission statement and Oath of Allegiance (1.5–1.5.3). Their inclusion in the founding charter does not establish that the narrator's claims are true or that the described authority is legitimate.</p><div class="actions">'+button("Take the knowledge check","next")+'</div>';}
- if(state.step===4){panel.innerHTML='<p class="eyebrow">05 / Knowledge check</p><h2>Test your reading of Chapter 1</h2>'+chapter.assessment.map((q,i)=>'<div class="question"><strong>'+(i+1)+'. '+esc(q.question)+'</strong>'+q.options.map((v,n)=>'<label class="answer"><input type="radio" name="'+q.id+'" value="'+n+'" '+(state.answers[q.id]===n?'checked':'')+' '+(state.submitted?'disabled':'')+'>'+esc(v)+'</label>').join("")+(state.submitted?'<p class="source">'+(state.answers[q.id]===q.answer?'Correct. ':'Not quite. ')+esc(q.explanation)+'</p>':'')+'</div>').join("")+(state.submitted?'<div class="result"><strong>Result: '+chapter.assessment.filter(q=>state.answers[q.id]===q.answer).length+' / '+chapter.assessment.length+'</strong><p>Use the explanations to revisit the source sections before continuing.</p></div>':'')+'<div class="actions">'+(state.submitted?button("Open chapter archive","next"):button("Check answers","submit"))+'</div>';}
- if(state.step===5){panel.innerHTML='<p class="eyebrow">06 / Archive unlocked</p><h2>Chapter 1 source coverage</h2><p>All 21 numbered headings are represented in this vertical slice. The map below shows where each appears in the briefing, decision context, debrief or assessment.</p><div style="overflow:auto"><table class="coverage"><tbody>'+chapter.coverage.map(x=>'<tr><td>'+esc(x.section_id)+'</td><td>'+esc(x.title)+'</td><td class="source">'+esc(x.represented_in)+'</td></tr>').join("")+'</tbody></table></div><div class="result"><strong>Chapter 1 slice complete</strong><p>Your decision record and assessment are saved locally on this device. Export a JSON backup if you want to move this campaign to another device.</p></div><div class="actions">'+button("Restart chapter","restart",false)+'</div>';}
+import { loadCampaignInventory, loadChapter } from "./engine/content.js";
+
+const dims = [
+  ["evidence_confidence", "Evidence confidence"],
+  ["accountability", "Accountability"],
+  ["institutional_cohesion", "Institutional cohesion"],
+  ["public_impact", "Public impact"]
+];
+const groups = [
+  { title: "Part I — Foundations: The Imperative of Evolutionary Oversight", start: 1, end: 3 },
+  { title: "Part II — The Cognitive Realm: Shaping the Mind", start: 4, end: 7 },
+  { title: "Part III — The Somatic Realm: Sculpting the Body", start: 8, end: 10 },
+  { title: "Part IV — The Environmental Realm: Shaping the World", start: 11, end: 14 }
+];
+
+let saved = loadState();
+let state = null;
+let inventory = null;
+let chapters = new Map();
+let campaignChapters = [];
+let chapter = null;
+const panel = document.getElementById("mainPanel");
+const campaignMap = document.getElementById("campaignMap");
+
+function esc(value) {
+  return String(value ?? "").replace(/[&<>"']/g, char => ({
+    "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"
+  })[char]);
 }
-panel.addEventListener("click",e=>{const opt=e.target.closest("[data-option]");if(opt){state.selected=opt.dataset.option;render();return;}const b=e.target.closest("[data-action]");if(!b)return;const a=b.dataset.action;if(a==="next"){state.step=Math.min(5,state.step+1);}if(a==="decide"&&state.selected){const o=chapter.scenario.options.find(x=>x.id===state.selected);saved=applyDecision(saved,o);syncFromSaved();document.getElementById("decisionState").textContent="Recorded";state.step=3;}if(a==="submit"){chapter.assessment.forEach(q=>{const v=panel.querySelector('input[name="'+q.id+'"]:checked');if(v)state.answers[q.id]=Number(v.value);});if(Object.keys(state.answers).length===chapter.assessment.length){const result=applyAssessment(saved,chapter.assessment,state.answers);saved=result.state;state.submitted=true;state.step=4;}}if(a==="restart"){saved=resetSavedState();syncFromSaved();document.getElementById("decisionState").textContent="Pending";}render();});
-panel.addEventListener("change",e=>{if(e.target.matches('input[type="radio"]')){state.answers[e.target.name]=Number(e.target.value);persist();}});
-function renderCampaignMap(){
- const groups=[
-  {title:"Part I — Foundations: The Imperative of Evolutionary Oversight",start:1,end:3},
-  {title:"Part II — The Cognitive Realm: Shaping the Mind",start:4,end:7},
-  {title:"Part III — The Somatic Realm: Sculpting the Body",start:8,end:10},
-  {title:"Part IV — The Environmental Realm: Shaping the World",start:11,end:14}
- ];
- const completed=saved.campaign.completedChapters.length;
- document.getElementById("dashCompleted").textContent=completed+" / 14";
- document.getElementById("dashPlayable").textContent="1 / 14";
- document.getElementById("launchChapter").textContent=saved.chapter.step>0?"Resume Chapter 1":"Begin Chapter 1";
- document.getElementById("campaignMap").innerHTML=groups.map(g=>'<section class="part"><h3>'+g.title+'</h3><div class="chapter-grid">'+campaignChapters.filter(c=>c.id>=g.start&&c.id<=g.end).map(c=>{
- const available=c.id===1,done=saved.campaign.completedChapters.includes(String(c.id));
- return '<div class="chapter-tile '+(available?'available':'locked')+'"><span class="number">'+String(c.id).padStart(2,"0")+'</span><div><strong>'+esc(c.title)+'</strong><small>'+c.sections+' numbered headings · '+(done?"Completed":available?"Playable prototype":"Not yet playable")+'</small></div>'+(available?'<button class="secondary" data-launch="1">Open</button>':'<span class="pill">Locked</span>')+'</div>';
- }).join("")+'</div></section>').join("");
+function syncFromSaved() {
+  state = {
+    step: saved.chapter.step,
+    selected: saved.chapter.selectedOptionId,
+    decision: saved.chapter.decision,
+    metrics: { ...saved.metrics },
+    answers: { ...saved.chapter.answers },
+    submitted: saved.chapter.assessmentSubmitted
+  };
 }
-function openChapter(){
- document.getElementById("commandDashboard").hidden=true;
- document.getElementById("campaignExperience").hidden=false;
- render();
- window.scrollTo({top:0,behavior:"auto"});
+function persist() {
+  saved = setChapterProgress(saved, {
+    step: state.step,
+    selectedOptionId: state.selected,
+    answers: state.answers,
+    assessmentSubmitted: state.submitted,
+    completed: state.step === 5,
+    unlockedSections: state.step === 5 ? chapter.briefing.sections : []
+  });
+  saved = saveState(saved);
 }
-document.getElementById("launchChapter").addEventListener("click",openChapter);
-document.getElementById("campaignMap").addEventListener("click",e=>{if(e.target.closest("[data-launch='1']"))openChapter();});
-document.getElementById("backToCommand").addEventListener("click",()=>{document.getElementById("campaignExperience").hidden=true;document.getElementById("commandDashboard").hidden=false;renderCampaignMap();window.scrollTo({top:0,behavior:"auto"});});
-renderCampaignMap();
-render();
-if(state.decision)document.getElementById("decisionState").textContent="Recorded";
-document.getElementById("exportSave").addEventListener("click",()=>{const blob=new Blob([exportSave(saved)],{type:"application/json"});const url=URL.createObjectURL(blob);const a=document.createElement("a");a.href=url;a.download="dhie-directors-mandate-save.json";a.click();URL.revokeObjectURL(url);document.getElementById("saveStatus").textContent="Save exported. Keep the JSON backup safe.";});
-document.getElementById("importSave").addEventListener("change",async e=>{const file=e.target.files?.[0];if(!file)return;try{saved=importSave(await file.text());saved=saveState(saved);syncFromSaved();document.getElementById("decisionState").textContent=state.decision?"Recorded":"Pending";render();document.getElementById("saveStatus").textContent="Save imported successfully.";}catch(err){document.getElementById("saveStatus").textContent=err.message;}e.target.value="";});
+function renderLedger() {
+  document.getElementById("ledger").innerHTML = dims.map(([key, label]) =>
+    '<div class="metric"><span>' + esc(label) + '</span><strong>' +
+    state.metrics[key] + '/10</strong></div><div class="track"><div class="fill" style="width:' +
+    state.metrics[key] * 10 + '%"></div></div>'
+  ).join("");
+}
+function renderSteps() {
+  document.querySelectorAll("#steps .step").forEach((element, index) => {
+    element.classList.toggle("active", index === state.step);
+    element.classList.toggle("done", index < state.step);
+  });
+}
+function button(label, action, primary = true, disabled = false) {
+  return '<button class="' + (primary ? "primary" : "secondary") + '" ' +
+    (disabled ? "disabled" : "") + ' data-action="' + esc(action) + '">' +
+    esc(label) + '</button>';
+}
+function render() {
+  if (!chapter || !state) return;
+  persist();
+  renderLedger();
+  renderSteps();
+  const sections = chapter.briefing.sections || [];
+  const title = esc(chapter.title);
+  if (state.step === 0) {
+    const structure = (chapter.briefing.structure || []).map(item =>
+      '<li>' + esc(item.summary) + '</li>'
+    ).join("");
+    panel.innerHTML =
+      '<p class="eyebrow">01 / Briefing · Source-derived</p><h2>' +
+      esc(chapter.briefing.title) + '</h2><p>' + esc(chapter.briefing.summary) +
+      '</p><div class="result"><strong>Critical reading</strong><p>' +
+      esc(chapter.briefing.critical_reading) + '</p></div>' +
+      (structure ? '<h3>Chapter structure</h3><ul>' + structure + '</ul>' : '') +
+      '<h3>Source coverage</h3><p class="source">This chapter maps all ' +
+      chapter.coverage.length + ' numbered headings. Source page references and exact section titles are checked against the source inventory before the chapter loads.</p>' +
+      '<p class="source">Sections: ' + sections.map(esc).join(" · ") +
+      '</p><div class="actions">' + button("Enter the situation", "next") + '</div>';
+  }
+  if (state.step === 1) {
+    panel.innerHTML =
+      '<p class="eyebrow">02 / Situation · Simulation design</p><h2>' +
+      esc(chapter.scenario.title) + '</h2><p>' + esc(chapter.scenario.situation) +
+      '</p><div class="result"><strong>Decision question</strong><p>' +
+      esc(chapter.scenario.question) + '</p></div><p class="source">This scenario is invented for the game. It is not presented as a real-world event or a procedure prescribed by the source manual.</p>' +
+      '<div class="actions">' + button("Review directives", "next") + '</div>';
+  }
+  if (state.step === 2) {
+    panel.innerHTML =
+      '<p class="eyebrow">03 / Decision · Simulation design</p><h2>' +
+      esc(chapter.scenario.question) + '</h2>' +
+      chapter.scenario.options.map(option =>
+        '<button class="option ' + (state.selected === option.id ? "selected" : "") +
+        '" data-option="' + esc(option.id) + '"><strong>' + esc(option.title) +
+        '</strong>' + esc(option.description) + '</button>'
+      ).join("") +
+      '<p class="source">' + esc(chapter.scenario.mechanics_note || "All numerical effects are game-only mechanics.") +
+      '</p><div class="actions">' + button("Record directive", "decide", true, !state.selected) + '</div>';
+  }
+  if (state.step === 3) {
+    const selected = chapter.scenario.options.find(option => option.id === state.decision);
+    if (!selected) {
+      state.step = 2;
+      render();
+      return;
+    }
+    panel.innerHTML =
+      '<p class="eyebrow">04 / Consequences and debrief</p><h2>' +
+      esc(selected.title) + '</h2><p>' + esc(selected.debrief) +
+      '</p><div class="result"><strong>Decision recorded · game-only effects</strong><p>' +
+      dims.map(([key, label]) => esc(label) + ': ' +
+        (selected.effects[key] > 0 ? "+" : "") + selected.effects[key]).join(" · ") +
+      '</p></div><h3>Source connection</h3><p>' +
+      esc(chapter.briefing.critical_reading) +
+      '</p><p class="source">Source: ' + title + ' · physical PDF pages ' +
+      esc(chapter.source_page) + '. The selected directive and its score changes are game design, not a recommendation or policy contained in the manual.</p>' +
+      '<div class="actions">' + button("Take the knowledge check", "next") + '</div>';
+  }
+  if (state.step === 4) {
+    panel.innerHTML =
+      '<p class="eyebrow">05 / Knowledge check</p><h2>Test your reading of ' +
+      title + '</h2>' +
+      chapter.assessment.map((question, index) =>
+        '<div class="question"><strong>' + (index + 1) + '. ' +
+        esc(question.question) + '</strong>' +
+        question.options.map((answer, answerIndex) =>
+          '<label class="answer"><input type="radio" name="' + esc(question.id) +
+          '" value="' + answerIndex + '" ' +
+          (state.answers[question.id] === answerIndex ? "checked" : "") +
+          (state.submitted ? " disabled" : "") + '>' + esc(answer) + '</label>'
+        ).join("") +
+        (state.submitted ? '<p class="source">' +
+          (state.answers[question.id] === question.answer ? "Correct. " : "Not quite. ") +
+          esc(question.explanation) + '</p>' : '') +
+        '</div>'
+      ).join("") +
+      (state.submitted ?
+        '<div class="result"><strong>Result: ' +
+        chapter.assessment.filter(question => state.answers[question.id] === question.answer).length +
+        ' / ' + chapter.assessment.length + '</strong><p>Review the explanations and source references before continuing.</p></div>' : '') +
+      '<div class="actions">' +
+      (state.submitted ? button("Open chapter archive", "next") :
+        button("Check answers", "submit", true,
+          Object.keys(state.answers).filter(key => chapter.assessment.some(q => q.id === key)).length !== chapter.assessment.length)) +
+      '</div>';
+  }
+  if (state.step === 5) {
+    panel.innerHTML =
+      '<p class="eyebrow">06 / Archive unlocked</p><h2>' + title +
+      ' — source coverage</h2><p>All ' + chapter.coverage.length +
+      ' numbered headings are represented in this chapter record. The table preserves the verified section titles and PDF page references.</p>' +
+      '<div style="overflow:auto"><table class="coverage"><thead><tr><th>Section</th><th>Source heading</th><th>PDF page</th><th>Game representation</th></tr></thead><tbody>' +
+      chapter.coverage.map(row =>
+        '<tr><td>' + esc(row.section_id) + '</td><td>' + esc(row.title) +
+        '</td><td class="source">' + esc(row.source_page) +
+        '</td><td class="source">' + esc(row.represented_in) + '</td></tr>'
+      ).join("") +
+      '</tbody></table></div><div class="result"><strong>Chapter ' +
+      esc(chapter.chapter_id) + ' knowledge check complete</strong><p>Your chapter progress and decision are saved locally on this device. Export a JSON backup to move the campaign to another device.</p></div>' +
+      '<div class="actions">' + button("Return to campaign overview", "overview", false) + '</div>';
+  }
+  document.getElementById("campaignChapterStat").textContent = chapter.chapter_id + " / 14";
+  document.getElementById("chapterCoverageStat").textContent = chapter.coverage.length + " / " + chapter.coverage.length;
+  document.getElementById("decisionState").textContent = state.decision ? "Recorded" : "Pending";
+  document.getElementById("activeChapterTitle").textContent = chapter.title;
+  document.getElementById("activeChapterEyebrow").textContent =
+    "Stage Three · Chapter " + String(chapter.chapter_id).padStart(2, "0");
+}
+function renderCampaignMap() {
+  document.getElementById("dashCompleted").textContent = saved.campaign.completedChapters.length + " / 14";
+  document.getElementById("dashPlayable").textContent = chapters.size + " / 14";
+  document.getElementById("launchChapter").textContent = "Resume Chapter " + saved.campaign.chapterId;
+  campaignMap.innerHTML = groups.map(group =>
+    '<section class="part"><h3>' + group.title + '</h3><div class="chapter-grid">' +
+    campaignChapters.filter(item => item.id >= group.start && item.id <= group.end).map(item => {
+      const ready = chapters.has(item.id);
+      const done = saved.campaign.completedChapters.includes(String(item.id));
+      const status = done ? "Completed" : ready ? "Playable" : "Unavailable — validation failed";
+      return '<div class="chapter-tile ' + (ready ? "available" : "locked") +
+        '"><span class="number">' + String(item.id).padStart(2, "0") +
+        '</span><div><strong>' + esc(item.title) + '</strong><small>' +
+        item.sections + ' numbered headings · ' + status + '</small></div>' +
+        (ready ? '<button class="secondary" data-chapter="' + item.id +
+          '">Open</button>' : '<span class="pill">Unavailable</span>') + '</div>';
+    }).join("") + '</div></section>'
+  ).join("");
+}
+function returnToOverview() {
+  document.getElementById("campaignExperience").hidden = true;
+  document.getElementById("commandDashboard").hidden = false;
+  renderCampaignMap();
+  window.scrollTo({ top: 0, behavior: "auto" });
+}
+function openChapter(chapterId) {
+  const loaded = chapters.get(Number(chapterId));
+  if (!loaded) {
+    document.getElementById("campaignStatus").textContent =
+      "This chapter did not pass content validation and cannot be opened.";
+    return;
+  }
+  saved = switchChapter(saved, String(chapterId));
+  saved = saveState(saved);
+  chapter = loaded;
+  syncFromSaved();
+  document.getElementById("commandDashboard").hidden = true;
+  document.getElementById("campaignExperience").hidden = false;
+  render();
+  window.scrollTo({ top: 0, behavior: "auto" });
+}
+
+document.getElementById("launchChapter").addEventListener("click", () => openChapter(saved.campaign.chapterId));
+campaignMap.addEventListener("click", event => {
+  const trigger = event.target.closest("[data-chapter]");
+  if (trigger) openChapter(trigger.dataset.chapter);
+});
+document.getElementById("backToCommand").addEventListener("click", returnToOverview);
+panel.addEventListener("click", event => {
+  const optionElement = event.target.closest("[data-option]");
+  if (optionElement && state && !state.decision) {
+    state.selected = optionElement.dataset.option;
+    render();
+    return;
+  }
+  const actionElement = event.target.closest("[data-action]");
+  if (!actionElement) return;
+  const action = actionElement.dataset.action;
+  if (action === "overview") {
+    returnToOverview();
+    return;
+  }
+  if (action === "next") state.step = Math.min(5, state.step + 1);
+  if (action === "decide" && state.selected) {
+    const selected = chapter.scenario.options.find(option => option.id === state.selected);
+    saved = applyDecision(saved, selected, chapter.chapter_id);
+    syncFromSaved();
+    state.step = 3;
+  }
+  if (action === "submit") {
+    const answers = {};
+    chapter.assessment.forEach(question => {
+      const selected = panel.querySelector('input[name="' + question.id + '"]:checked');
+      if (selected) answers[question.id] = Number(selected.value);
+    });
+    if (Object.keys(answers).length === chapter.assessment.length) {
+      const result = applyAssessment(saved, chapter.assessment, answers, chapter.chapter_id);
+      saved = result.state;
+      syncFromSaved();
+      state.submitted = true;
+      state.step = 4;
+    }
+  }
+  render();
+});
+panel.addEventListener("change", event => {
+  if (event.target.matches('input[type="radio"]') && state && !state.submitted) {
+    state.answers[event.target.name] = Number(event.target.value);
+    persist();
+  }
+});
+
+document.getElementById("exportSave").addEventListener("click", () => {
+  const blob = new Blob([exportSave(saved)], { type: "application/json" });
+  const url = URL.createObjectURL(blob);
+  const link = document.createElement("a");
+  link.href = url;
+  link.download = "dhie-directors-mandate-save.json";
+  link.click();
+  URL.revokeObjectURL(url);
+  document.getElementById("saveStatus").textContent = "Save exported. Keep the JSON backup safe.";
+});
+document.getElementById("importSave").addEventListener("change", async event => {
+  const file = event.target.files?.[0];
+  if (!file) return;
+  try {
+    saved = saveState(importSave(await file.text()));
+    syncFromSaved();
+    renderCampaignMap();
+    document.getElementById("saveStatus").textContent = "Save imported. Resume the saved chapter from the campaign overview.";
+    returnToOverview();
+  } catch (error) {
+    document.getElementById("saveStatus").textContent = error.message;
+  }
+  event.target.value = "";
+});
+
+async function initializeCampaign() {
+  try {
+    inventory = await loadCampaignInventory();
+    const results = await Promise.allSettled(
+      Array.from({ length: 14 }, (_, index) => loadChapter(index + 1, globalThis.fetch, inventory))
+    );
+    results.forEach((result, index) => {
+      const id = index + 1;
+      if (result.status === "fulfilled") {
+        chapters.set(id, result.value);
+        campaignChapters.push({ id, title: result.value.title, sections: result.value.coverage.length });
+      } else {
+        const expected = inventory["chapter_" + id + "_sections"] || [];
+        campaignChapters.push({
+          id,
+          title: inventory.chapter_titles[id - 1] || ("Chapter " + id),
+          sections: expected.length
+        });
+      }
+    });
+    renderCampaignMap();
+    document.getElementById("campaignStatus").textContent =
+      chapters.size + " of 14 chapter records passed source and mechanics validation.";
+    document.getElementById("launchChapter").disabled = chapters.size === 0;
+  } catch (error) {
+    document.getElementById("campaignStatus").textContent =
+      "Campaign inventory could not be loaded: " + error.message;
+    document.getElementById("launchChapter").disabled = true;
+  }
+}
+initializeCampaign();
+
 </script></body></html>
