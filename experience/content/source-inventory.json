@@ -128,7 +128,7 @@
       9
     ]
   ],
-  "status": "M0 in progress. Chapters 1–4 have section inventories and page references checked. Chapters 5–14 remain.",
+  "status": "M0 in progress. Chapters 1–5 have section inventories and page references checked. Chapters 6–14 remain.",
   "method": "Physical PDF page indexing (1-based), using the supplied 91-page PDF and checking page text directly. Page ranges are used where a section spans a page break. Heading extraction is tracked chapter by chapter; the preliminary global count of 277 remains unverified.",
   "editorial_rules": [
     "Preserve source wording, numbering, omissions, and contradictions; do not silently repair.",
@@ -444,5 +444,108 @@
       "28–29"
     ]
   ],
-  "chapter_4_page_mapping_status": "PDF pages 22–29 checked directly. Chapter 4 headings 4.1–4.5.3 verified; page ranges use physical PDF pages (1-based). Page 29 also checked to confirm the transition to Chapter 5."
+  "chapter_4_page_mapping_status": "PDF pages 22–29 checked directly. Chapter 4 headings 4.1–4.5.3 verified; page ranges use physical PDF pages (1-based). Page 29 also checked to confirm the transition to Chapter 5.",
+  "chapter_5_sections": [
+    [
+      "5.1",
+      "Affective Damping: Reducing Destabilizing Emotions",
+      29
+    ],
+    [
+      "5.1.1",
+      "Aggression Suppression: The \"Pax Humana\" Mandate",
+      "29–30"
+    ],
+    [
+      "5.1.2",
+      "Grief Mitigation and Emotional Flatlining Protocols",
+      30
+    ],
+    [
+      "5.1.3",
+      "Anxiety and Fear Abatement: Creating Compliant Citizens",
+      "30–31"
+    ],
+    [
+      "5.2",
+      "Empathy Amplification: Encouraging Pro-Social Behaviors",
+      31
+    ],
+    [
+      "5.2.1",
+      "Oxytocin Receptor Enhancement and Bonding Protocols",
+      31
+    ],
+    [
+      "5.2.2",
+      "Collective Sentiment Synchronization: Fostering Unity",
+      "31–32"
+    ],
+    [
+      "5.2.3",
+      "Altruism Inducement and Reciprocity Algorithms",
+      32
+    ],
+    [
+      "5.3",
+      "Emotional Resilience Training: Building Optimal Psychological States",
+      32
+    ],
+    [
+      "5.3.1",
+      "Stress Inoculation Protocols: Minimizing Distress Responses",
+      32
+    ],
+    [
+      "5.3.2",
+      "Mental Fortitude Cultivation: Resilience in the Face of DHIE Directives",
+      "32–33"
+    ],
+    [
+      "5.3.3",
+      "The \"Emotional Baseline\" Standard",
+      33
+    ],
+    [
+      "5.4",
+      "Bio-Chemical Regulation: Pharmaceuticals and Gene Therapies",
+      33
+    ],
+    [
+      "5.4.1",
+      "Mood Stabilizers and Serotonin Reuptake Facilitators",
+      33
+    ],
+    [
+      "5.4.2",
+      "Genetic Markers for Emotional Volatility and their Suppression",
+      "33–34"
+    ],
+    [
+      "5.4.3",
+      "Targeted Neurotransmitter Release Agents",
+      34
+    ],
+    [
+      "5.5",
+      "The \"Consciousness Matrix\": Categorizing Subjective Experience",
+      34
+    ],
+    [
+      "5.5.1",
+      "The Spectrum of Sentience: DHIE's Definition of Consciousness",
+      "34–35"
+    ],
+    [
+      "5.5.2",
+      "Emotion Mapping and Predictive Models",
+      35
+    ],
+    [
+      "5.5.3",
+      "Identifying \"Discordant\" Emotional Signatures",
+      35
+    ]
+  ],
+  "chapter_5_page_mapping_status": "PDF pages 29–35 checked directly. Chapter 5 headings 5.1–5.5.3 verified; page ranges use physical PDF pages (1-based). Page 35 also checked to confirm the transition to Chapter 6."
 }
