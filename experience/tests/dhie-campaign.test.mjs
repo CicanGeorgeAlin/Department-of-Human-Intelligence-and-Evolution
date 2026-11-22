@@ -14,7 +14,8 @@ import {
 import {
   applyDecision,
   setChapterProgress,
-  applyAssessment
+  applyAssessment,
+  restartChapter
 } from "../engine/rules.js";
 import {
   loadCampaignInventory,
@@ -166,4 +167,57 @@ test("local storage adapter safely persists and restores a chapter save", () => 
   const restored = loadState(storage);
   assert.equal(restored.chapter.step, 4);
   assert.deepEqual(restored.chapter.answers, { q1: 2, q2: 1 });
+});
+
+
+test("restarting one chapter clears only its progress and replays metrics from remaining decisions", () => {
+  const effects = value => ({
+    evidence_confidence: value,
+    accountability: value,
+    institutional_cohesion: value,
+    public_impact: value
+  });
+  let state = createInitialState();
+  state = applyDecision(state, { id: "chapter-one-choice", effects: effects(2) }, "1");
+  state = setChapterProgress(state, {
+    step: 5, answers: { q1: 1 }, assessmentSubmitted: true,
+    assessmentScore: 3, completed: true, unlockedSections: ["1.1", "shared"]
+  });
+  state = applyDecision(state, { id: "chapter-two-choice", effects: effects(2) }, "2");
+  state = setChapterProgress(state, {
+    step: 4, answers: { q1: 2 }, completed: true, unlockedSections: ["2.1", "shared"]
+  });
+  state = applyDecision(state, { id: "chapter-three-choice", effects: effects(2) }, "3");
+  state = setChapterProgress(state, { step: 3, answers: { q2: 1 } });
+  state = switchChapter(state, "1");
+
+  // Three +2 decisions clamp at 10. Replaying the two surviving decisions
+  // must produce 9, not a naive subtraction result of 8.
+  assert.equal(state.metrics.evidence_confidence, 10);
+  const restarted = restartChapter(state);
+  assert.equal(restarted.campaign.chapterId, "1");
+  assert.deepEqual(restarted.chapter, {
+    step: 0, selectedOptionId: null, decision: null, answers: {},
+    assessmentSubmitted: false, assessmentScore: null
+  });
+  assert.equal(restarted.campaign.completedChapters.includes("1"), false);
+  assert.equal(restarted.campaign.completedChapters.includes("2"), true);
+  assert.deepEqual(restarted.decisionLog.map(entry => entry.chapterId), ["2", "3"]);
+  assert.deepEqual(restarted.metrics, {
+    evidence_confidence: 9, accountability: 9,
+    institutional_cohesion: 9, public_impact: 9
+  });
+  assert.deepEqual(restarted.chapterProgress["2"].answers, { q1: 2 });
+  assert.equal(restarted.chapterProgress["2"].step, 4);
+  assert.deepEqual(restarted.chapterProgress["3"].answers, { q2: 1 });
+  assert.equal(restarted.chapterProgress["3"].step, 3);
+  assert.deepEqual(new Set(restarted.campaign.unlockedSections), new Set(["1.1", "2.1", "shared"]));
+});
+
+test("chapter restart is safe when repeated and validates its target", () => {
+  const first = restartChapter(createInitialState(), "14");
+  const second = restartChapter(first, "14");
+  assert.deepEqual(second.chapter, first.chapter);
+  assert.deepEqual(second.metrics, first.metrics);
+  assert.throws(() => restartChapter(first, "15"), /between 1 and 14/);
 });
