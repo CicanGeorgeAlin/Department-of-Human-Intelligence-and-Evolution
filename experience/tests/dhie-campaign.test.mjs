@@ -61,6 +61,42 @@ test("all fourteen chapter records pass exact source and mechanics validation", 
   }
 });
 
+test("legacy version-one saves migrate their active chapter progress", () => {
+  const legacy = {
+    version: 1,
+    campaign: { chapterId: "4", completedChapters: ["2"], unlockedSections: ["1.1"] },
+    chapter: {
+      step: 3,
+      selectedOptionId: "directive-b",
+      decision: "directive-b",
+      answers: { q1: 2, q2: 1 },
+      assessmentSubmitted: false,
+      assessmentScore: null
+    },
+    metrics: { evidence_confidence: 7 },
+    decisionLog: [{ chapterId: "4", optionId: "directive-b", effects: {} }]
+  };
+  const migrated = normalizeState(legacy);
+  assert.equal(migrated.campaign.chapterId, "4");
+  assert.equal(migrated.chapter.step, 3);
+  assert.equal(migrated.chapter.selectedOptionId, "directive-b");
+  assert.deepEqual(migrated.chapter.answers, { q1: 2, q2: 1 });
+  assert.deepEqual(migrated.chapterProgress["4"], migrated.chapter);
+  assert.equal(migrated.metrics.evidence_confidence, 7);
+  assert.deepEqual(migrated.campaign.completedChapters, ["2"]);
+});
+
+test("unsupported save versions safely normalize to a fresh campaign", () => {
+  const unsupported = normalizeState({
+    version: 99,
+    campaign: { chapterId: "14", completedChapters: ["1", "14"] },
+    metrics: { evidence_confidence: 10 }
+  });
+  assert.equal(unsupported.campaign.chapterId, "1");
+  assert.deepEqual(unsupported.campaign.completedChapters, []);
+  assert.equal(unsupported.metrics.evidence_confidence, 5);
+});
+
 test("chapter switching preserves independent answers and progress", () => {
   let state = createInitialState();
   state = setChapterProgress(state, { step: 2, answers: { q1: 1, q2: 0 } });
@@ -72,6 +108,15 @@ test("chapter switching preserves independent answers and progress", () => {
   state = switchChapter(state, "2");
   assert.equal(state.chapter.step, 1);
   assert.deepEqual(state.chapter.answers, { q1: 2 });
+
+  for (let id = 3; id <= 14; id += 1) {
+    state = setChapterProgress(state, { chapterId: String(id), step: id % 6, answers: { q1: id % 4 } });
+  }
+  for (let id = 1; id <= 14; id += 1) {
+    state = switchChapter(state, String(id));
+    assert.equal(state.chapter.step, id === 1 ? 2 : id === 2 ? 1 : id % 6);
+    if (id >= 3) assert.deepEqual(state.chapter.answers, { q1: id % 4 });
+  }
 });
 
 test("decisions are chapter-scoped and cannot be applied twice", async () => {
