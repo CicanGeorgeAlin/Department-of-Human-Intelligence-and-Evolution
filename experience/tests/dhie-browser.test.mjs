@@ -55,6 +55,14 @@ test("campaign works in Chromium desktop and mobile viewports", async t => {
   await page.goto(baseUrl, { waitUntil: "networkidle" });
   await page.getByText("14 of 14 chapter records passed source and mechanics validation.").waitFor();
   assert.equal(await page.locator("#dashPlayable").textContent(), "14 / 14");
+  await page.keyboard.press("Tab");
+  assert.equal(
+    await page.evaluate(() => document.activeElement?.classList.contains("skip-link")),
+    true,
+    "first keyboard stop should be the skip link"
+  );
+  await page.keyboard.press("Enter");
+  assert.equal(new URL(page.url()).hash, "#commandDashboard");
 
   await page.locator('[data-chapter="14"]').click();
   await page.locator("#activeChapterTitle").waitFor();
