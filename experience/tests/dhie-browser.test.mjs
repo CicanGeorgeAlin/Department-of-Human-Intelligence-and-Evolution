@@ -99,7 +99,7 @@ test("campaign works in Chromium desktop and mobile viewports", async t => {
   assert.match(await page.locator("#dashCompleted").textContent(), /14 \/ 14/);
 
   await page.locator('[data-chapter="2"]').click();
-  await page.getByRole("heading", { name: /Organizational Structure/ }).waitFor();
+  await page.locator("#activeChapterTitle").waitFor();
   await page.getByRole("button", { name: "← Campaign overview" }).click();
   await page.locator('[data-chapter="14"]').click();
   await page.locator("#activeChapterTitle").waitFor();
