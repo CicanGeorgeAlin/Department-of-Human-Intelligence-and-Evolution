@@ -4,7 +4,7 @@
   "pdf_pages": 91,
   "verified_part_count": 4,
   "verified_chapter_count": 14,
-  "transcribed_numbered_heading_count": 265,
+  "transcribed_numbered_heading_count": 277,
   "chapter_titles": [
     "The Genesis of Oversight – From Anarchy to Architects",
     "Organizational Structure – The Labyrinth of Control",
@@ -128,8 +128,8 @@
       9
     ]
   ],
-  "status": "M0 in progress. Chapters 1–13 have section inventories and page references checked. Chapter 14 remains.",
-  "method": "Physical PDF page indexing (1-based), using the supplied 91-page PDF and checking page text directly. Page ranges are used where a section spans a page break. Heading extraction is tracked chapter by chapter; the preliminary global count of 277 remains unverified.",
+  "status": "M0 source inventory complete. All 14 chapters have section inventories and physical PDF page references checked.",
+  "method": "Physical PDF page indexing (1-based), using the supplied 91-page PDF and checking page text directly. Page ranges are used where a section spans a page break. All 14 chapter inventories have been checked against the source; 277 numbered headings are mapped.",
   "editorial_rules": [
     "Preserve source wording, numbering, omissions, and contradictions; do not silently repair.",
     "Chapter title strings are transcribed as printed where confirmed; some titles wrap across lines.",
@@ -1391,5 +1391,68 @@
       87
     ]
   ],
-  "chapter_13_page_mapping_status": "PDF pages 81–87 checked directly. Chapter 13 headings 13.1–13.5.3 verified; page ranges use physical PDF pages (1-based). Page 87 also checked to confirm the transition to Chapter 14."
+  "chapter_13_page_mapping_status": "PDF pages 81–87 checked directly. Chapter 13 headings 13.1–13.5.3 verified; page ranges use physical PDF pages (1-based). Page 87 also checked to confirm the transition to Chapter 14.",
+  "chapter_14_sections": [
+    [
+      "14.1",
+      "The Homo Optima: The Pinnacle of Engineered Being",
+      87
+    ],
+    [
+      "14.1.1",
+      "Cognitive Perfection: The Unwavering Mind",
+      88
+    ],
+    [
+      "14.1.2",
+      "Somatic Excellence: The Optimized Body",
+      88
+    ],
+    [
+      "14.1.3",
+      "Emotional and Social Harmony: The Compliant Soul",
+      "88–89"
+    ],
+    [
+      "14.2",
+      "The Role of the DHIE in Perpetual Evolution: The Guiding Architect",
+      89
+    ],
+    [
+      "14.2.1",
+      "Continuous Genetic and Cognitive Refinement",
+      89
+    ],
+    [
+      "14.2.2",
+      "Environmental Synchronization and Planetary Expansion",
+      "89–90"
+    ],
+    [
+      "14.2.3",
+      "The \"Benevolent Oversight\" Doctrine: Eternal Guardianship",
+      90
+    ],
+    [
+      "14.3",
+      "The Final Ascendance: Humanity's Cosmic Trajectory",
+      90
+    ],
+    [
+      "14.3.1",
+      "Transcending Biological Limits: Digital Immortality",
+      90
+    ],
+    [
+      "14.3.2",
+      "The \"Universal Harmony\" Directive: Cosmic Integration",
+      "90–91"
+    ],
+    [
+      "14.3.3",
+      "The Perpetual Present: An End to Chaos",
+      91
+    ]
+  ],
+  "chapter_14_page_mapping_status": "PDF pages 87–91 checked directly. Chapter 14 headings 14.1–14.3.3 verified; page ranges use physical PDF pages (1-based). Page 91 contains the final section and closing paragraph of the manual."
 }
