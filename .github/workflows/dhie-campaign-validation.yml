@@ -1,0 +1,29 @@
+name: DHIE campaign validation
+
+on:
+  push:
+    paths:
+      - "experience/**"
+      - ".github/workflows/dhie-campaign-validation.yml"
+  pull_request:
+    paths:
+      - "experience/**"
+      - ".github/workflows/dhie-campaign-validation.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  campaign-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Run DHIE campaign tests
+        run: node --test tests/dhie-campaign.test.mjs
+        working-directory: experience
