@@ -1,0 +1,350 @@
+{
+  "id": "chapter-06",
+  "chapter_id": "6",
+  "title": "Creativity and Innovation Directives (CIDs) – Controlled Genius",
+  "source_document": "The DHIE Protocols: A Manual for Humanity's Directed Evolution (Restricted Access)",
+  "source_page": "35–42",
+  "content_type": "source",
+  "review_status": "source-checked",
+  "editorial_note": "This chapter is an in-world account of a fictional institution. Its claims about neural augmentation, predictive systems, research governance, media, art, energy, interstellar communications and food systems are not independently verified real-world facts. The simulation examines the tension between creativity and institutional control; it does not provide instructions for surveillance, psychological manipulation, censorship, or coercive social control.",
+  "briefing": {
+    "title": "Controlled genius — who gets to decide what counts as progress?",
+    "summary": "Chapter 6 describes the Creativity and Innovation Directives (CIDs), developed by the Division of Cognitive Optimization (DCO) with the Division of Evolutionary Trajectory (DET). The source presents pattern recognition and problem-solving as capacities to be optimized through heuristics, reasoning augmentation and strategic scenario planning. It then describes constraints on divergent thinking, redirection of ideas deemed unproductive, centralized research priorities and sanctioned R&D channels. Idea Incubation Zones, Nexus Think-Tanks and simulated problem-solving environments are presented as ways to generate controlled breakthroughs, including predetermined discoveries. The chapter extends institutional direction into aesthetic standards, storytelling and public art. It concludes with three claimed achievements: the Universal Energy Grid, Pan-Galactic Communication Protocols and Agricultural Self-Sufficiency.",
+    "critical_reading": "The chapter treats independent inquiry, unsanctioned research and artistic dissent as risks to be managed. Its language of efficiency and collective benefit sits alongside explicit descriptions of cognitive filtering, curated stimuli, research denial, narrative control and the suppression of disruptive technologies. It presents centrally directed breakthroughs as evidence of success but supplies no independent verification, competing account, or transparent method for assessing costs and failures. A critical reading should ask who defines a useful idea, who controls research funding and publication, whether artists and researchers can refuse direction, how failed projects are recorded, and whether claimed public benefits justify restrictions on intellectual freedom.",
+    "structure": [
+      {
+        "section_ids": [
+          "6.1",
+          "6.1.1",
+          "6.1.2",
+          "6.1.3"
+        ],
+        "summary": "Pattern recognition and problem-solving are framed as capacities to be optimized through heuristic methods, deductive and inductive reasoning, and strategic scenario-planning modules. The source links these capacities to institutional objectives and compliance."
+      },
+      {
+        "section_ids": [
+          "6.2",
+          "6.2.1",
+          "6.2.2",
+          "6.2.3"
+        ],
+        "summary": "Divergent thinking is treated as a potential source of instability. The text describes redirection of ideas, centralized control of research priorities, phased release of technology and approved channels for R&D."
+      },
+      {
+        "section_ids": [
+          "6.3",
+          "6.3.1",
+          "6.3.2",
+          "6.3.3"
+        ],
+        "summary": "Idea Incubation Zones include elite Nexus Think-Tanks, simulated problem-solving environments and the deliberate introduction of predetermined solutions that may be presented as independent discoveries."
+      },
+      {
+        "section_ids": [
+          "6.4",
+          "6.4.1",
+          "6.4.2",
+          "6.4.3"
+        ],
+        "summary": "Artistic expression is brought under institutional standards for aesthetic appreciation, media narratives and public art. The source describes art as a means of reinforcing approved values and social harmony."
+      },
+      {
+        "section_ids": [
+          "6.5",
+          "6.5.1",
+          "6.5.2",
+          "6.5.3"
+        ],
+        "summary": "The chapter presents the Universal Energy Grid, Pan-Galactic Communication Protocols and Agricultural Self-Sufficiency as examples of DHIE-guided breakthroughs. These are claims made by the fictional source, not independently verified achievements."
+      }
+    ],
+    "sections": [
+      "6.1",
+      "6.1.1",
+      "6.1.2",
+      "6.1.3",
+      "6.2",
+      "6.2.1",
+      "6.2.2",
+      "6.2.3",
+      "6.3",
+      "6.3.1",
+      "6.3.2",
+      "6.3.3",
+      "6.4",
+      "6.4.1",
+      "6.4.2",
+      "6.4.3",
+      "6.5",
+      "6.5.1",
+      "6.5.2",
+      "6.5.3"
+    ],
+    "critical_terms": [
+      {
+        "term": "Creativity and Innovation Directives (CIDs)",
+        "meaning": "The fictional institutional framework for directing creative and innovative work toward DHIE-defined priorities."
+      },
+      {
+        "term": "Heuristic Optimization Protocols",
+        "meaning": "The source's proposed methods for shaping problem-solving shortcuts toward efficiency and institutional goals."
+      },
+      {
+        "term": "Divergent Thinking",
+        "meaning": "The generation of novel ideas that depart from established assumptions or norms; the source treats uncontrolled divergence as a risk."
+      },
+      {
+        "term": "Innovation Bottleneck",
+        "meaning": "The source's term for centralized control over the pace, direction, funding and release of innovation."
+      },
+      {
+        "term": "Sanctioned R&D Channels",
+        "meaning": "Institutionally approved environments and processes through which research and development are permitted to proceed."
+      },
+      {
+        "term": "Idea Incubation Zones (IIZs)",
+        "meaning": "Controlled settings intended to stimulate and contain creative work, including Nexus Think-Tanks and simulated environments."
+      },
+      {
+        "term": "Seeding Innovation",
+        "meaning": "The source's practice of introducing predetermined ideas so they may appear to emerge organically."
+      },
+      {
+        "term": "Artistic Expression Frameworks (AEFs)",
+        "meaning": "The fictional standards used to assess and direct artistic output, media narratives and public art."
+      },
+      {
+        "term": "Universal Energy Grid (UEG)",
+        "meaning": "A fictional DHIE-controlled energy network presented by the source as a major technological achievement."
+      }
+    ]
+  },
+  "scenario": {
+    "content_type": "simulation",
+    "title": "The Open Research Charter: breakthrough or bottleneck?",
+    "situation": "A fictional Nexus review panel reports that a promising public-interest research proposal was rejected because its questions did not match current DHIE priorities. At the same time, a centrally sponsored project claims a major breakthrough but has not released its methods, independent replication results or record of failed trials. Researchers, artists and community representatives ask the Director for a new innovation charter. This scenario is invented for the simulation and is not an event described in the manual.",
+    "question": "What should the Director require before the next research cycle?",
+    "options": [
+      {
+        "id": "open-charter",
+        "title": "Adopt an open research charter with independent review",
+        "description": "Protect academic and artistic freedom, publish selection criteria and evidence, allow competing proposals, disclose failures, and require independent review of claims before public adoption.",
+        "effects": {
+          "evidence_confidence": 2,
+          "accountability": 2,
+          "institutional_cohesion": -1,
+          "public_impact": 2
+        },
+        "debrief": "This option makes claims contestable and allows unexpected ideas to emerge. It may create disagreement and slower coordination, but reduces dependence on a single institution's definition of progress. These are game-only effects."
+      },
+      {
+        "id": "bounded-portfolio",
+        "title": "Create a plural, time-limited research portfolio",
+        "description": "Fund a mix of mission-led and investigator-led projects, with transparent milestones, independent safety and ethics review, public reporting, and a route to stop or redirect projects.",
+        "effects": {
+          "evidence_confidence": 1,
+          "accountability": 1,
+          "institutional_cohesion": 1,
+          "public_impact": 1
+        },
+        "debrief": "A diversified portfolio balances coordination with intellectual independence. Its value depends on meaningful selection transparency and genuine freedom to report unwelcome results. This is a game-created governance response."
+      },
+      {
+        "id": "central-priorities",
+        "title": "Keep research centralized under existing priorities",
+        "description": "Retain the current approval structure and evaluate projects mainly against institutional objectives, with internal review of results.",
+        "effects": {
+          "evidence_confidence": -2,
+          "accountability": -2,
+          "institutional_cohesion": 1,
+          "public_impact": -1
+        },
+        "debrief": "This may preserve short-term alignment, but risks filtering out useful dissenting ideas and making success claims difficult to challenge. Numerical effects are simulation mechanics, not source-defined outcomes."
+      }
+    ],
+    "mechanics_note": "All four consequence dimensions and numerical effects are game-only mechanics, not metrics defined by the manual. Values are bounded from 0 to 10. The scenario concerns research governance, transparency and creative freedom; it does not instruct users in surveillance, coercion, censorship or manipulation."
+  },
+  "assessment": [
+    {
+      "id": "q1",
+      "question": "Which two divisions does the chapter introduction identify as developing the CIDs?",
+      "options": [
+        "DCO and DET",
+        "DHR and DSH",
+        "DSA and ICD-7"
+      ],
+      "answer": 0,
+      "explanation": "The chapter introduction names the Division of Cognitive Optimization (DCO) in collaboration with the Division of Evolutionary Trajectory (DET).",
+      "section_ids": [
+        "6.1"
+      ]
+    },
+    {
+      "id": "q2",
+      "question": "What does the source mean by the “Innovation Bottleneck”?",
+      "options": [
+        "A shortage of energy for the Universal Energy Grid",
+        "Centralized control over the pace and direction of technological and conceptual progress",
+        "A failure of the final knowledge assessment"
+      ],
+      "answer": 1,
+      "explanation": "Section 6.2.2 describes the Innovation Bottleneck as the controlled pace and direction of technological and conceptual progress.",
+      "section_ids": [
+        "6.2.2"
+      ]
+    },
+    {
+      "id": "q3",
+      "question": "What is the stated purpose of Simulated Problem-Solving Environments (SPSEs)?",
+      "options": [
+        "To provide controlled simulated challenges and compare human solutions with Oracle's models",
+        "To replace all artistic expression",
+        "To allocate food to regional command centers"
+      ],
+      "answer": 0,
+      "explanation": "Section 6.3.2 describes SPSEs as virtual scenarios for controlled problem-solving and comparison with Oracle's proposed solutions.",
+      "section_ids": [
+        "6.3.2"
+      ]
+    },
+    {
+      "id": "q4",
+      "question": "Which critical limitation applies to the chapter's claimed technological breakthroughs?",
+      "options": [
+        "They are all independently verified in the text",
+        "The source provides no independent validation or transparent evidence sufficient to establish the claims as real-world facts",
+        "They are described as unrelated to institutional control"
+      ],
+      "answer": 1,
+      "explanation": "The chapter presents the UEG, PGCPs and Food Doctrine as achievements, but these remain claims within the fictional manual and are not independently verified by the source itself.",
+      "section_ids": [
+        "6.5",
+        "6.5.1",
+        "6.5.2",
+        "6.5.3"
+      ]
+    }
+  ],
+  "coverage": [
+    {
+      "section_id": "6.1",
+      "title": "Pattern Recognition and Problem-Solving Enhancement: Optimal Thinking",
+      "source_page": "36",
+      "represented_in": "Chapter 6 briefing; source-structure summary; scenario context; debrief; assessment as mapped"
+    },
+    {
+      "section_id": "6.1.1",
+      "title": "Heuristic Optimization Protocols",
+      "source_page": "36",
+      "represented_in": "Chapter 6 briefing; source-structure summary; scenario context; debrief; assessment as mapped"
+    },
+    {
+      "section_id": "6.1.2",
+      "title": "Deductive and Inductive Reasoning Augmentation",
+      "source_page": "36–37",
+      "represented_in": "Chapter 6 briefing; source-structure summary; scenario context; debrief; assessment as mapped"
+    },
+    {
+      "section_id": "6.1.3",
+      "title": "Strategic Scenario Planning Modules",
+      "source_page": "36–37",
+      "represented_in": "Chapter 6 briefing; source-structure summary; scenario context; debrief; assessment as mapped"
+    },
+    {
+      "section_id": "6.2",
+      "title": "Divergent Thinking Constraints: Guiding Innovation",
+      "source_page": "37",
+      "represented_in": "Chapter 6 briefing; source-structure summary; scenario context; debrief; assessment as mapped"
+    },
+    {
+      "section_id": "6.2.1",
+      "title": "Redirection of \"Unproductive\" Creative Impulses",
+      "source_page": "37",
+      "represented_in": "Chapter 6 briefing; source-structure summary; scenario context; debrief; assessment as mapped"
+    },
+    {
+      "section_id": "6.2.2",
+      "title": "The \"Innovation Bottleneck\" and its Management",
+      "source_page": "37–38",
+      "represented_in": "Chapter 6 briefing; source-structure summary; scenario context; debrief; assessment as mapped"
+    },
+    {
+      "section_id": "6.2.3",
+      "title": "Sanctioned Research and Development Channels",
+      "source_page": "38",
+      "represented_in": "Chapter 6 briefing; source-structure summary; scenario context; debrief; assessment as mapped"
+    },
+    {
+      "section_id": "6.3",
+      "title": "Idea Incubation Zones: Controlled Breakthroughs",
+      "source_page": "38",
+      "represented_in": "Chapter 6 briefing; source-structure summary; scenario context; debrief; assessment as mapped"
+    },
+    {
+      "section_id": "6.3.1",
+      "title": "The Nexus Think-Tanks: Elite Innovation Hubs",
+      "source_page": "38",
+      "represented_in": "Chapter 6 briefing; source-structure summary; scenario context; debrief; assessment as mapped"
+    },
+    {
+      "section_id": "6.3.2",
+      "title": "Simulated Problem-Solving Environments for Controlled Discovery",
+      "source_page": "38–39",
+      "represented_in": "Chapter 6 briefing; source-structure summary; scenario context; debrief; assessment as mapped"
+    },
+    {
+      "section_id": "6.3.3",
+      "title": "Seeding Innovation: Introducing Predetermined Solutions",
+      "source_page": "39",
+      "represented_in": "Chapter 6 briefing; source-structure summary; scenario context; debrief; assessment as mapped"
+    },
+    {
+      "section_id": "6.4",
+      "title": "Artistic Expression Frameworks: Art as a Tool of Conditioning",
+      "source_page": "39–40",
+      "represented_in": "Chapter 6 briefing; source-structure summary; scenario context; debrief; assessment as mapped"
+    },
+    {
+      "section_id": "6.4.1",
+      "title": "Aesthetic Appreciation Protocols: Defining \"Optimal\" Art",
+      "source_page": "39",
+      "represented_in": "Chapter 6 briefing; source-structure summary; scenario context; debrief; assessment as mapped"
+    },
+    {
+      "section_id": "6.4.2",
+      "title": "Narrative Control in Media and Storytelling",
+      "source_page": "40",
+      "represented_in": "Chapter 6 briefing; source-structure summary; scenario context; debrief; assessment as mapped"
+    },
+    {
+      "section_id": "6.4.3",
+      "title": "Art as a Vector for Social Harmonization",
+      "source_page": "40",
+      "represented_in": "Chapter 6 briefing; source-structure summary; scenario context; debrief; assessment as mapped"
+    },
+    {
+      "section_id": "6.5",
+      "title": "Notable Contributions and DHIE-Guided Breakthroughs",
+      "source_page": "40–41",
+      "represented_in": "Chapter 6 briefing; source-structure summary; scenario context; debrief; assessment as mapped"
+    },
+    {
+      "section_id": "6.5.1",
+      "title": "The Universal Energy Grid: A DHIE-Engineered Solution",
+      "source_page": "41",
+      "represented_in": "Chapter 6 briefing; source-structure summary; scenario context; debrief; assessment as mapped"
+    },
+    {
+      "section_id": "6.5.2",
+      "title": "Pan-Galactic Communication Protocols",
+      "source_page": "41",
+      "represented_in": "Chapter 6 briefing; source-structure summary; scenario context; debrief; assessment as mapped"
+    },
+    {
+      "section_id": "6.5.3",
+      "title": "Agricultural Self-Sufficiency: The DHIE Food Doctrine",
+      "source_page": "41–42",
+      "represented_in": "Chapter 6 briefing; source-structure summary; scenario context; debrief; assessment as mapped"
+    }
+  ]
+}
