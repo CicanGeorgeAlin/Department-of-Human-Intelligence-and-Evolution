@@ -10,21 +10,21 @@ import {
   loadState,
   exportSave,
   importSave
-} from "../experience/engine/state.js";
+} from "../engine/state.js";
 import {
   applyDecision,
   setChapterProgress,
   applyAssessment
-} from "../experience/engine/rules.js";
+} from "../engine/rules.js";
 import {
   loadCampaignInventory,
   loadChapter,
   TOTAL_CHAPTERS
-} from "../experience/engine/content.js";
+} from "../engine/content.js";
 
 const root = process.cwd();
 const fetcher = async path => {
-  const file = resolve(root, "experience", path.replace(/^\.\//, ""));
+  const file = resolve(root, path.replace(/^\.\//, ""));
   try {
     const content = await readFile(file, "utf8");
     return { ok: true, status: 200, json: async () => JSON.parse(content) };
