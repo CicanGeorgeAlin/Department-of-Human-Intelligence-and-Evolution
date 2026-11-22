@@ -56,10 +56,17 @@ test("campaign works in Chromium desktop and mobile viewports", async t => {
   await page.getByText("14 of 14 chapter records passed source and mechanics validation.").waitFor();
   assert.equal(await page.locator("#dashPlayable").textContent(), "14 / 14");
   await page.keyboard.press("Tab");
+  const firstKeyboardTarget = await page.evaluate(() => ({
+    tag: document.activeElement?.tagName,
+    id: document.activeElement?.id,
+    className: document.activeElement?.className,
+    href: document.activeElement?.getAttribute("href"),
+    text: document.activeElement?.textContent?.trim()
+  }));
   assert.equal(
-    await page.evaluate(() => document.activeElement?.classList.contains("skip-link")),
+    firstKeyboardTarget.className === "skip-link",
     true,
-    "first keyboard stop should be the skip link"
+    "first keyboard stop should be the skip link; focused target: " + JSON.stringify(firstKeyboardTarget)
   );
   await page.keyboard.press("Enter");
   assert.equal(new URL(page.url()).hash, "#commandDashboard");
