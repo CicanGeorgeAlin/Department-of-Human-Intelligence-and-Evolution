@@ -15,9 +15,11 @@ const mime = {
 let server;
 let browser;
 let baseUrl;
+const configuredBaseUrl = process.env.DHIE_BASE_URL;
 
 test("campaign works in Chromium desktop and mobile viewports", async t => {
-  server = createServer(async (request, response) => {
+  if (!configuredBaseUrl) {
+    server = createServer(async (request, response) => {
     try {
       const pathname = decodeURIComponent(new URL(request.url, "http://localhost").pathname);
       const relative = pathname === "/" ? "index.html" : pathname.replace(/^\/+/, "");
@@ -34,14 +36,17 @@ test("campaign works in Chromium desktop and mobile viewports", async t => {
     } catch {
       response.writeHead(404).end("Not found");
     }
-  });
-  await new Promise(resolveListen => server.listen(0, "127.0.0.1", resolveListen));
-  const address = server.address();
-  baseUrl = `http://127.0.0.1:${address.port}/`;
+    });
+    await new Promise(resolveListen => server.listen(0, "127.0.0.1", resolveListen));
+    const address = server.address();
+    baseUrl = `http://127.0.0.1:${address.port}/`;
+  } else {
+    baseUrl = configuredBaseUrl.endsWith("/") ? configuredBaseUrl : configuredBaseUrl + "/";
+  }
   browser = await chromium.launch({ headless: true });
   t.after(async () => {
     await browser?.close();
-    await new Promise(resolveClose => server?.close(resolveClose));
+    if (server) await new Promise(resolveClose => server.close(resolveClose));
   });
 
   const page = await browser.newPage({ viewport: { width: 1365, height: 900 } });
