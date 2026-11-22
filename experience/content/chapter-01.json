@@ -90,7 +90,10 @@
         "Genetic screening, neural downloads, social credit and nanobot integration"
       ],
       "answer": 0,
-      "explanation": "The chapter's opening diagnosis names ecological collapse, resource wars, cognitive drift and societal fragmentation. These are presented as claims within the fictional manual."
+      "explanation": "The chapter's opening diagnosis names ecological collapse, resource wars, cognitive drift and societal fragmentation. These are presented as claims within the fictional manual.",
+      "section_ids": [
+        "1.1"
+      ]
     },
     {
       "id": "q2",
@@ -101,7 +104,10 @@
         "The Global Surveillance Grid"
       ],
       "answer": 1,
-      "explanation": "Section 1.2 names the CICAN Doctrine as the philosophical cornerstone and describes directed evolution as its central principle."
+      "explanation": "Section 1.2 names the CICAN Doctrine as the philosophical cornerstone and describes directed evolution as its central principle.",
+      "section_ids": [
+        "1.2"
+      ]
     },
     {
       "id": "q3",
@@ -112,7 +118,10 @@
         "As granting the DHIE universal jurisdiction"
       ],
       "answer": 2,
-      "explanation": "Section 1.4.2 says the treaty granted the DHIE universal jurisdiction. This is a statement made by the fictional source, not a real-world treaty claim."
+      "explanation": "Section 1.4.2 says the treaty granted the DHIE universal jurisdiction. This is a statement made by the fictional source, not a real-world treaty claim.",
+      "section_ids": [
+        "1.4.2"
+      ]
     },
     {
       "id": "q4",
@@ -123,7 +132,10 @@
         "Ten"
       ],
       "answer": 1,
-      "explanation": "Section 1.5.1 lists seven pillars: Cognitive Advancement, Somatic Perfection, Emotional Stability, Social Cohesion, Environmental Symbiosis, Resource Efficiency and Evolutionary Trajectory."
+      "explanation": "Section 1.5.1 lists seven pillars: Cognitive Advancement, Somatic Perfection, Emotional Stability, Social Cohesion, Environmental Symbiosis, Resource Efficiency and Evolutionary Trajectory.",
+      "section_ids": [
+        "1.5.1"
+      ]
     }
   ],
   "coverage": [
