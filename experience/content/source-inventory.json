@@ -25,7 +25,7 @@
     [
       "1.1",
       "The Great Stagnation/Regression: A Planetary Decline",
-      3
+      "3–4"
     ],
     [
       "1.1.1",
@@ -55,7 +55,7 @@
     [
       "1.2.1",
       "Overriding Natural Selection: A Moral Imperative",
-      6
+      "5–6"
     ],
     [
       "1.2.2",
@@ -65,7 +65,7 @@
     [
       "1.2.3",
       "From Sapient to Managed Species: The Paradigm Shift",
-      7
+      "6–7"
     ],
     [
       "1.3",
@@ -75,64 +75,65 @@
     [
       "1.3.1",
       "Disparate Efforts: Early Bio-Engineering and Behavioral Science Groups",
-      7
+      "6–7"
     ],
     [
       "1.3.2",
       "The Unification Conferences: Forging a Global Consensus",
-      8
+      "6–7"
     ],
     [
       "1.3.3",
       "Proto-Organizations and Failed Models",
-      8
+      7
     ],
     [
       "1.4",
       "The Global Mandate: Achieving Planetary Authority",
-      9
+      7
     ],
     [
       "1.4.1",
       "The Consolidation Wars and \"Pax DHIE\"",
-      9
+      7
     ],
     [
       "1.4.2",
       "Treaty of Geneva (Revised): Granting Universal Jurisdiction",
-      10
+      "7–8"
     ],
     [
       "1.4.3",
       "The Establishment of the Central Nexus",
-      10
+      8
     ],
     [
       "1.5",
       "Founding Charter and Core Values: The DHIE Credo",
-      10
+      8
     ],
     [
       "1.5.1",
       "The Seven Pillars of Optimization",
-      10
+      "8–9"
     ],
     [
       "1.5.2",
       "Mission Statement: Cultivating the Homo Optima",
-      11
+      9
     ],
     [
       "1.5.3",
       "Oath of Allegiance: The Unbreakable Vow",
-      11
+      9
     ]
   ],
-  "status": "M0 preliminary source inventory; full section-by-section page mapping and visual verification of wrapped headings remain open.",
-  "method": "Text extracted from the supplied 91-page PDF with physical PDF page indexing (1-based). Chapter 1 entries include initial page checks; total heading count is a text-extraction count, not final editorial sign-off.",
+  "status": "M0 in progress. Chapter 1 heading inventory and page ranges checked; Chapters 2–14 still require section-by-section extraction and page mapping.",
+  "method": "Physical PDF page indexing (1-based), using the supplied 91-page PDF and checking page text directly. Page ranges are used where a section spans a page break. This is a source inventory, not an interpretation of the fictional claims.",
   "editorial_rules": [
     "Preserve source wording, numbering, omissions, and contradictions; do not silently repair.",
     "Chapter title strings are transcribed as printed where confirmed; some titles wrap across lines.",
     "The manual is treated as fictional/speculative source material, not verified real-world fact or policy guidance."
-  ]
+  ],
+  "chapter_1_page_mapping_status": "Pages 3–9 checked directly in the PDF text extraction. Page ranges indicate physical PDF page numbers, 1-based. Section headings and their continuation text were checked across page breaks."
 }
