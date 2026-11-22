@@ -7,7 +7,7 @@ This document defines the repeatable operating protocol for developing **DHIE: D
 When the user says **Continue** in this project, advance the next unfinished checkpoint in the sequence below. Do not ask the user to restate the project brief or repeat confirmed decisions.
 
 ## Locked decisions
-- Genre: strategy simulation.
+- Genre: hybrid exploration adventure, hands-on puzzle game and light strategy simulation (user-approved direction D).
 - Player perspective: Director Cican George Alin.
 - Source of truth: original 91-page PDF, preserved unchanged.
 - Campaign: all 14 chapters in their original four-part order.
@@ -200,3 +200,22 @@ Stage Three is complete only when:
 - **M24 browser coverage:** Chromium now completes the 14-chapter campaign, opens a completed chapter, dismisses the restart confirmation and verifies the save is unchanged, then confirms restart and verifies the selected chapter returns to its briefing with no decision/answers/completion. It also verifies 13/14 completion, preservation of another chapter's saved progress, removal of the restarted chapter's decision-log entry, and exact agreement between displayed metrics and replay of the remaining decision log.
 - **M24 verification:** all 11 Node regression tests passed; local Chromium desktop/mobile end-to-end flow passed; published GitHub Pages Chromium end-to-end flow passed, including restart cancellation and confirmation. GitHub Pages build/deployment succeeded for commit `28c359d5ed7488b13ee33d72a619bff5d19068aa`. Validation run: https://github.com/CicanGeorgeAlin/Department-of-Human-Intelligence-and-Evolution/actions/runs/45054828945. Pages build/deployment: https://github.com/CicanGeorgeAlin/Department-of-Human-Intelligence-and-Evolution/actions/runs/45054828627.
 - **M24 scope boundary:** the restart flow and automated browser tests are implemented and deployed. Restart preserves cumulative archive unlocks because those may be shared across chapters. Physical Android-device testing, manual visual review, screen-reader review and a formal WCAG audit remain outstanding.
+
+
+## Revised product direction — 22 November 2026
+
+The user reviewed the text-heavy Director's Mandate experience and said it did not feel sufficiently like a game. The previous chapter/briefing/choice/quiz flow is retained as a source archive and campaign reference, but it is no longer the primary gameplay vision. The user approved a combined direction:
+- **Exploration:** move through a visible world and discover places.
+- **Adventure:** complete missions, interact with characters and uncover local situations.
+- **Strategy/simulation:** manage scarce resources, make consequential choices and see the resulting community outcome.
+- **Playability first:** each milestone must deliver a tangible game loop, not simply more reading screens.
+
+## Verified playable-world progress
+
+- **M25 — The Living District, Mission 01:** added a separate playable world at `experience/world.html`, with its own responsive styling and gameplay engine in `experience/world.css` and `experience/world.js`. The campaign landing page now prominently links to **PLAY MISSION 01** so the player can enter the world immediately.
+- **Gameplay loop:** move a character around a top-down New Meridian district using WASD, arrow keys, touch directional controls or tap-to-step on the map; approach marked places and interact; collect two repair-part caches; restore the water station; speak with two residents and choose whether to listen/co-design or issue a rushed directive; solve a three-node solar-routing puzzle; then return to the Commons to complete the mission.
+- **Consequences and replay:** the player's community-trust choices change the ending narrative. The mission tracks repair parts, water, trust and power, marks objectives as completed, saves progress locally, restores the completed outcome after refresh, and supports restarting/replaying the mission.
+- **Source and safety framing:** the mission is clearly presented as a fictional civic-recovery simulation. Its resource values and scenario are game design, not real-world claims or operational instructions.
+- **M25 automated verification:** existing 11 Node campaign regression tests pass. Chromium end-to-end tests now also complete the new mission on a mobile viewport, exercise touch controls, collect both caches, restore water, choose both resident interactions, intentionally fail then solve the solar puzzle, activate the Commons, verify the community-led ending, reload the completed save, and replay from a clean state. Both local Chromium and the published GitHub Pages Chromium runs passed.
+- **M25 deployment:** playable mission and updated campaign entry point deployed successfully. Validation run: https://github.com/CicanGeorgeAlin/Department-of-Human-Intelligence-and-Evolution/actions/runs/45055862236. Pages deployment: https://github.com/CicanGeorgeAlin/Department-of-Human-Intelligence-and-Evolution/actions/runs/45055862631.
+- **M25 scope boundary:** this is the first playable vertical slice, not yet a full open world or complete 14-chapter adventure. The current mission uses a compact fixed district map, one resource/power puzzle and two resident encounters. Further missions, richer world interactions, animation/audio and deeper campaign progression remain future work. Physical Android-device testing and a manual accessibility review are still outstanding.
