@@ -324,10 +324,13 @@ document.getElementById("importSave").addEventListener("change", async event => 
     saved = saveState(importSave(await file.text()));
     syncFromSaved();
     renderCampaignMap();
-    document.getElementById("saveStatus").textContent = "Save imported. Resume the saved chapter from the campaign overview.";
+    const message = "Save imported. Resume the saved chapter from the campaign overview.";
+    document.getElementById("saveStatus").textContent = message;
+    document.getElementById("campaignStatus").textContent = message;
     returnToOverview();
   } catch (error) {
     document.getElementById("saveStatus").textContent = error.message;
+    document.getElementById("campaignStatus").textContent = error.message;
   }
   event.target.value = "";
 });
