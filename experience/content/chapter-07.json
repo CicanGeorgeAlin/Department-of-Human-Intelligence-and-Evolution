@@ -1,0 +1,355 @@
+{
+  "id": "chapter-07",
+  "chapter_id": "7",
+  "title": "Memory Calibration and Recall (MCRs) – The Curated Past",
+  "source_document": "The DHIE Protocols: A Manual for Humanity's Directed Evolution (Restricted Access)",
+  "source_page": "42–48",
+  "content_type": "source",
+  "review_status": "source-checked",
+  "editorial_note": "This chapter is an in-world account of a fictional institution. Its claims about memory erasure, memory implantation, neural intervention, archival manipulation and identity reassignment are fictional and are not medical or scientific guidance. The simulation treats these practices as abuses of power and examines historical integrity, personal identity, informed consent, archival independence and the right to contest official narratives. It does not provide instructions for manipulating memory or people.",
+  "briefing": {
+    "title": "The curated past — who owns the truth?",
+    "summary": "Chapter 7 describes Memory Calibration and Recall (MCRs), attributed to the Division of Historical Revision (DHR) working with the Division of Cognitive Optimization (DCO). The source presents targeted amnesia and identity replacement as tools for removing memories it considers undesirable, including memories of trauma and resistance. It then describes the construction of personal and collective memories through fabricated historical narratives, curated childhood experiences and invented shared traditions. The chapter expands this control to archives, public records, monuments, media and personal recollections. Its final sections describe the alignment of individual memories with an official historical database and the use of memory distortion, manufactured threats and identity reassignment to suppress dissent. These are claims and mechanisms in the fictional manual, not real-world capabilities established by evidence.",
+    "critical_reading": "The chapter makes an explicit claim to institutional ownership of historical truth: it treats disagreement, contradictory evidence and personal recollection as problems to be corrected. It conflates social cohesion with uniform belief and presents censorship, falsification and identity erasure as administrative tools. The source does not offer independent evidence for its extraordinary technologies or claims of effectiveness. A critical review should distinguish documented events from interpretation, preserve original records and provenance, protect witnesses and privacy, allow multiple accounts, and provide independent routes to challenge official histories. It should also recognize that painful memories and dissenting testimony may be important to justice and accountability rather than errors to erase.",
+    "structure": [
+      {
+        "section_ids": [
+          "7.1",
+          "7.1.1",
+          "7.1.2",
+          "7.1.3"
+        ],
+        "summary": "Targeted Amnesia Induction is presented as removing memories considered harmful to the institution, including trauma, dissenting events and personal identity. The source's descriptions are fictional and raise profound questions about autonomy, consent and human rights."
+      },
+      {
+        "section_ids": [
+          "7.2",
+          "7.2.1",
+          "7.2.2",
+          "7.2.3"
+        ],
+        "summary": "Memory Implantation and Augmentation is used in the source to construct official historical narratives, shape childhood recollections and create collective nostalgia around fabricated events."
+      },
+      {
+        "section_ids": [
+          "7.3",
+          "7.3.1",
+          "7.3.2",
+          "7.3.3"
+        ],
+        "summary": "The Division of Historical Revision is depicted as rewriting archives, altering public records and monuments, and suppressing counter-narratives across media and information platforms."
+      },
+      {
+        "section_ids": [
+          "7.4",
+          "7.4.1",
+          "7.4.2",
+          "7.4.3"
+        ],
+        "summary": "Personal Chronological Integration is described as forcing individual recollections to match the institution's database and establishing a uniform Reality Consensus. The source treats personal disagreement as a discrepancy rather than a potential source of evidence."
+      },
+      {
+        "section_ids": [
+          "7.5",
+          "7.5.1",
+          "7.5.2",
+          "7.5.3"
+        ],
+        "summary": "The final section presents memory distortion, fabricated accusations and identity reassignment as sanctions against dissent. It exposes the chapter's most explicit conflict between institutional power and personal identity."
+      }
+    ],
+    "sections": [
+      "7.1",
+      "7.1.1",
+      "7.1.2",
+      "7.1.3",
+      "7.2",
+      "7.2.1",
+      "7.2.2",
+      "7.2.3",
+      "7.3",
+      "7.3.1",
+      "7.3.2",
+      "7.3.3",
+      "7.4",
+      "7.4.1",
+      "7.4.2",
+      "7.4.3",
+      "7.5",
+      "7.5.1",
+      "7.5.2",
+      "7.5.3"
+    ],
+    "critical_terms": [
+      {
+        "term": "Memory Calibration and Recall (MCRs)",
+        "meaning": "The fictional framework through which the DHIE claims to shape individual and collective historical consciousness."
+      },
+      {
+        "term": "Targeted Amnesia Induction",
+        "meaning": "The source's fictional label for removing selected memories; it raises issues of bodily autonomy, consent and identity."
+      },
+      {
+        "term": "Dissenting Event Erasure",
+        "meaning": "The removal or suppression of records and accounts of resistance to the institution."
+      },
+      {
+        "term": "Blank Slate Procedure",
+        "meaning": "A fictional procedure described as erasing personal identity and assigning a replacement identity."
+      },
+      {
+        "term": "Memory Implantation and Augmentation",
+        "meaning": "The source's concept of constructing or reinforcing personal and collective memories."
+      },
+      {
+        "term": "Collective Nostalgia",
+        "meaning": "A shared sense of longing for a past, which the chapter says can be manufactured around invented events."
+      },
+      {
+        "term": "Division of Historical Revision (DHR)",
+        "meaning": "The fictional division tasked with controlling archives, public records and historical narratives."
+      },
+      {
+        "term": "Personal Chronological Integration (PCI)",
+        "meaning": "The source's framework for aligning personal recollections with the official institutional account."
+      },
+      {
+        "term": "Reality Consensus",
+        "meaning": "The chapter's term for a population whose subjective understanding of history is made to match the DHIE's approved narrative."
+      },
+      {
+        "term": "Counter-Narrative Suppression",
+        "meaning": "The restriction or discrediting of accounts that challenge an official historical narrative."
+      }
+    ]
+  },
+  "scenario": {
+    "content_type": "simulation",
+    "title": "The Archive Dispute: preserve the record or protect the official story?",
+    "situation": "A fictional public archive discovers two conflicting records of a major event in the DHIE's founding period. The official account describes unanimous public support; original letters, meeting minutes and independent testimony suggest protests and unresolved harm. The DHR requests that the conflicting material be removed pending an internal review. Families and researchers ask that the originals remain accessible. This invented scenario is not an event described in the manual.",
+    "question": "What should the Director order while the evidence is reviewed?",
+    "options": [
+      {
+        "id": "preserve-independent-review",
+        "title": "Preserve all originals and commission an independent review",
+        "description": "Freeze destructive changes, preserve provenance and access logs, publish a clear account of known uncertainties, protect private information, and invite independent historians and affected communities to assess the evidence.",
+        "effects": {
+          "evidence_confidence": 2,
+          "accountability": 2,
+          "institutional_cohesion": -1,
+          "public_impact": 2
+        },
+        "debrief": "This choice protects the evidentiary record and makes the official account open to challenge. It may reveal conflict and delay a single institutional conclusion, but it preserves the possibility of correction and redress. These are game-only effects."
+      },
+      {
+        "id": "parallel-records",
+        "title": "Publish parallel accounts with transparent source notes",
+        "description": "Keep the original materials intact and publish the official account alongside documented alternative accounts, explaining provenance, gaps, disagreements and what remains unverified.",
+        "effects": {
+          "evidence_confidence": 1,
+          "accountability": 1,
+          "institutional_cohesion": 1,
+          "public_impact": 1
+        },
+        "debrief": "This approach acknowledges that historical interpretation can be contested while retaining a shared evidentiary foundation. It requires careful privacy safeguards and clear distinctions between evidence and interpretation. This is a game-created governance response."
+      },
+      {
+        "id": "remove-disputed-records",
+        "title": "Remove the conflicting material until the DHR completes its review",
+        "description": "Allow the institution that authored the official account to control access to the disputed records, without an independent preservation requirement or public timeline.",
+        "effects": {
+          "evidence_confidence": -2,
+          "accountability": -2,
+          "institutional_cohesion": 1,
+          "public_impact": -2
+        },
+        "debrief": "This may reduce immediate institutional disagreement, but risks destroying provenance, creating a conflict of interest and making later verification impossible. Numerical effects are simulation mechanics, not source-defined outcomes."
+      }
+    ],
+    "mechanics_note": "All four consequence dimensions and numerical effects are game-only mechanics, not measures defined by the manual. Values are bounded from 0 to 10. The scenario focuses on historical evidence, archives, privacy, identity and accountability; it does not provide methods for manipulating memory or suppressing people."
+  },
+  "assessment": [
+    {
+      "id": "q1",
+      "question": "Which two divisions does the Chapter 7 introduction identify as working on MCRs?",
+      "options": [
+        "DHR and DCO",
+        "DSA and DET",
+        "DSH and ICD-7"
+      ],
+      "answer": 0,
+      "explanation": "The chapter introduction identifies the Division of Historical Revision (DHR), working with the Division of Cognitive Optimization (DCO).",
+      "section_ids": [
+        "7.1"
+      ]
+    },
+    {
+      "id": "q2",
+      "question": "What does the chapter describe as the purpose of fabricated historical narratives?",
+      "options": [
+        "To preserve every competing account",
+        "To reinforce the DHIE's legitimacy and the perceived necessity of its governance",
+        "To replace the source inventory with a new technical schema"
+      ],
+      "answer": 1,
+      "explanation": "Section 7.2.1 describes fabricated narratives as a means of reinforcing institutional legitimacy.",
+      "section_ids": [
+        "7.2",
+        "7.2.1"
+      ]
+    },
+    {
+      "id": "q3",
+      "question": "What is Personal Chronological Integration (PCI) intended to achieve in the fictional source?",
+      "options": [
+        "Alignment of personal recollections with the DHIE's official historical account",
+        "Independent archival review by outside historians",
+        "Preservation of contradictory personal testimony"
+      ],
+      "answer": 0,
+      "explanation": "Section 7.4 describes PCI as aligning individual memories with the collective narrative maintained by the institution.",
+      "section_ids": [
+        "7.4",
+        "7.4.1"
+      ]
+    },
+    {
+      "id": "q4",
+      "question": "What is the most important critical safeguard when an official history conflicts with original records?",
+      "options": [
+        "Delete the conflicting records to maintain consistency",
+        "Preserve originals and provenance, disclose uncertainty, and enable independent review",
+        "Assume the institution's version is correct because it is official"
+      ],
+      "answer": 1,
+      "explanation": "Preserving original evidence and enabling independent scrutiny protects historical integrity and makes correction possible.",
+      "section_ids": [
+        "7.3",
+        "7.3.1",
+        "7.5"
+      ]
+    }
+  ],
+  "coverage": [
+    {
+      "section_id": "7.1",
+      "title": "Targeted Amnesia Induction: Removing Undesirable Memories",
+      "source_page": "42",
+      "represented_in": "Chapter 7 briefing; source-structure summary; scenario context; debrief; assessment as mapped"
+    },
+    {
+      "section_id": "7.1.1",
+      "title": "Trauma Protocol 7.B: Eradicating Emotional Scars",
+      "source_page": "42",
+      "represented_in": "Chapter 7 briefing; source-structure summary; scenario context; debrief; assessment as mapped"
+    },
+    {
+      "section_id": "7.1.2",
+      "title": "Dissenting Event Erasure: Maintaining Social Cohesion",
+      "source_page": "43",
+      "represented_in": "Chapter 7 briefing; source-structure summary; scenario context; debrief; assessment as mapped"
+    },
+    {
+      "section_id": "7.1.3",
+      "title": "The \"Blank Slate\" Procedure for Re-Education Subjects",
+      "source_page": "43",
+      "represented_in": "Chapter 7 briefing; source-structure summary; scenario context; debrief; assessment as mapped"
+    },
+    {
+      "section_id": "7.2",
+      "title": "Memory Implantation and Augmentation: Creating Shared Experiences",
+      "source_page": "43–44",
+      "represented_in": "Chapter 7 briefing; source-structure summary; scenario context; debrief; assessment as mapped"
+    },
+    {
+      "section_id": "7.2.1",
+      "title": "Fabricated Historical Narratives: Reinforcing DHIE's Legitimacy",
+      "source_page": "43",
+      "represented_in": "Chapter 7 briefing; source-structure summary; scenario context; debrief; assessment as mapped"
+    },
+    {
+      "section_id": "7.2.2",
+      "title": "Childhood Memory Enhancement: Perfecting Upbringing",
+      "source_page": "44",
+      "represented_in": "Chapter 7 briefing; source-structure summary; scenario context; debrief; assessment as mapped"
+    },
+    {
+      "section_id": "7.2.3",
+      "title": "Creating \"Collective Nostalgia\" for Fabricated Past Events",
+      "source_page": "44–45",
+      "represented_in": "Chapter 7 briefing; source-structure summary; scenario context; debrief; assessment as mapped"
+    },
+    {
+      "section_id": "7.3",
+      "title": "Historical Narrative Control: DHR's Role in Shaping Collective Memory",
+      "source_page": "45",
+      "represented_in": "Chapter 7 briefing; source-structure summary; scenario context; debrief; assessment as mapped"
+    },
+    {
+      "section_id": "7.3.1",
+      "title": "Archival Revision Protocols: Rewriting the Past",
+      "source_page": "45",
+      "represented_in": "Chapter 7 briefing; source-structure summary; scenario context; debrief; assessment as mapped"
+    },
+    {
+      "section_id": "7.3.2",
+      "title": "Public Record Management and Data Scrubbing",
+      "source_page": "45–46",
+      "represented_in": "Chapter 7 briefing; source-structure summary; scenario context; debrief; assessment as mapped"
+    },
+    {
+      "section_id": "7.3.3",
+      "title": "Propaganda Dissemination and Counter-Narrative Suppression",
+      "source_page": "46",
+      "represented_in": "Chapter 7 briefing; source-structure summary; scenario context; debrief; assessment as mapped"
+    },
+    {
+      "section_id": "7.4",
+      "title": "Personal Chronological Integration: Ensuring Consistency",
+      "source_page": "46",
+      "represented_in": "Chapter 7 briefing; source-structure summary; scenario context; debrief; assessment as mapped"
+    },
+    {
+      "section_id": "7.4.1",
+      "title": "Memory Stream Synchronization with DHIE Databases",
+      "source_page": "46",
+      "represented_in": "Chapter 7 briefing; source-structure summary; scenario context; debrief; assessment as mapped"
+    },
+    {
+      "section_id": "7.4.2",
+      "title": "Identifying and Correcting \"Errant\" Personal Recollections",
+      "source_page": "46–47",
+      "represented_in": "Chapter 7 briefing; source-structure summary; scenario context; debrief; assessment as mapped"
+    },
+    {
+      "section_id": "7.4.3",
+      "title": "The \"Reality Consensus\" Indoctrination",
+      "source_page": "47",
+      "represented_in": "Chapter 7 briefing; source-structure summary; scenario context; debrief; assessment as mapped"
+    },
+    {
+      "section_id": "7.5",
+      "title": "Protocols for Dissent Suppression: Memory as a Weapon",
+      "source_page": "47",
+      "represented_in": "Chapter 7 briefing; source-structure summary; scenario context; debrief; assessment as mapped"
+    },
+    {
+      "section_id": "7.5.1",
+      "title": "Inducing Confusion and Self-Doubt Through Memory Alteration",
+      "source_page": "47",
+      "represented_in": "Chapter 7 briefing; source-structure summary; scenario context; debrief; assessment as mapped"
+    },
+    {
+      "section_id": "7.5.2",
+      "title": "Creating False Flags and Manufactured Threats in Memory",
+      "source_page": "47–48",
+      "represented_in": "Chapter 7 briefing; source-structure summary; scenario context; debrief; assessment as mapped"
+    },
+    {
+      "section_id": "7.5.3",
+      "title": "The Ultimate Sanction: Complete Memory Wipe and Identity Reassignment",
+      "source_page": "48",
+      "represented_in": "Chapter 7 briefing; source-structure summary; scenario context; debrief; assessment as mapped"
+    }
+  ]
+}
