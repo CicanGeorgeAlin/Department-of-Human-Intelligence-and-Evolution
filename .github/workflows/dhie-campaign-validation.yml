@@ -30,6 +30,9 @@ jobs:
       - name: Install Chromium
         run: npx playwright install --with-deps chromium
         working-directory: experience
+      - name: Run Homo Optima creation regression tests
+        run: node --test tests/dhie-creation.test.mjs
+        working-directory: experience
       - name: Run DHIE campaign regression tests
         run: node --test tests/dhie-campaign.test.mjs
         working-directory: experience
