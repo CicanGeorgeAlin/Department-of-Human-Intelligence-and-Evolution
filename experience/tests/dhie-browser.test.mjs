@@ -2,7 +2,9 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import { createServer } from "node:http";
 import { readFile, stat } from "node:fs/promises";
-import { resolve, extname, sep } from "node:path";
+import { resolve, extname, sep, join } from "node:path";
+import { mkdtemp, rm } from "node:fs/promises";
+import { tmpdir } from "node:os";
 import { chromium } from "playwright";
 
 const root = process.cwd();
@@ -71,24 +73,30 @@ test("campaign works in Chromium desktop and mobile viewports", async t => {
   await page.keyboard.press("Enter");
   assert.equal(new URL(page.url()).hash, "#commandDashboard");
 
-  await page.locator('[data-chapter="14"]').click();
-  await page.locator("#activeChapterTitle").waitFor();
-  await page.getByRole("button", { name: "Enter the situation" }).click();
-  await page.getByRole("button", { name: "Review directives" }).click();
-  await page.locator(".option").first().click();
-  await page.getByRole("button", { name: "Record directive" }).click();
-  await page.getByRole("button", { name: "Take the knowledge check" }).click();
+  for (let chapterId = 1; chapterId <= 14; chapterId++) {
+    await page.locator(`[data-chapter="${chapterId}"]`).click();
+    await page.locator("#activeChapterTitle").waitFor();
+    await page.getByRole("button", { name: "Enter the situation" }).click();
+    await page.getByRole("button", { name: "Review directives" }).click();
+    await page.locator(".option").first().click();
+    await page.getByRole("button", { name: "Record directive" }).click();
+    await page.getByRole("button", { name: "Take the knowledge check" }).click();
 
-  const chapter14 = JSON.parse(await readFile(resolve(root, "content/chapter-14.json"), "utf8"));
-  for (const question of chapter14.assessment) {
-    await page.locator(`input[name="${question.id}"][value="${question.answer}"]`).check();
+    const chapterData = JSON.parse(await readFile(resolve(root, `content/chapter-${String(chapterId).padStart(2, "0")}.json`), "utf8"));
+    for (const question of chapterData.assessment) {
+      await page.locator(`input[name="${question.id}"][value="${question.answer}"]`).check();
+    }
+    await page.getByRole("button", { name: "Check answers" }).click();
+    await page.getByText("Result: 4 / 4").waitFor();
+    if (chapterId === 14) {
+      await page.getByRole("button", { name: "Open chapter archive" }).click();
+      assert.equal(await page.locator(".coverage tbody tr").count(), chapterData.coverage.length);
+      await page.getByRole("button", { name: "Return to campaign overview" }).click();
+    } else {
+      await page.getByRole("button", { name: "← Campaign overview" }).click();
+    }
   }
-  await page.getByRole("button", { name: "Check answers" }).click();
-  await page.getByText("Result: 4 / 4").waitFor();
-  await page.getByRole("button", { name: "Open chapter archive" }).click();
-  assert.equal(await page.locator(".coverage tbody tr").count(), chapter14.coverage.length);
-  await page.getByRole("button", { name: "Return to campaign overview" }).click();
-  assert.match(await page.locator("#dashCompleted").textContent(), /1 \/ 14/);
+  assert.match(await page.locator("#dashCompleted").textContent(), /14 \/ 14/);
 
   await page.locator('[data-chapter="2"]').click();
   await page.getByRole("heading", { name: /Organizational Structure/ }).waitFor();
@@ -97,6 +105,30 @@ test("campaign works in Chromium desktop and mobile viewports", async t => {
   await page.locator("#activeChapterTitle").waitFor();
   assert.equal(await page.locator("#campaignChapterStat").textContent(), "14 / 14");
   assert.equal(await page.locator("#chapterCoverageStat").textContent(), "12 / 12");
+
+  const exportDir = await mkdtemp(join(tmpdir(), "dhie-save-"));
+  try {
+    const downloadPromise = page.waitForEvent("download");
+    await page.getByRole("button", { name: "Export save" }).click();
+    const download = await downloadPromise;
+    const savePath = join(exportDir, "campaign-save.json");
+    await download.saveAs(savePath);
+    const exported = JSON.parse(await readFile(savePath, "utf8"));
+    assert.equal(exported.format, "dhie-directors-mandate-save");
+    assert.equal(exported.campaign.completedChapters.length, 14);
+    await page.evaluate(() => localStorage.clear());
+    await page.reload({ waitUntil: "networkidle" });
+    await page.getByText("14 of 14 chapter records passed source and mechanics validation.").waitFor();
+    await page.locator("#importSave").setInputFiles(savePath);
+    await page.getByText("Save imported. Resume the saved chapter from the campaign overview.").waitFor();
+    assert.match(await page.locator("#dashCompleted").textContent(), /14 \/ 14/);
+    await page.locator('[data-chapter="14"]').click();
+    await page.locator("#activeChapterTitle").waitFor();
+    assert.equal(await page.locator("#campaignChapterStat").textContent(), "14 / 14");
+    assert.equal(await page.locator("#chapterCoverageStat").textContent(), "12 / 12");
+  } finally {
+    await rm(exportDir, { recursive: true, force: true });
+  }
   assert.deepEqual(pageErrors, []);
 
   await page.setViewportSize({ width: 390, height: 844 });
