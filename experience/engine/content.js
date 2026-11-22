@@ -31,14 +31,13 @@ export async function loadCampaignInventory(fetcher = globalThis.fetch) {
   return inventory;
 }
 
-export async function loadChapter(chapterId, fetcher = globalThis.fetch) {
+export async function loadChapter(chapterId, fetcher = globalThis.fetch, suppliedInventory = null) {
   if (typeof fetcher !== "function") throw new Error("A Fetch-compatible loader is required.");
   const id = chapterNumber(chapterId);
   const filename = String(id).padStart(2, "0");
-  const [chapter, inventory] = await Promise.all([
-    readJson("./content/chapter-" + filename + ".json", fetcher),
-    loadCampaignInventory(fetcher)
-  ]);
+  const chapterPromise = readJson("./content/chapter-" + filename + ".json", fetcher);
+  const inventoryPromise = suppliedInventory ? Promise.resolve(suppliedInventory) : loadCampaignInventory(fetcher);
+  const [chapter, inventory] = await Promise.all([chapterPromise, inventoryPromise]);
 
   const expected = inventory["chapter_" + id + "_sections"];
   if (!chapter || chapter.chapter_id !== String(id) ||
