@@ -1,0 +1,11 @@
+import test from "node:test";
+import assert from "node:assert/strict";
+import fs from "node:fs";
+const html=fs.readFileSync(new URL("../chapter5.html",import.meta.url),"utf8");
+const js=fs.readFileSync(new URL("../chapter5.js",import.meta.url),"utf8");
+const css=fs.readFileSync(new URL("../chapter5.css",import.meta.url),"utf8");
+test("Chapter 5 covers sections 5.1 through 5.5 in source order",()=>{for(const s of ["SECTION 5.1","SECTION 5.2","SECTION 5.3","SECTIONS 5.4–5.5"])assert.ok(html.includes(s));for(const id of ["anger","grief","fear","bonding","sync","altruism","stress","fortitude","baseline","chemistry","genetics","sentience"])assert.ok(js.includes('id:"'+id+'"'));});
+test("four sequential investigations require complete case reviews",()=>{assert.match(js,/const incorrect=stages\[stage\]\.cards/);assert.match(js,/state\.complete\[stage\]=true/);assert.match(js,/b\.disabled=i>0&&!state\.complete/);});
+test("emotional autonomy charter protects consent, diversity and conscience",()=>{for(const phrase of ["voluntary support","freely chosen","freedom to refuse","neurodiversity","informed consent","equal dignity"])assert.ok(js.toLowerCase().includes(phrase.toLowerCase()));});
+test("progress persists locally and fictional source boundary is explicit",()=>{assert.match(js,/dhie-chapter5-emotional-autonomy-v1/);assert.match(js,/localStorage\.setItem\(KEY/);assert.match(js,/localStorage\.getItem\(KEY/);assert.match(html,/fictional claims in the manual/);assert.match(html,/does not provide instructions for psychological/);});
+test("mobile layout is responsive",()=>assert.match(css,/@media\(max-width:760px\)/));
