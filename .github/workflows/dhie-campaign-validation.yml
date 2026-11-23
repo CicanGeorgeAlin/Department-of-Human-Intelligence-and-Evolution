@@ -48,6 +48,9 @@ jobs:
       - name: Run Chapter 3 privacy audit regression tests
         run: node --test tests/dhie-chapter3.test.mjs
         working-directory: experience
+      - name: Run Chapter 4 cognitive freedom regression tests
+        run: node --test tests/dhie-chapter4.test.mjs
+        working-directory: experience
       - name: Run Chapter 1 doctrine investigation Chromium test
         run: node --test tests/dhie-chapter1-doctrine-browser.test.mjs
         working-directory: experience
@@ -66,6 +69,9 @@ jobs:
       - name: Run Chapter 3 privacy audit Chromium test
         run: node --test tests/dhie-chapter3-browser.test.mjs
         working-directory: experience
+      - name: Run Chapter 4 cognitive freedom Chromium test
+        run: node --test tests/dhie-chapter4-browser.test.mjs
+        working-directory: experience
       - name: Wait for this commit to reach GitHub Pages
         run: |
           node --input-type=module <<'NODE'
@@ -73,7 +79,8 @@ jobs:
           const checks = [
             ["creation.html", "chapterOneProgress"],
             ["chapter2.html", "THE LABYRINTH"],
-            ["chapter3.html", "THE PANOPTICON"]
+            ["chapter3.html", "THE PANOPTICON"],
+            ["chapter4.html", "COGNITIVE"]
           ];
           const deadline = Date.now() + 300000;
           while (Date.now() < deadline) {
@@ -114,6 +121,11 @@ jobs:
           DHIE_BASE_URL: https://cicangeorgealin.github.io/Department-of-Human-Intelligence-and-Evolution/experience/
       - name: Run published Chapter 3 privacy audit Chromium test
         run: node --test tests/dhie-chapter3-browser.test.mjs
+        working-directory: experience
+        env:
+          DHIE_BASE_URL: https://cicangeorgealin.github.io/Department-of-Human-Intelligence-and-Evolution/experience/
+      - name: Run published Chapter 4 cognitive freedom Chromium test
+        run: node --test tests/dhie-chapter4-browser.test.mjs
         working-directory: experience
         env:
           DHIE_BASE_URL: https://cicangeorgealin.github.io/Department-of-Human-Intelligence-and-Evolution/experience/
