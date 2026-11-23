@@ -1,0 +1,12 @@
+import test from "node:test";
+import assert from "node:assert/strict";
+import fs from "node:fs";
+const html=fs.readFileSync(new URL("../chapter1-doctrine.html",import.meta.url),"utf8");
+const js=fs.readFileSync(new URL("../chapter1-doctrine.js",import.meta.url),"utf8");
+const css=fs.readFileSync(new URL("../chapter1-doctrine.css",import.meta.url),"utf8");
+test("Chapter 1 sections 1.2 to 1.5 are represented in source order",()=>{for(const s of ["SECTION 1.2","SECTION 1.3","SECTION 1.4","SECTION 1.5"])assert.ok(html.includes(s));for(const id of ["moral","benevolence","managed","bio","gcei","pgpa","pax","treaty","nexus"])assert.ok(js.includes('id:"'+id+'"'));});
+test("doctrine, predecessor and authority investigations require all correct reviews",()=>{assert.match(js,/state\.complete\[key\]=true/);assert.match(js,/const wrong=cases\[key\]/);assert.match(js,/independent oversight/);});
+test("all Seven Pillars must be explored before the oath can complete the charter",()=>{assert.equal((js.match(/\["(?:cognitive|somatic|emotional|social|environmental|resources|trajectory)"/g)||[]).length,7);assert.match(js,/state\.explored\.length!==7/);assert.match(js,/state\.oath!=="rights"/);});
+test("save state is restored from local storage",()=>{assert.match(js,/localStorage\.setItem\(KEY/);assert.match(js,/localStorage\.getItem\(KEY/);assert.match(js,/dhie-chapter1-doctrine-review-v1/);});
+test("fictional source and human-rights safeguards are explicit",()=>{assert.match(html,/fictional DHIE manual/);assert.match(js,/bodily autonomy/);assert.match(js,/freedom to refuse/);});
+test("mobile layout collapses case and pillar grids",()=>{assert.match(css,/@media\(max-width:760px\)/);assert.match(css,/grid-template-columns:1fr/);});
