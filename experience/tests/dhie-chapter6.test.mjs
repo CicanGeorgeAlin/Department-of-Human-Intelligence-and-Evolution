@@ -1,0 +1,11 @@
+import test from "node:test";
+import assert from "node:assert/strict";
+import fs from "node:fs";
+const html=fs.readFileSync(new URL("../chapter6.html",import.meta.url),"utf8");
+const js=fs.readFileSync(new URL("../chapter6.js",import.meta.url),"utf8");
+const css=fs.readFileSync(new URL("../chapter6.css",import.meta.url),"utf8");
+test("Chapter 6 covers sections 6.1 through 6.5 in source order",()=>{for(const s of ["SECTION 6.1","SECTION 6.2","SECTION 6.3","SECTIONS 6.4–6.5"])assert.ok(html.includes(s));for(const id of ["heuristics","induction","forecast","filter","bottleneck","channels","thinktank","simulation","seeding","aesthetic","narrative","breakthrough"])assert.ok(js.includes('id:"'+id+'"'));});
+test("four sequential investigations require complete case reviews",()=>{assert.match(js,/const incorrect=stages\[stage\]\.cards/);assert.match(js,/state\.complete\[stage\]=true/);assert.match(js,/b\.disabled=i>0&&!state\.complete/);});
+test("creative freedom charter protects inquiry, artistic liberty and evidence",()=>{for(const phrase of ["academic freedom","plural funding","artistic expression","genuine discovery","independent evidence","cultural pluralism"])assert.ok(js.toLowerCase().includes(phrase.toLowerCase()));});
+test("progress persists locally and fictional source boundary is explicit",()=>{assert.match(js,/dhie-chapter6-creative-freedom-v1/);assert.match(js,/localStorage\.setItem\(KEY/);assert.match(js,/localStorage\.getItem\(KEY/);assert.match(html,/fictional assertions in the manual/);assert.match(html,/does not provide covert manipulation or sabotage methods/);});
+test("mobile layout is responsive",()=>assert.match(css,/@media\(max-width:760px\)/));
