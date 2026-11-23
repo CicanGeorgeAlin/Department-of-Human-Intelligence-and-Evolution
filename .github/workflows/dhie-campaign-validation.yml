@@ -30,11 +30,17 @@ jobs:
       - name: Install Chromium
         run: npx playwright install --with-deps chromium
         working-directory: experience
+      - name: Run Chapter 1 source study regression tests
+        run: node --test tests/dhie-chapter1.test.mjs
+        working-directory: experience
       - name: Run Homo Optima creation regression tests
         run: node --test tests/dhie-creation.test.mjs
         working-directory: experience
       - name: Run DHIE campaign regression tests
         run: node --test tests/dhie-campaign.test.mjs
+        working-directory: experience
+      - name: Run Chapter 1 source study Chromium test
+        run: node --test tests/dhie-chapter1-browser.test.mjs
         working-directory: experience
       - name: Run Homo Optima creation Chromium test
         run: node --test tests/dhie-creation-browser.test.mjs
@@ -42,6 +48,11 @@ jobs:
       - name: Run Chromium end-to-end smoke test
         run: node --test tests/dhie-browser.test.mjs
         working-directory: experience
+      - name: Run published Chapter 1 source study Chromium test
+        run: node --test tests/dhie-chapter1-browser.test.mjs
+        working-directory: experience
+        env:
+          DHIE_BASE_URL: https://cicangeorgealin.github.io/Department-of-Human-Intelligence-and-Evolution/experience/
       - name: Run published Homo Optima creation Chromium test
         run: node --test tests/dhie-creation-browser.test.mjs
         working-directory: experience
