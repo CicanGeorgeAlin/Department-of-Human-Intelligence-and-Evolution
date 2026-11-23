@@ -1,0 +1,11 @@
+import test from "node:test";
+import assert from "node:assert/strict";
+import fs from "node:fs";
+const html=fs.readFileSync(new URL("../chapter3.html",import.meta.url),"utf8");
+const js=fs.readFileSync(new URL("../chapter3.js",import.meta.url),"utf8");
+const css=fs.readFileSync(new URL("../chapter3.css",import.meta.url),"utf8");
+test("Chapter 3 covers sections 3.1 through 3.5 in source order",()=>{for(const s of ["SECTION 3.1","SECTION 3.2","SECTION 3.3","SECTIONS 3.4–3.5"])assert.ok(html.includes(s));for(const id of ["identity","cognition","behaviour","network","anomaly","propensity","talent","agents","fabrication","sabotage","score","access","oracle","minerva"])assert.ok(js.includes('id:"'+id+'"'));});
+test("all four privacy and evidence investigations require complete case reviews",()=>{assert.match(js,/const incorrect=stages\[stage\]\.cards/);assert.match(js,/state\.complete\[stage\]=true/);assert.match(js,/b\.disabled=i>0&&!state\.complete/);});
+test("the data charter protects privacy, due process and independent review",()=>{for(const phrase of ["data minimization","mental privacy","due process","independent verification","independent audits","freedom of thought"])assert.ok(js.toLowerCase().includes(phrase.toLowerCase()));});
+test("progress is saved and restored locally",()=>{assert.match(js,/dhie-chapter3-panopticon-audit-v1/);assert.match(js,/localStorage\.setItem\(KEY/);assert.match(js,/localStorage\.getItem\(KEY/);});
+test("fiction boundary and mobile responsive layout are explicit",()=>{assert.match(html,/fictional claims in the manual/);assert.match(html,/does not provide instructions for surveillance/);assert.match(css,/@media\(max-width:760px\)/);});
