@@ -1,0 +1,8 @@
+@import url("./chapter1-doctrine.css");
+.investigation-panel{min-height:300px}
+.case-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+.case-card .source-quote{min-height:54px}
+.case-card .principle{font-size:.82rem;color:#8fa5b9}
+.final-file{border-color:#547e70}
+.design-warning{border-top:1px solid #30453a;padding-top:13px;margin-top:15px;color:#b8cbbf;font-size:.9rem}
+@media(max-width:760px){.case-grid{grid-template-columns:1fr}}
