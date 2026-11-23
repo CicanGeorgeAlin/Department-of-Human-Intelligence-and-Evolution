@@ -42,6 +42,9 @@ jobs:
       - name: Run DHIE campaign regression tests
         run: node --test tests/dhie-campaign.test.mjs
         working-directory: experience
+      - name: Run Chapter 2 power audit regression tests
+        run: node --test tests/dhie-chapter2.test.mjs
+        working-directory: experience
       - name: Run Chapter 1 doctrine investigation Chromium test
         run: node --test tests/dhie-chapter1-doctrine-browser.test.mjs
         working-directory: experience
@@ -53,6 +56,9 @@ jobs:
         working-directory: experience
       - name: Run Chromium end-to-end smoke test
         run: node --test tests/dhie-browser.test.mjs
+        working-directory: experience
+      - name: Run Chapter 2 power audit Chromium test
+        run: node --test tests/dhie-chapter2-browser.test.mjs
         working-directory: experience
       - name: Run published Chapter 1 doctrine investigation Chromium test
         run: node --test tests/dhie-chapter1-doctrine-browser.test.mjs
@@ -66,6 +72,11 @@ jobs:
           DHIE_BASE_URL: https://cicangeorgealin.github.io/Department-of-Human-Intelligence-and-Evolution/experience/
       - name: Run published Homo Optima creation Chromium test
         run: node --test tests/dhie-creation-browser.test.mjs
+        working-directory: experience
+        env:
+          DHIE_BASE_URL: https://cicangeorgealin.github.io/Department-of-Human-Intelligence-and-Evolution/experience/
+      - name: Run published Chapter 2 power audit Chromium test
+        run: node --test tests/dhie-chapter2-browser.test.mjs
         working-directory: experience
         env:
           DHIE_BASE_URL: https://cicangeorgealin.github.io/Department-of-Human-Intelligence-and-Evolution/experience/
