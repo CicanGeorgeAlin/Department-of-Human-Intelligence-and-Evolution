@@ -1,0 +1,12 @@
+import test from "node:test";
+import assert from "node:assert/strict";
+import fs from "node:fs";
+const html=fs.readFileSync(new URL("../chapter1.html",import.meta.url),"utf8");
+const js=fs.readFileSync(new URL("../chapter1.js",import.meta.url),"utf8");
+const css=fs.readFileSync(new URL("../chapter1.css",import.meta.url),"utf8");
+test("Chapter 1 study contains four ordered source claims",()=>{for(const id of ["premise","ecology","cognition","impasse"])assert.ok(js.includes('id:"'+id+'"'));assert.ok(js.includes("1.1.4"));});
+test("simulation is locked until all four claims are examined",()=>{assert.match(js,/state\.seen\.length!==4/);assert.match(html,/id="simulation" hidden/);});
+test("three governance choices have distinct debriefs",()=>{for(const id of ["command","participatory","market"])assert.ok(js.includes(id+":["));assert.match(js,/game-only interpretation/);});
+test("progress and selected response persist locally",()=>{assert.match(js,/localStorage\.setItem\(KEY/);assert.match(js,/localStorage\.getItem\(KEY/);});
+test("source is framed as fictional and speculative",()=>{assert.match(html,/fictional manual/);assert.match(html,/not verified real-world history or science/);});
+test("mobile layout collapses the source grid",()=>{assert.match(css,/@media\(max-width:700px\)/);assert.match(css,/grid-template-columns:1fr/);});
