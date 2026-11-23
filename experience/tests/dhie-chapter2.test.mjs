@@ -1,0 +1,11 @@
+import test from "node:test";
+import assert from "node:assert/strict";
+import fs from "node:fs";
+const html=fs.readFileSync(new URL("../chapter2.html",import.meta.url),"utf8");
+const js=fs.readFileSync(new URL("../chapter2.js",import.meta.url),"utf8");
+const css=fs.readFileSync(new URL("../chapter2.css",import.meta.url),"utf8");
+test("Chapter 2 covers the four source sections in order",()=>{for(const s of ["SECTION 2.1","SECTION 2.2","SECTION 2.3","SECTION 2.4"])assert.ok(html.includes(s));for(const id of ["director","octad","tiers","cognitive","somatic","social","future","history","regional","operatives","extraction","surveillance","punishment","watchers"])assert.ok(js.includes('id:"'+id+'"'));});
+test("all four audits require every case to be answered correctly",()=>{assert.match(js,/const incorrect=stages\[stage\]\.cards/);assert.match(js,/state\.complete\[stage\]=true/);assert.match(js,/b\.disabled=i>0&&!state\.complete/);});
+test("the alternative design protects rights and independent oversight",()=>{for(const phrase of ["independent checks","informed consent","freedom of conscience","independent courts","data is minimized"])assert.ok(js.toLowerCase().includes(phrase.toLowerCase()));assert.match(html,/human-centred institution/);});
+test("progress is saved and restored locally",()=>{assert.match(js,/dhie-chapter2-power-audit-v1/);assert.match(js,/localStorage\.setItem\(KEY/);assert.match(js,/localStorage\.getItem\(KEY/);});
+test("source is explicitly fictional and mobile layout is responsive",()=>{assert.match(html,/fictional claims in the manual/);assert.match(css,/@media\(max-width:760px\)/);});
