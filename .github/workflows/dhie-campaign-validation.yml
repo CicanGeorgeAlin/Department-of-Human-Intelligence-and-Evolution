@@ -60,6 +60,31 @@ jobs:
       - name: Run Chapter 2 power audit Chromium test
         run: node --test tests/dhie-chapter2-browser.test.mjs
         working-directory: experience
+      - name: Wait for this commit to reach GitHub Pages
+        run: |
+          node --input-type=module <<'NODE'
+          const base = "https://cicangeorgealin.github.io/Department-of-Human-Intelligence-and-Evolution/experience/";
+          const checks = [
+            ["creation.html", "chapterOneProgress"],
+            ["chapter2.html", "THE LABYRINTH"]
+          ];
+          const deadline = Date.now() + 300000;
+          while (Date.now() < deadline) {
+            const results = await Promise.all(checks.map(async ([path, marker]) => {
+              try {
+                const response = await fetch(base + path + "?deploy-check=" + Date.now(), { cache: "no-store" });
+                return response.ok && (await response.text()).includes(marker);
+              } catch { return false; }
+            }));
+            if (results.every(Boolean)) {
+              console.log("GitHub Pages contains the new Creation Project progress and Chapter 2 page.");
+              process.exit(0);
+            }
+            console.log("Waiting for GitHub Pages to publish this commit...");
+            await new Promise(resolve => setTimeout(resolve, 10000));
+          }
+          throw new Error("GitHub Pages did not publish the expected files within five minutes.");
+          NODE
       - name: Run published Chapter 1 doctrine investigation Chromium test
         run: node --test tests/dhie-chapter1-doctrine-browser.test.mjs
         working-directory: experience
