@@ -1,0 +1,11 @@
+import test from "node:test";
+import assert from "node:assert/strict";
+import fs from "node:fs";
+const html=fs.readFileSync(new URL("../chapter4.html",import.meta.url),"utf8");
+const js=fs.readFileSync(new URL("../chapter4.js",import.meta.url),"utf8");
+const css=fs.readFileSync(new URL("../chapter4.css",import.meta.url),"utf8");
+test("Chapter 4 covers sections 4.1 through 4.5 in source order",()=>{for(const s of ["SECTION 4.1","SECTION 4.2","SECTIONS 4.3–4.4","SECTION 4.5"])assert.ok(html.includes(s));for(const id of ["implants","genes","reversal","bias","rewiring","memory","download","focus","sleep","chimera","alpha","drift"])assert.ok(js.includes('id:"'+id+'"'));});
+test("four sequential investigations require complete case reviews",()=>{assert.match(js,/const incorrect=stages\[stage\]\.cards/);assert.match(js,/state\.complete\[stage\]=true/);assert.match(js,/b\.disabled=i>0&&!state\.complete/);});
+test("cognitive freedom charter protects consent and mental integrity",()=>{for(const phrase of ["ongoing consent","bodily autonomy","mental privacy","memory integrity","independent evidence","adverse-event reporting"])assert.ok(js.toLowerCase().includes(phrase.toLowerCase()));});
+test("progress persists locally and the fictional source boundary is explicit",()=>{assert.match(js,/dhie-chapter4-cognitive-freedom-v1/);assert.match(js,/localStorage\.setItem\(KEY/);assert.match(js,/localStorage\.getItem\(KEY/);assert.match(html,/fictional claims in the manual/);assert.match(html,/no instructions for biological or neurological intervention/);});
+test("mobile layout is responsive",()=>assert.match(css,/@media\(max-width:760px\)/));
